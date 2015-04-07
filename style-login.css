@@ -1,0 +1,18 @@
+body.login {background:#666}
+body.login div#login {}
+body.login div#login h1 {}
+body.login div#login h1 a {background-size:200px!important; webkit-background-size:200px!important; height:200px!important; width:200px; padding-bottom:0px;}
+body.login div#login form#loginform {}
+body.login div#login form#loginform p {}
+body.login div#login form#loginform p label {}
+body.login div#login form#loginform input {}
+body.login div#login form#loginform input#user_login {}
+body.login div#login form#loginform input#user_pass {}
+body.login div#login form#loginform p.forgetmenot {}
+body.login div#login form#loginform p.forgetmenot input#rememberme {}
+body.login div#login form#loginform p.submit {}
+body.login div#login form#loginform p.submit input#wp-submit {background:#666; border-color:#333}
+body.login div#login p#nav {}
+body.login div#login p#nav a {}
+body.login div#login p#backtoblog {}
+body.login div#login p#backtoblog a {}

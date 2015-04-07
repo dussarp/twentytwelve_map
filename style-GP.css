@@ -1,0 +1,1304 @@
+/*
+ Theme Name:   Twenty Twelve Child
+ Theme URI:    http://www.mapgroupe.fr/twenty-twelve-child
+ Description:  Twenty Twelve Child Theme
+ Author:       MAP
+ Author URI:   http://www.mapgroupe.fr
+ Template:     twentytwelve
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-twelve-child
+*/
+
+
+
+/* ------------------ ------- GP STYLES------------------------------------------------------------------*/
+/* ----------------------- COMMUN ------------------------------- -*/
+
+/*fond pour la l'affichage de la page category.php*/
+
+
+.conteneur_image_fond
+{
+	float: left;
+	width: 5%;
+	height: 1170px;
+	background-position: -20px;
+	border: 6px none #963;
+}
+/* positionnement du conteneur principal */#primary
+{
+	width: 100%;
+}
+/* conteneur associé à la sidebar */
+
+
+
+#secondary
+{
+	float: left;
+	margin-top: 30px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 1%;
+	width : 20%;
+	display: inline-block;/*position: absolute;
+	left: 0px;
+	top: 200px;*/
+}
+#primary, #secondary
+{
+	border: 2px none #F00;
+}
+/* ----------------------- tableaux ------------------------------- -*/
+.tableau
+{
+	display: table;
+}
+.ligne
+{
+	display: table-row;
+}
+.cellule
+{
+	display: table-cell;
+}
+/* ----------------------- textes ------------------------------- -*/
+
+
+.texte_courant
+{
+	font-family: "ITCAvantGardeStd-Bk_0";
+	line-height: 1.5rem;
+	font-size: 1rem;
+}
+.texte_jaune
+{
+	color: #FC0;
+}
+.texte_blanc
+{
+	color: #FFF;
+}
+.texte_gris_fonce
+{
+	color: #666;
+}
+/*---------------------------------------------------------- fontes ---------------------------- */
+.fonte_replica
+{
+	font-family: ReplicaProLight;
+}
+.fonte_avantgarde
+{
+	font-family: "ITCAvantGardeStd-Bk_0";
+}
+.interligne_-1
+{
+	line-height: 4rem;
+}
+.interligne_-2
+{
+	line-height: 1.8rem;
+}
+.interligne_-3
+{
+	line-height: 1.6rem;
+}
+.interligne_-4
+{
+	line-height: 1.0rem;
+}
+/*--------------------------------------------------------- titres ------------------------- */
+.T-1
+{
+	font-size: 3rem;
+}
+.T-2
+{
+	font-size: 2rem;
+	margin-bottom: 20px
+}
+.T-3
+{
+	font-size: 1.5rem;
+	margin-bottom: 20px
+}
+.T-4
+{
+	font-size: 1.2rem;
+	margin-bottom: 10px;
+}
+.T-5
+{
+	font-size: 0.85rem;
+	letter-spacing: 0.05rem;
+}
+.T-6
+{
+	font-size: 0.8rem;
+	letter-spacing: 0.04rem;
+}
+.T-7
+{
+	font-size: 0.7rem;
+	letter-spacing: 0.08rem;
+}
+.T-6E
+{
+	font-size: 0.8rem;
+	margin-top: 8px;
+	letter-spacing: 0.04rem;
+}
+p.T-5
+{
+	padding-left: 10px;
+}
+/*--------------------------------------------------------- fond ------------------------- */.fond_blanc
+{
+	background-color: #FFF;
+}
+.fond_jaune
+{
+	background-color: #FC0;
+}
+.fond_gris_fonce
+{
+	border: medium none #03C;
+	background-color: #666;
+}
+.fond_gris_clair
+{
+	background-color: #999;
+}
+/*--------------------------------------------------------- autres ------------------------- */
+
+.site-info
+{
+	background-color: #666;
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+	border: 10px none #F00;
+	left: 0px;
+	bottom: 20px;
+}
+.image_fond_div
+{
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	background-color: #03C;
+	z-index: 1;
+	left: 0px;
+	top: 0px;
+}
+/* ---------------------------- MENUS ET ZONES ----------------------------------- -*/
+
+.conteneur_boite
+{
+	border: 10px none #06F;
+	padding: 0px;
+}
+#position_barre
+{
+	width: auto; /* boite principale à droite de la barre ---------------------*/
+	border: 5px solid #03F;
+	vertical-align: top;
+	float: right;
+}
+#boite_principale
+{
+	border: 5px none #9F9;
+	width: 100%;
+}
+#position_barre, #boite_principale
+{
+	display: inline-block;
+}
+.navigation_categorie
+{
+	margin-top: 0px;
+	border: 4px none #333;
+	z-index: +20;
+	height: 400px;
+	position: relative;
+}
+.menu_ref_niv-1
+{
+	font-family: ReplicaProRegular;
+	color: #FFF;
+	background-color: #FFF;
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	width: auto;
+	margin: 0px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.menu_ref_niv0
+{
+	font-family: ReplicaProRegular;
+	color: #F90;
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	width: auto;
+	margin: 0px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.second_menu
+{
+	font-family: ReplicaProRegular;
+	color: #666;
+	background-color: #F00;
+	border: 2px none #00C;
+}
+/* -------------------------- menu navigation icone ------------------------------------- -*/
+
+
+.centre_menu
+{
+	width: 450px;
+	margin-right: auto;
+	margin-left: auto;
+	float: none;
+	height: auto;
+	border: 1px none #F00; /* ------------------- contour centrage menu -------------------------------------------- -*/
+	clear: right;
+	margin-top: 56px;
+	padding: 0px;
+}
+.centre_menu ul li
+{
+	margin: 0px!important;
+}
+.centre_menu ul li
+{
+	margin: 0px!important;
+}
+#menu-menu-02 ul li a
+{
+	display: block;
+	width: 85px!important;
+	background-position: top center!important;
+	margin: 0!important
+}
+#site-navigation .map_menu01 a
+{
+	background-image: url(img/menu/logoNAV_16.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+#site-navigation .map_menu02 a
+{
+	background-image: url(img/menu/logoNAV_17.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+#site-navigation .map_menu03 a
+{
+	background-image: url(img/menu/logoNAV_18.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+#site-navigation .map_menu04 a
+{
+	background-image: url(img/menu/logoNAV_19.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+#site-navigation .map_menu05 a
+{
+	background-image: url(img/menu/logoNAV_20.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	margin-right: 0px;
+}
+#site-navigation .map_menu01 a, #site-navigation .map_menu02 a, #site-navigation .map_menu03 a, #site-navigation .map_menu04 a, #site-navigation .map_menu05 a
+{
+	height: 55px;
+	width: 70px;
+	padding-top: 45px;
+	text-align: center;
+	margin-top: 5px; /* marge entre la ligne jaune et les logos du menu haut */
+	border: 1px none #F00; /* ---------------------------- contours icone ----------------------------------- -*/
+	margin-left: 0px;
+}
+#site-navigation .map_menu01 a, #site-navigation .map_menu02 a, #site-navigation .map_menu03 a, #site-navigation .map_menu04 a
+{
+	margin-right: 0px; /* ------------------- écart entre les logos, le dernier logo n'a pas d'espacement -------------------------------------------- -*/
+}
+.fond01
+{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: Black;
+	z-index: 1;/* These three lines are for transparency in all browsers. */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	opacity: 1;
+	border: 2px solid #F00;
+}
+.menu_fixe
+{
+	height: 42px;
+	width: auto;
+	border: 1px none #F00;
+	float: left;
+	margin-left: 0px;
+	margin-right: 0px;
+	clear: right;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+/* --------------------- menu icone centrage ------------------------------------------ -*/
+.map_logo
+{
+	width: 140px;
+	/* height: 150px; */
+	padding: 0px;
+	float: left;
+	margin-top: 25px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 25px;
+	border: 5px none #093;
+}
+/* --------------------------------------------------------------- -*/
+
+.section_centre_haut
+{
+	width: 100%;
+	border: 1px solid #666;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+.section_centre_bas
+{
+	width: 100%;
+	border: 2px none #666;
+	height: 600px;
+	clear: both;
+	padding-top: 100px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	background-color: #FFF;
+	margin-top: 300px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+/* --------------------------------------------------------------- -*/
+
+
+.article_principal
+{
+	height: auto;
+	width: 1028px;
+	float: left;
+	clear: none;
+	padding-top: 0px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	border: 2px none #099;
+}
+/* --------------------------- Entité----------------------- -*/	
+
+#conteneur_entite
+{
+	border: 5px none #9F9;
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 200px;
+	margin-top: 20px;
+}
+.bande_colo
+{
+	float: left;
+	width: 5%;
+	height : 300px;
+	background-position: -20px;
+	border: 6px none #963;
+}
+.cellule_entite
+{
+	background-color: #FFF;
+	width: 45%;
+	border: 5px none #903;
+	padding-top: 00px;
+	padding-left: 20px;
+	float: left;
+}
+#cellule_entite_gauche
+{
+	width : 30%;
+	max-width: 420px;
+	padding-right: 100px;
+	text-align: right;
+}
+#cellule_entite_droite
+{
+	width: 50%;
+}
+#corps_cellule_entite
+{
+	margin-bottom: 6px;
+	border: 2px none #903;
+	margin-top: 0px;
+	padding-top: 7px;
+}
+.cellule_liens
+{
+	width: 550px;
+	border: 2px none #F00;
+	margin-right: auto;
+	margin-left: auto;
+	clear: both;
+	margin-bottom: 150px;
+	margin-top: 150px;
+	height: 150px;
+}
+#lien_trombino
+{
+	width: auto;
+	text-align: center;
+	padding-top: 35px;
+	float: left;
+}
+#lien_organigramme
+{
+	text-align: center;
+	width: auto;
+	float: left;
+}
+#icone_pellicule
+{
+	margin-left : 80px;
+	width: 100px;
+}
+.cellule_pellicule
+{
+	padding-left: 10px;
+	padding-right: 20px;
+	margin-top: 0px;
+	border: 2px none #903;
+	width: 250px;
+	float: left;
+	height: 120px;
+	display: inline-block;
+	vertical-align: baseline;
+}
+#lien_organigramme, #lien_trombino
+{
+	vertical-align: bottom;
+}
+#infos_add
+{
+	margin-top: 75px;
+}
+.icone_organisation
+{
+	border: 2px none #903;
+}
+/* --------------------------- portraits miniatures ----------------------- -*/
+.titre_cellule__membre
+{
+	float: left;
+	width: 100%;
+	margin-top: 50px;
+}
+.cellule_membre_organigramme
+{
+	float: left;
+	max-width: 72px;
+}
+#icone_fonction
+{
+	width: 20px;
+	margin-right: 2px;
+	float : left;
+}
+#fonction_organigramme
+{
+	margin-bottom: 18px;
+}
+#icone_fonction, #fonction_organigramme
+{
+	display : inline-block;
+}
+#legende_nom
+{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.organi_tombino
+{
+	width: 400px;
+	float: left;
+}
+/*.cellule_au-dela, .cellule_membre_organigramme, #icone_fonction, #legende_nom, #conteneur_portraits, #icone_infos_add, #corps_cellule_entite, #conteneur_entite, .titre_cellule__membre
+{
+	border: 1px solid #009; */
+}
+/* --------------------------- Au-delà ----------------------- -*/	
+
+#conteneur_au-dela
+{
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 200px;
+	margin-top: 20px;
+}
+.cellule_au-dela
+{
+	width: 45%;
+	padding-top: 00px;
+	padding-left: 20px;
+	float: left;
+	border: 2px solid #009;
+}
+#cellule_au-dela_gauche
+{
+	width: 20%;
+	max-width: 420px;
+	padding-right: 45px;
+	text-align: right;
+}
+#cellule_au-dela_droite
+{
+	width: 70%;
+}
+#visuel_au-dela
+{
+	width: 400px;
+	height: 200px;
+	border: 4px solid #009;
+	background-color: #C00;
+}
+.titre_au-dela
+{
+	width: 300px;
+	display: inline-block;
+	background-color: #FFF;
+	position: relative;
+	left: 0px;
+	top: 64px;
+	z-index: +4;
+}
+#corps_cellule_au-dela
+{
+	margin-bottom: 6px;
+	margin-top: 0px;
+	padding-top: 7px;
+}
+/* #titre_au-dela, .cellule_au-dela, #corps_cellule_au-dela, #visuel_au-dela, .cellule_membre_organigramme, #icone_fonction, #legende_nom, #conteneur_portraits, #icone_infos_add, #corps_cellule_entite, #conteneur_entite, .titre_cellule__membre
+{
+	border: 1px none #009; */
+}
+/* --------------------------- tableau pour l'affichage de la page des 5 catégories ----------------------- -*/
+/* --------------------------- style PYD ----------------------- -*/
+
+
+div#accroche
+{
+	font-size: 24px;
+	padding: 10px;
+	display: block;
+	width: 50%;
+}
+div#tableau_ref_categorie div.cellule
+{
+	width: 20%;
+	float: left;
+	padding: 0!important;
+	max-width: 400px!important;
+	position: relative;
+	overflow: hidden;
+}
+div#tableau_ref_categorie div.ref_vignette img
+{
+	height: 100%;
+	overflow: hidden;
+}
+div#tableau_ref_categorie div.ref_vignette a
+{
+	float: left;
+	display: block
+}
+
+figure.miniature_ref_enfant img
+{
+	transform: scale3d(1.1, 1.1, 1) /*zoom */
+}
+
+
+/* Smartphones */
+@media (min-width : 320px) and (max-width : 480px) {
+div#tableau_ref_categorie div.cellule
+{
+	width: 100%;
+}
+}
+
+/* Tablets */
+@media (min-width : 481px) and (max-width : 1024px) {
+div#tableau_ref_categorie div.cellule
+{
+	width: 33%;
+}
+}
+/* --------------------------- fin ----------------------- -*/
+
+.titre_ref_enfant a:hover {
+	color: #F90;
+}
+
+.titre_ref_enfant
+{
+	display: block;
+	position: absolute;
+	top: 150px;
+	color: white;
+	z-index: 10;
+	border: 1px none #FFF;
+	background-color: #FFF;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	width: auto;
+	Opacity:0.4;
+}
+
+.cellule_ref_categorie
+{
+	vertical-align: top;
+	height: 300px;
+	width : 300px;
+	margin: 0px;
+	display: inline-block;
+}
+#accroche
+{
+	padding-top: 20px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+}
+#accroche_sous-titre
+{
+	padding-top: 0px;
+	padding-left: 20px;
+}
+#cellule_num
+{
+	background-color: #999;
+	margin: 0px;/* 	padding: 10px;
+	width: 210px; */
+}
+#num_categorie
+{
+	padding-top : 20px;
+	padding-left: 20px;
+}
+#titre_sous_categorie {display: block; padding-left: 20px;}
+#titre_ref_categorie
+{
+	padding-top : 0px;
+	padding-left: 20px;
+}
+#titre_ref_categorie, .tableau_ref_categories, #num_categorie, .visuel_principal, #accroche, .cellule_ref_categorie
+{
+	border: 1px none #F00;
+}
+/* --------------------------- tableau pour l'affichage des résultats de choix des categories ----------------------- -*/
+
+.texte_blanc a
+{
+	color: #FFF;
+}
+#conteneur_tri_categorie
+{
+	/* float: right; */
+	max-width: 100%;
+	/*	width : 1075px; */
+	margin-right: auto;
+	margin-left: auto;/*	display : inline-block ; */
+}
+.cellule_tri_categorie
+{
+	height: 240px;
+	width : 100%;
+	max-width: 290px;
+	vertical-align: top;
+	display: inline-block;
+}
+#vignette_tri_categorie
+{
+	width : 100%;
+	max-width: 480px;
+}
+#fil_ariane_tri_categorie
+{
+	padding-right: 40px;
+	padding-left: 20px;
+	padding-top: 5px;/*	width : 200px; */
+}
+#titre_tri_categorie
+{
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 5px;
+	width : auto;
+	text-align: right;
+}
+#fil_ariane_tri_categorie, #vignette_tri_categorie, #titre_tri_categorie, .cellule_tri_categorie, #conteneur_tri_categorie
+{
+	border: 1px none #F00;
+}
+/* --------------------------------------------------------------- -*/
+/* ---------------------------  résultat presse ----------------------- -*/
+
+.texte_blanc a
+{
+	color: #FFF;
+}
+.texte_blanc a:hover
+{
+	color: #FFF;
+}
+.conteneur_tri_presse
+{
+	width : 800px;
+	margin-right: auto;
+	margin-left: auto;
+
+	}
+.cellule_tri_presse
+{
+
+	width: 290px;
+	vertical-align: top;
+	display: inline-block;
+	padding: 10px;
+	margin-top: 5px;
+
+}
+#titre_tri_presse
+{
+
+}
+
+#fil_ariane_tri_presse
+{
+
+}
+
+#corps_tri_presse
+{padding-top: 10px;
+	text-align: left;
+	z-index: +4;
+}
+#vignette_tri_presse
+{
+
+
+}
+/* #titre_tri_presse, #fil_ariane_tri_presse, #vignette_tri_presse, .cellule_tri_presse, #conteneur_tri_presse
+{
+	border: 1px solid #F00;
+}
+/* --------------------------------------------------------------- -*/
+
+
+.suite_art
+{
+	border: 2px solid #0F0;
+	background-color: #CFC;
+}
+/* --------------------------------------------------------------- -*/
+.article_secondaire
+{
+	background-color: #FFF;
+	height: 250px;
+	width: 230px;
+	float: left;
+	clear: none;
+	padding-top: 0px;
+	padding-right: 42px;
+	padding-bottom: 20px;
+	padding-left: 42px;
+	border: 2px none #0FC;
+}
+.boite_article_secondaire
+{
+	background-color: #FFF;
+	height: auto;
+	width: 231px;
+	float: left;
+	clear: none;
+	padding-top: 0px;
+	padding-right: 42px;
+	padding-bottom: 20px;
+	padding-left: 42px;
+	border: 2px none #0FC;
+}
+/* --------------------------------------------------------------- -*/
+
+
+.actus_secondaires
+{
+	border: 2px none #09F;
+	width: 1028px;
+	height: 600px;
+	margin-right: auto;
+	margin-left: auto;
+}
+/* --------------------------------------------------------------- -*/
+
+
+.titre_niv_00
+{
+	font-size: 1.8em;
+	padding: 0px;
+	margin: 0px;
+	font-weight: normal;
+	top: 0px;
+	font-family: "ITCAvantGardeStd-Bk_0";
+}
+.titre_niv_-1
+{
+	font-family: "ITCAvantGardeStd-Bk_0";
+	font-size: 1.2em;
+	padding: 0px;
+	margin: 0px;
+}
+.texte_courant
+{
+	font-family: "ITCAvantGardeStd-Bk_0";
+	font-size: 0.8em;
+	line-height: 1.5em;
+}
+/* --------------------------------------------------------------- -*/
+
+
+.bloc_jaune
+{
+	background-color: #FFC700;
+	width: 122px;
+	float: left;
+	clear: both;
+	border: 2px none #090;
+	height: 122px;
+	padding: 10px;
+	font-family: "ITCAvantGardeStd-Bk_0";
+	color: #FFF;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	text-align: right;
+}
+.bloc_gris
+{
+	background-color: #737373;
+	width: 40px;
+	float: left;
+	clear: both;
+	border: 2px none #090;
+	height: 425px;
+	padding: 10px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #FFF;
+	margin: 0px;
+}
+/* --------------------------------------------------------------- -*/
+
+
+.date_publication
+{
+	font-family: "ITCAvantGardeStd-Bk_0";
+	font-size: 0.6em;
+}
+.visuel_article_secondaire
+{
+	border: 2px none #F00;
+	background-color: #FFF;
+	width: 230px;
+	float: left;
+	padding-right: 42px;
+	padding-left: 42px;
+}
+/* --------------------------------------------------------------- -*/
+
+.menu_haut
+{
+	font-size: 0.8em;
+	color: #FFF;
+	float: left;
+	clear: right;
+	width: 78px;
+	text-align: center;
+	margin-top: 0px;
+	text-transform: uppercase;
+	font-family: ReplicaProRegular;
+	border: 2px dotted #09F;
+}
+.boite_explication_menu
+{
+	height: 400px;
+	width: 100%;
+	clear: both;
+	float: left;
+	background-color: #737373;
+}
+.boite_slogan
+{
+	background-color: #CCC;
+	float: left;
+	height: 150px;
+	width: 150px;
+	margin: 30px;
+	font-family: "ITCAvantGardeStd-Bk_0";
+	font-size: 1.5em;
+	color: #FFF;
+	padding: 10px;
+}
+/* ------------------------------- actus principales -------------------------------- -*/
+
+
+div#image_actu_bandeau
+{
+	position: relative;
+	margin-top: 0px;
+	background-color: #FFF;
+}
+.actus_principales
+{
+	position: absolute;
+	top: 10%;
+	left: 20px;
+	width: 290px;
+}
+.totem_actu
+{
+	padding: 10px;
+	float: left;
+	height: 30px;
+	width: 30px;
+	border: medium none #999;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+.titre_actu
+{
+	font-family: "ITCAvantGardeStd-Bk_0";
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 200px;
+	border: 1px none #069;
+	float: left;
+	text-align: left;
+	height: 70px;
+	margin-bottom: 10px;
+}
+#content-actu
+{
+	font-family: "ITCAvantGardeStd-Bk_0";
+	border: 1px none #C00;
+	padding: 20px;
+	border-radius: 5px;
+	text-align: right;
+}
+#date_actu
+{
+	border: 2px none #666;
+	margin-top: 20px;
+	padding-bottom: 10px;
+}
+/* -------------------------------  anciennes actus-------------------------------- -*/
+
+
+#conteneur_anciennes_actus
+{
+	/* width: auto; */
+	margin-right: 20%;
+	margin-left: 20%;
+	margin-top: 80px;
+	margin-bottom: 150px;/* max-width: 287px; */
+}
+.cellule_anciennes_actus
+{
+	padding-right: 2px;
+	padding-left: 2px;
+	text-align: center;
+	width: 32%;
+	margin-right: 0%;
+	/* min-width: 355px; */
+	margin-left: 0%;
+	display: inline-block;
+}
+#titre_anciennes_actus
+{
+	font-family: "ITCAvantGardeStd-Bk_0";
+	height: 50px;
+	padding-bottom: 50px;
+}
+#date_anciennes_actus
+{
+	padding-bottom: 10px;
+}
+#tableau_anciennes_actus, #titre_anciennes_actus, #date_anciennes_actus, .cellule_anciennes_actus, #conteneur_anciennes_actus
+{
+	border: 1px none #009;
+}
+/* ------------------------------- sommaire -------------------------------- -*/
+
+
+.conteneur_sommaire
+{
+	width: 100%;
+	padding-top: 80px;
+	padding-bottom: 0px;
+	margin-top: 0px;
+}
+#tableau_sommaire
+{
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+}
+#tableau_contact
+{
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+}
+.conteneur_contact
+{
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 0px;
+	margin-top: 0px;
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-color: #999;
+	border-right-color: #999;
+	border-bottom-color: #999;
+	border-left-color: #999;
+}
+#cellule_sommaire
+{
+	padding-left: 10px;
+	padding-bottom: 60px;
+	vertical-align: top;
+	width: 30%;
+	padding-right: 90px;
+}
+#cellule_icone_sommaire
+{
+	width: 50px;
+}
+.corps_sommaire
+{
+	font-family: "ITCAvantGardeStd-Bk_0";
+	font-size: 1rem;
+	line-height: 1.6rem;
+}
+/* .corps_sommaire, #cellule_icone_sommaire, #cellule_sommaire, #tableau_contact, .conteneur_contact, #tableau_sommaire, .conteneur_sommaire
+{
+	border: 1px none #F00; */
+
+
+/* ----------------------- Détails fiche référence ------------------------------- -*/
+.conteneur_fiche_details
+{
+	height: 800px;
+	width: 100%;
+	background-color: #FFF;
+}
+.conteneur_light_box
+{
+	float: left;
+	width: 70%;
+	max-width: 822px;
+	margin-left: 290px;
+	margin-top: 20px;
+}
+#visuel_carte
+{
+	display: inline-block;
+	width: 50%;
+	max-width : 400px;
+	margin-right: 20px;
+}
+.conteneur_visuels
+{
+	display: inline-block;
+	vertical-align: top;
+	float: left;
+}
+.visuel_light_box
+{
+	width: 217px;
+	vertical-align: top;
+	float: left;
+	display: block;
+	clear: right;
+}
+.conteneur_fiche_details, .conteneur_light_box, .visuel_light_box, .visuel_carte
+{
+	border : 1px none red;
+}
+/* ---------------------------------------Indesign SYTLES -------------------------------------- */
+/* --------------------------------------- div image ------------------------------------------------- */
+
+
+.section_haut /* bloc entête */
+{
+	height: 190px;
+	width: 100%;
+	margin: 0px;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	padding: 0px;
+	float: left;
+}
+/* div slide image ----------------------------------------------------------------------------- */
+.fiche_reference
+{
+	position: absolute;
+	top: 275px;
+	left: 70px;
+	width: 240px;
+	margin: 0px;
+	/* padding: 6px; */
+	float: right;
+}
+.titre-op-ration /* conteneur pour le titre ----------------------------------------------------------------------------- */
+{
+	/*width: 100%; */
+	border: 3px none #F00;
+	padding: 10px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	background-color: #FC0;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+.d-tails/* conteneur pour les détails ----------------------------------------------------------------------------- */
+{
+	height: auto;
+	/* width: 100%; */
+	border: 2px none #930;
+	background-color: #FFF;
+	padding: 10px;
+	margin-bottom: 0px;
+}
+.titre-principale-verso/* conteneur pour le programme ----------------------------------------------------------------------------- */
+{
+	height: auto;
+	/* width: 100%; */
+	border: 2px none #930;
+	background-color: #999;
+	padding: 10px;/* margin-bottom: 10px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px; */
+}
+/* textes ----------------------------------------------------------------------------- */.Titre-verso
+{
+	height: auto;
+	width: auto;
+	border: 2px none #00F;
+	font-family: ReplicaProRegular;
+	font-size: 1.2rem;
+	line-height: 1.2rem;
+	text-transform: capitalize;
+	color: #FFF;
+}
+.ville-couv, .Ville-verso, .para-style-override-1
+{
+	font-family: ReplicaProRegular;
+	font-size: 0.8rem;
+	color: #FFF;
+}
+.label-info
+{
+	font-family: ReplicaProRegular;
+	font-size: 0.8rem;
+	color: #999;
+	text-transform: uppercase;
+	width: 100%;
+	border: 2px none #F00;
+	letter-spacing : 0.05 rem;
+}
+.info
+{
+	font-family: ReplicaProLight;
+	color: #333;
+	font-size: 1rem;
+	line-height: 1.2rem;
+	margin-top: 2px;
+	margin-bottom: 8px;
+	letter-spacing : 1 rem;
+}
+.Titre-projet-verso
+{
+	font-family: ReplicaProRegular;
+	color: #FFF;
+	font-size: 0.8rem;
+	line-height: 0.5rem;
+	margin-top: 0px;
+	text-transform: uppercase;
+	letter-spacing : 1 rem;
+}
+body.archive category category-01_urba category-20 logged-in custom-background custom-font-enabled single-author
+{
+	background-color: #099;
+}
+/* fin GP STYLES------------------------------------------------------------- */
+}

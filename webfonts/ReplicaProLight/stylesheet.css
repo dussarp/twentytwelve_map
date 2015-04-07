@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'ReplicaProLight';
+	src: url('ReplicaProLight.eot');
+	src: url('ReplicaProLight.eot?#iefix') format('embedded-opentype'),
+		url('ReplicaProLight.woff') format('woff'),
+		url('ReplicaProLight.ttf') format('truetype'),
+		url('ReplicaProLight.svg') format('svg');
+}
