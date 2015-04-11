@@ -33,6 +33,7 @@ add_image_size( 'miniature-bandeau', 1920, 800, true );
 add_image_size( 'miniature-galerie', 1920, 400, true );
 add_image_size( 'visuel-maxi', 1920, 1200, false );
 add_image_size( 'miniature-tri', 480, 240, true );
+add_image_size( 'miniature-publication', 260, 160, true );
 
 // Les bonus http://buzut.fr/2012/03/09/3-facons-davoir-plusieurs-pages-de-blog-avec-wordpress/
 add_action('init', 'lesBonus_post_type');

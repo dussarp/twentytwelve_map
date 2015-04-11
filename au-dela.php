@@ -19,7 +19,7 @@ get_header(); ?>
 <!-- début section centre haut -->
 <!-- boite principale AMA ------------------------------------------------>
 
-<div id="conteneur_au-dela" class="conteneur_boite">
+<div class="conteneur_AD fond_jaune">
 			<!-- contenu boite principale ------------------------------------------------>
 			<div  id="cellule_au-dela_gauche" class="cellule_au-dela">
 						<!-- présentation de l'entité ---------------------------------------------- -->
@@ -27,9 +27,10 @@ get_header(); ?>
 									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu/logoVSM.png" width="100px" />
 						</div> -->
 						<!-- liens vers page php par icones ---------------------------------------------->
-						<p class="T-2">AMA</p>
+						<p class="T-2 texte_blanc">les Ateliers Métropolitains de l'Architecture</p>
 						<span class="interligne_-3 T-5"> Fuga. Tis volumenis idestrum, omnisi tecto volorro rersper istrum que iliberion natio. Et ellat quid mod quibusame expliqu untioreptasi cone nus, exceris vid quaest et ma voluptatibus am, ut experum aut eaquam landigent.</span>
 			</div>
+				<!-- Cellule droite -------------------------------------------------->
 			<div  id="cellule_au-dela_droite" class="cellule_au-dela">
 						
 						<!-- Début de la Boucle-------------------------------------------------->
@@ -42,13 +43,13 @@ get_header(); ?>
 						<?php if ( $the_query->have_posts() ) : ?>
 						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 						<a href="<?php the_permalink(); ?>">
-									<div class="visuel_au-dela">
-												<span class="titre_au-dela T-4"><?php the_title(); ?></span>
+									<div id="visuel_au-dela">
+												<!--<span class="titre_au-dela T-4"><?php the_title(); ?></span>-->
 												<figure>
-															<?php the_post_thumbnail('miniature-article'); ?>
+															<?php the_post_thumbnail('miniature-actus'); ?>
 												</figure>
-												<figcaption>
-												</figcaption>
+												<!--<figcaption>
+												</figcaption>-->
 									</div>
 						</a>
 						<?php endwhile; ?>
@@ -56,25 +57,26 @@ get_header(); ?>
 						<p>
 									<?php _e( 'Sorry, no posts matched your criteria.' ); ?>
 						</p>
-						<?php endif; ?>
+						<?php endif; ?>			<a href="<?php the_permalink(); ?>">
+									<div id="plus_au-dela">
+															<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/add/plus_11.png"/>
+
+									</div>
+						</a>
 			</div>
 </div>
+
 <! ---------------------------------------------------------------------------------------------------------------------- -->
 <!-- boite principale Consilium ------------------------------------------------>
 
-<div id="conteneur_au-dela" class="conteneur_boite">
+<div class="conteneur_AD fond_gris_clair">
 			<!-- contenu boite principale ------------------------------------------------>
-			<div class="bande_colo fond_jaune alignleft">
-			</div>
 			<div  id="cellule_au-dela_gauche" class="cellule_au-dela">
 						<!-- présentation de l'entité ---------------------------------------------- -->
-						<div>
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu/logoVSM.png" width="100px" />
-						</div>
-						<!-- liens vers page php par icones ---------------------------------------------->
-						<p class="T-2">Consilium</p>
+						<p class="T-2 texte_blanc">Consilium</p>
 						<span class="interligne_-3 T-5"> Fuga. Tis volumenis idestrum, omnisi tecto volorro rersper istrum que iliberion natio. Et ellat quid mod quibusame expliqu untioreptasi cone nus, exceris vid quaest et ma voluptatibus am, ut experum aut eaquam landigent.</span>
 			</div>
+								<!-- Droite ------------------------------------------------->
 			<div  id="cellule_au-dela_droite" class="cellule_au-dela">
 						
 						<!-- Début de la Boucle-------------------------------------------------->
@@ -84,37 +86,32 @@ get_header(); ?>
 				$the_query = new WP_Query( $args ); 
 			?>
 						<?php if ( $the_query->have_posts() ) : ?>
-						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-						<span class="arrow title">
+								<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 						<a href="<?php the_permalink(); ?>">
-									<div id="legende_nom" class="cellule_membre_organigramme interligne_-4 T-7">
-												<?php the_title(); ?>
+									<div id="visuel_au-dela">
+												<!--<span class="titre_au-dela T-4"><?php the_title(); ?></span>-->
+												<figure>
+															<?php the_post_thumbnail('miniature-actus'); ?>
+												</figure>
+												<!--<figcaption>
+												</figcaption>-->
 									</div>
-									<?php the_post_thumbnail('miniature-article'); ?>
 						</a>
-						</span>
 						<?php endwhile; ?>
-						<?php else:  ?>
-						<p>
-									<?php _e( 'Sorry, no posts matched your criteria.' ); ?>
-						</p>
+					
 						<?php endif; ?>
 			</div>
 </div>
 <! ---------------------------------------------------------------------------------------------------------------------- -->
 <!-- boite principale Focus on ------------------------------------------------>
 
-<div id="conteneur_au-dela" class="conteneur_boite">
+<div class="conteneur_AD fond_jaune">
 			<!-- contenu boite principale ------------------------------------------------>
-			<div class="bande_colo fond_jaune alignleft">
-			</div>
+
 			<div  id="cellule_au-dela_gauche" class="cellule_au-dela">
 						<!-- présentation de l'entité ---------------------------------------------- -->
-						<div>
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu/logoVSM.png" width="100px" />
-						</div>
 						<!-- liens vers page php par icones ---------------------------------------------->
-						<p class="T-2">Focus on</p>
+						<p class="T-2 texte_blanc">Focus</p>
 						<span class="interligne_-3 T-5"> Fuga. Tis volumenis idestrum, omnisi tecto volorro rersper istrum que iliberion natio. Et ellat quid mod quibusame expliqu untioreptasi cone nus, exceris vid quaest et ma voluptatibus am, ut experum aut eaquam landigent.</span>
 			</div>
 			<div  id="cellule_au-dela_droite" class="cellule_au-dela">
@@ -122,19 +119,21 @@ get_header(); ?>
 						<!-- Début de la Boucle-------------------------------------------------->
 						
 						<?php 
-				$args = array( 'post_type' => 'perspective', 'posts_per_page' => 3, 'order' => 'ASC', 'sorte' => 'focus-on');
+				$args = array( 'post_type' => 'perspective', 'posts_per_page' => 3, 'order' => 'ASC', 'sorte' => 'focus');
 				$the_query = new WP_Query( $args ); 
 			?>
 						<?php if ( $the_query->have_posts() ) : ?>
-						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-						<span class="arrow title">
+		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 						<a href="<?php the_permalink(); ?>">
-									<div id="legende_nom" class="cellule_membre_organigramme interligne_-4 T-7">
-												<?php the_title(); ?>
+									<div id="visuel_au-dela">
+												<!--<span class="titre_au-dela T-4"><?php the_title(); ?></span>-->
+												<figure>
+															<?php the_post_thumbnail('miniature-actus'); ?>
+												</figure>
+												<!--<figcaption>
+												</figcaption>-->
 									</div>
-									<?php the_post_thumbnail('miniature-miniature'); ?>
 						</a>
-						</span>
 						<?php endwhile; ?>
 						<?php else:  ?>
 						<p>

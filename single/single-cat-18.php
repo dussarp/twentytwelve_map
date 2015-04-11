@@ -203,7 +203,7 @@ _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
 						</a>
 						<?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_class' => 'nav-menu' ) ); ?>
 			</nav>
-			<!-- fin menu REF ---------------------------------------------- -->
+			<!-- fin menu REF ---------------------------------------------- -->single-cat-18.php
 			<div id="content" role="main">
 						<?php while ( have_posts() ) : the_post(); ?>
 						<!-- 	<div id="primary" class="site-content">-->

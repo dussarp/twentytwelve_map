@@ -112,6 +112,10 @@
 	line-height: 1.0rem;
 }
 /*--------------------------------------------------------- titres ------------------------- */
+.tete
+{
+	margin-top: 8px;
+}
 .T-1
 {
 	font-size: 3rem;
@@ -194,6 +198,14 @@ p.T-5
 	z-index: 1;
 	left: 0px;
 	top: 0px;
+}
+/* ---------------------------- ombres ----------------------------------- -*/
+./ombre_haut {
+-moz-box-shadow: inset 0px 20px 20px 0px #cfcfcf;
+-webkit-box-shadow: inset 0px 20px 20px 0px #cfcfcf;
+-o-box-shadow: inset 0px 20px 20px 0px #cfcfcf;
+box-shadow: inset 0px 20px 20px 0px #cfcfcf;
+filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, Strength=20);
 }
 /* ---------------------------- MENUS ET ZONES ----------------------------------- -*/
 
@@ -559,26 +571,26 @@ p.T-5
 	width: 400px;
 	float: left;
 }
-/*.cellule_au-dela, .cellule_membre_organigramme, #icone_fonction, #legende_nom, #conteneur_portraits, #icone_infos_add, #corps_cellule_entite, #conteneur_entite, .titre_cellule__membre
-{
-	border: 1px solid #009; */
-}
+
 /* --------------------------- Au-delà ----------------------- -*/	
 
-#conteneur_au-dela
-{
+.conteneur_AD {
 	width: 100%;
+	height: 300px;
 	display: inline-block;
-	margin-bottom: 200px;
-	margin-top: 20px;
+	margin-bottom: 50px;
+	margin-top: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	z-index:+4;
 }
+
+
 .cellule_au-dela
 {
 	width: 45%;
-	padding-top: 00px;
 	padding-left: 20px;
-	float: left;
-	border: 2px solid #009;
+	float: left;/*	border: 2px solid #009;*/
 }
 #cellule_au-dela_gauche
 {
@@ -586,17 +598,18 @@ p.T-5
 	max-width: 420px;
 	padding-right: 45px;
 	text-align: right;
+	padding-left: 70px;
 }
 #cellule_au-dela_droite
 {
-	width: 70%;
+	width: 68%;
 }
 #visuel_au-dela
 {
-	width: 400px;
-	height: 200px;
-	border: 4px solid #009;
-	background-color: #C00;
+
+	display: inline-block;
+	vertical-align: top;
+	width: 25%;
 }
 .titre_au-dela
 {
@@ -614,10 +627,15 @@ p.T-5
 	margin-top: 0px;
 	padding-top: 7px;
 }
-/* #titre_au-dela, .cellule_au-dela, #corps_cellule_au-dela, #visuel_au-dela, .cellule_membre_organigramme, #icone_fonction, #legende_nom, #conteneur_portraits, #icone_infos_add, #corps_cellule_entite, #conteneur_entite, .titre_cellule__membre
-{
-	border: 1px none #009; */
+
+#plus_au-dela {
+  padding-left: 30px;
+
+  width: 100px !important;
+
+  display: inline-block;
 }
+
 /* --------------------------- tableau pour l'affichage de la page des 5 catégories ----------------------- -*/
 /* --------------------------- style PYD ----------------------- -*/
 
@@ -648,7 +666,6 @@ div#tableau_ref_categorie div.ref_vignette a
 	float: left;
 	display: block
 }
-
 figure.miniature_ref_enfant img
 {
 	transform: scale3d(1.1, 1.1, 1) /*zoom */
@@ -672,10 +689,10 @@ div#tableau_ref_categorie div.cellule
 }
 /* --------------------------- fin ----------------------- -*/
 
-.titre_ref_enfant a:hover {
+.titre_ref_enfant a:hover
+{
 	color: #F90;
 }
-
 .titre_ref_enfant
 {
 	display: block;
@@ -690,9 +707,8 @@ div#tableau_ref_categorie div.cellule
 	padding-bottom: 5px;
 	padding-left: 10px;
 	width: auto;
-	Opacity:0.4;
+	Opacity: 0.4;
 }
-
 .cellule_ref_categorie
 {
 	vertical-align: top;
@@ -724,7 +740,11 @@ div#tableau_ref_categorie div.cellule
 	padding-top : 20px;
 	padding-left: 20px;
 }
-#titre_sous_categorie {display: block; padding-left: 20px;}
+#titre_sous_categorie
+{
+	display: block;
+	padding-left: 20px;
+}
 #titre_ref_categorie
 {
 	padding-top : 0px;
@@ -781,7 +801,13 @@ div#tableau_ref_categorie div.cellule
 }
 /* --------------------------------------------------------------- -*/
 /* ---------------------------  résultat presse ----------------------- -*/
-
+#publication.site-content
+{
+	margin-top: 4px;
+	margin-right: 2% !important;
+	margin-left: 2%;
+	margin-bottom: 4px;/*		border: solid 1px red*/
+}
 .texte_blanc a
 {
 	color: #FFF;
@@ -790,46 +816,38 @@ div#tableau_ref_categorie div.cellule
 {
 	color: #FFF;
 }
-.conteneur_tri_presse
+div.conteneur_tri_presse
 {
-	width : 800px;
-	margin-right: auto;
-	margin-left: auto;
-
-	}
+	width: 33%;
+	border: thin none #06C;
+	display: inline-block;
+}
 .cellule_tri_presse
 {
-
-	width: 290px;
+	width: 50%;
 	vertical-align: top;
 	display: inline-block;
-	padding: 10px;
-	margin-top: 5px;
-
+	height: 160px;
 }
 #titre_tri_presse
 {
-
+	padding-top: 5px;
+	padding-left: 16px;
+	padding-right: 16px;
 }
-
-#fil_ariane_tri_presse
+#champs
 {
-
+  padding-left: 16px;
+  padding-right: 16px;
+  vertical-align: top;
 }
-
-#corps_tri_presse
-{padding-top: 10px;
-	text-align: left;
-	z-index: +4;
+#titre_tri_presse.T-3
+{
+	margin-bottom: 6px !important;
 }
 #vignette_tri_presse
 {
-
-
-}
-/* #titre_tri_presse, #fil_ariane_tri_presse, #vignette_tri_presse, .cellule_tri_presse, #conteneur_tri_presse
-{
-	border: 1px solid #F00;
+	width: 49%;
 }
 /* --------------------------------------------------------------- -*/
 
@@ -1049,23 +1067,28 @@ div#image_actu_bandeau
 
 #conteneur_anciennes_actus
 {
-	/* width: auto; */
-	margin-right: 20%;
-	margin-left: 20%;
-	margin-top: 80px;
-	margin-bottom: 150px;/* max-width: 287px; */
+  width: 60%;
+  margin-right: 20%;
+  margin-left: 20%;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  /* max-width: 287px; */
 }
 .cellule_anciennes_actus
 {
-	padding-right: 2px;
-	padding-left: 2px;
-	text-align: center;
-	width: 32%;
-	margin-right: 0%;
-	/* min-width: 355px; */
-	margin-left: 0%;
-	display: inline-block;
+  padding-right: 8px;
+  padding-left: 8px;
+  text-align: center;
+  width: 30%;
+  margin-right: 0%;
+  /* min-width: 355px; */
+  margin-left: 0%;
+  display: inline-block
 }
+
+.cellule_anciennes_actus img { border-radius: 3px !important}
+
+
 #titre_anciennes_actus
 {
 	font-family: "ITCAvantGardeStd-Bk_0";
