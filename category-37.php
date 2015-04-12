@@ -7,7 +7,7 @@ get_header(); ?>
 
 <section id="publication" class="site-content">
 			<?php /*?><?php get_sidebar(); ?><?php */?>
-			<?php 
+		<?php 
 // Check if there are any posts to display
 if ( have_posts() ) : ?>
 			

@@ -384,7 +384,7 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 /* --------------------- menu icone centrage ------------------------------------------ -*/
 .map_logo
 {
-	width: 140px;
+	width: 120px;
 	/* height: 150px; */
 	padding: 0px;
 	float: left;
@@ -476,10 +476,21 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 }
 #corps_cellule_entite
 {
-	margin-bottom: 6px;
+	margin-bottom: 100px;
 	border: 2px none #903;
 	margin-top: 0px;
 	padding-top: 7px;
+}
+
+#conteneur_A {
+float: left;
+  width: 40%;
+
+}
+#conteneur_B {
+  float: right;
+  width: 56%;
+
 }
 .cellule_liens
 {
@@ -537,10 +548,9 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 /* --------------------------- portraits miniatures ----------------------- -*/
 .titre_cellule__membre
 {
-	float: left;
-	width: 100%;
-	margin-top: 50px;
-}
+float: left;
+  width:100%;
+ }
 .cellule_membre_organigramme
 {
 	float: left;
@@ -571,7 +581,9 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	width: 400px;
 	float: left;
 }
-
+.titre_cellule__membre, .cellule_membre_organigramme, #icone_fonction, #fonction_organigramme, #icone_fonction, #fonction_organigramme, #legende_nom, .organi_tombino, #conteneur_A  {
+	border: 1px solid #009;
+}
 /* --------------------------- Au-delà ----------------------- -*/	
 
 .conteneur_AD {
@@ -795,18 +807,22 @@ div#tableau_ref_categorie div.cellule
 	width : auto;
 	text-align: right;
 }
-#fil_ariane_tri_categorie, #vignette_tri_categorie, #titre_tri_categorie, .cellule_tri_categorie, #conteneur_tri_categorie
-{
-	border: 1px none #F00;
-}
+
 /* --------------------------------------------------------------- -*/
 /* ---------------------------  résultat presse ----------------------- -*/
+/*#accroche_presse {	  width: 33%;
+  height: 90px;
+}*/
+
 #publication.site-content
 {
-	margin-top: 4px;
-	margin-right: 2% !important;
-	margin-left: 2%;
-	margin-bottom: 4px;/*		border: solid 1px red*/
+  margin-top: 4px;
+  margin-right: 0% !important;
+  margin-left: 2% !important;
+  margin-bottom: 4px;
+  background-color: #FC0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .texte_blanc a
 {
@@ -1011,9 +1027,9 @@ div.conteneur_tri_presse
 
 div#image_actu_bandeau
 {
-	position: relative;
-	margin-top: 0px;
-	background-color: #FFF;
+  position: relative;
+  margin-top: 65px;
+ 
 }
 .actus_principales
 {
@@ -1036,17 +1052,17 @@ div#image_actu_bandeau
 }
 .titre_actu
 {
-	font-family: "ITCAvantGardeStd-Bk_0";
-	padding-top: 30px;
-	padding-bottom: 30px;
-	padding-left: 20px;
-	padding-right: 20px;
-	width: 200px;
-	border: 1px none #069;
-	float: left;
-	text-align: left;
-	height: 70px;
-	margin-bottom: 10px;
+  font-family: "ITCAvantGardeStd-Bk_0";
+  padding-top: 12px;
+  padding-bottom: 6px;
+  padding-left: 31px;
+  padding-right: 20px;
+  width: 166px;
+  border: 1px none #069;
+  float: left;
+  text-align: left;
+  height: 70px;
+  margin-bottom: 10px;
 }
 #content-actu
 {
@@ -1170,44 +1186,73 @@ div#image_actu_bandeau
 
 
 /* ----------------------- Détails fiche référence ------------------------------- -*/
-.conteneur_fiche_details
+
+/* FLECHES http://apps.eky.hk/css-triangle-generator/ */
+#position_fleche_droite, #position_fleche_gauche
 {
-	height: 800px;
-	width: 100%;
-	background-color: #FFF;
-}
-.conteneur_light_box
-{
-	float: left;
-	width: 70%;
-	max-width: 822px;
-	margin-left: 290px;
-	margin-top: 20px;
-}
-#visuel_carte
-{
-	display: inline-block;
-	width: 50%;
-	max-width : 400px;
-	margin-right: 20px;
-}
-.conteneur_visuels
-{
-	display: inline-block;
-	vertical-align: top;
-	float: left;
-}
-.visuel_light_box
-{
-	width: 217px;
-	vertical-align: top;
-	float: left;
+	position: absolute;
+	top: 70%;
+	z-index: +10;
 	display: block;
-	clear: right;
 }
-.conteneur_fiche_details, .conteneur_light_box, .visuel_light_box, .visuel_carte
+#position_fleche_droite
 {
-	border : 1px none red;
+	right: 0px;
+}
+#position_fleche_gauche
+{
+	left: 0px;
+}
+.fleche_droite, .fleche_gauche
+{
+	display: inline-block;
+}
+.fleche_haut
+{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 37.5px 65.0px 37.5px;
+	border-color: transparent transparent #FFC700 transparent;
+	line-height: 0px;
+	_border-color: #000000 #000000 #FFC700#000000;
+_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+}
+.fleche_bas
+{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 21.7px 12.5px 0 12.5px;
+	border-color: #007bff transparent transparent transparent;
+	line-height: 0px;
+	_border-color: #007bff #000000 #000000 #000000;
+_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+}
+.fleche_droite
+{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 25px 0 25px 43.3px;
+	border-color: transparent transparent transparent #FFC700;
+	line-height: 0px;
+	_border-color: #000000 #000000 #000000 #FFC700;
+_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+	float: right!important;
+	display : block;
+}
+.fleche_gauche
+{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 25px 43.3px 25px 0;
+	border-color: transparent #FFC700 transparent transparent;
+	line-height: 0px;
+	_border-color: #000000 #FFC700 #000000 #000000;
+_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+	float: left;
 }
 /* ---------------------------------------Indesign SYTLES -------------------------------------- */
 /* --------------------------------------- div image ------------------------------------------------- */
@@ -1215,7 +1260,7 @@ div#image_actu_bandeau
 
 .section_haut /* bloc entête */
 {
-	height: 190px;
+	height: 160px;
 	width: 100%;
 	margin: 0px;
 	left: 0px;
