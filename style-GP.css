@@ -474,22 +474,34 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 {
 	width: 50%;
 }
+#corps_cellule_entite_premier
+{
+  margin-bottom: 100px;
+  border: 2px none #903;
+  margin-top: 0px;
+  padding-top: 40px;
+}
+
 #corps_cellule_entite
 {
-	margin-bottom: 100px;
-	border: 2px none #903;
-	margin-top: 0px;
-	padding-top: 7px;
+  margin-bottom: 100px;
+  border: 2px none #903;
+  margin-top: 0px;
+
 }
 
 #conteneur_A {
-float: left;
+  float: left;
   width: 40%;
+  margin-bottom: 35px; 
+  clear: left;
 
 }
 #conteneur_B {
   float: right;
   width: 56%;
+		margin-bottom: 35px; 
+		
 
 }
 .cellule_liens
@@ -524,14 +536,15 @@ float: left;
 .cellule_pellicule
 {
 	padding-left: 10px;
-	padding-right: 20px;
-	margin-top: 0px;
-	border: 2px none #903;
-	width: 250px;
-	float: left;
-	height: 120px;
-	display: inline-block;
-	vertical-align: baseline;
+  padding-right: 20px;
+  margin-top: 0px;
+  border: 2px none #903;
+  width: 250px;
+  float: right;
+  height: 120px;
+  display: inline-block;
+  vertical-align: baseline;
+  text-align: right
 }
 #lien_organigramme, #lien_trombino
 {
@@ -553,8 +566,8 @@ float: left;
  }
 .cellule_membre_organigramme
 {
-	float: left;
-	max-width: 72px;
+  float: left;
+  max-width: 65px;
 }
 #icone_fonction
 {
@@ -572,18 +585,19 @@ float: left;
 }
 #legende_nom
 {
-	width: 100%;
-	text-align: center;
-	margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+  min-height: 50px;
+
 }
 .organi_tombino
 {
 	width: 400px;
 	float: left;
 }
-.titre_cellule__membre, .cellule_membre_organigramme, #icone_fonction, #fonction_organigramme, #icone_fonction, #fonction_organigramme, #legende_nom, .organi_tombino, #conteneur_A  {
+/*.titre_cellule__membre, .cellule_membre_organigramme, #icone_fonction, #fonction_organigramme, #icone_fonction, #fonction_organigramme, #legende_nom, .organi_tombino, #conteneur_A  {
 	border: 1px solid #009;
-}
+}*/
 /* --------------------------- Au-delà ----------------------- -*/	
 
 .conteneur_AD {

@@ -25,7 +25,7 @@ if ( have_posts() ) : ?>
 									<?php the_field('projet_concerne'); ?>
 						</div>
 									<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
-												<div id="titre_tri_presse" class="T-3 ">
+												<div id="titre_tri_presse" class="T-4">
 															<?php the_title(); ?>
 												</div>
 												<div id="champs" class="T-5">
