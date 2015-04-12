@@ -42,8 +42,6 @@ get_header(); ?>
 									</div>
 						</section>
 						<?php endwhile; ?>
-						<?php else: ?>
-						<article> Désolé, il n'y à rien à afficher :( </article>
 						<?php endif; ?>
 			</div>
 			

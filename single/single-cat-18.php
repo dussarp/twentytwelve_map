@@ -123,7 +123,7 @@ div.ref-description
 div.ref-carte
 {
   float: right;
-  width: 48%;
+  width: 47%;
   height: 400px;
   margin-top: 0px;
   /* margin-right: 10%; */
@@ -334,6 +334,7 @@ div#static-description
 			{
 				return "#error";
 			}
+
 		}
 		
 		function get_previous_subcategory_post_link()
