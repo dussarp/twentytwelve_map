@@ -40,8 +40,7 @@ get_header(); ?>
 #gallery-info
 {
   float: right;
-  max-width: 400px!important;
-  width: 35%;
+  width: 30%;
   display: inline-block;
   max-height: 400px !important;
 
@@ -66,7 +65,9 @@ get_header(); ?>
 }
 .gallery-item a
 {
-	width: 100%;	height: 200px;
+	width: 100%;
+	height: 200px;
+	min-width:200px!important;
 	overflow: hidden;
 }
 
@@ -123,7 +124,7 @@ div.ref-description
 div.ref-carte
 {
   float: right;
-  width: 47%;
+  width: 40%;
   height: 400px;
   margin-top: 0px;
   /* margin-right: 10%; */
@@ -150,7 +151,7 @@ div.gallery
 div#static-description
 {
 	float: left;
-	width: 27% !important;
+	width: 30% !important;
 	padding-top: 0px;
 	padding-right: 0px;
 	padding-bottom: 0px;
