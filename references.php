@@ -108,15 +108,14 @@ div#tableau_ref_categorie div.cellule
 						<?php if ( $retrieve_sub_item->have_posts() ) : ?>
 						<?php while ( $retrieve_sub_item->have_posts() ) : $retrieve_sub_item->the_post(); ?>
 						<div class="cellule project">
-									<span class="titre_ref_enfant T-4">
-									<a href="<?php echo get_category_link($sub->cat_ID); ?>">
-									<?php echo $sub->name; ?></a>
-									</span>
+									<a class="titre_ref_enfant T-4" href="<?php echo get_category_link($sub->cat_ID); ?>">
+									<?php echo $sub->name; ?>
+									</a>
 																
 									<a href="<?php the_permalink(); ?>">
 												<figure class="miniature_ref_enfant">
 															<?php the_post_thumbnail('miniature-slide'); ?>
-															<figcaption></figcaption>
+															
 												</figure>
 									</a>
 						</div>
