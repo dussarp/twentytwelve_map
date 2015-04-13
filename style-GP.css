@@ -716,25 +716,26 @@ div#tableau_ref_categorie div.cellule
 }
 /* --------------------------- fin ----------------------- -*/
 
-.titre_ref_enfant a:hover
+.titre_ref_enfant:hover
 {
 	color: #F90;
+	background-color: rgba(255,255,255,1)
 }
 .titre_ref_enfant
 {
 	display: block;
 	position: absolute;
-	top: 150px;
+	top: 45%;
 	color: white;
 	z-index: 10;
 	border: 1px none #FFF;
-	background-color: #FFF;
+	background-color: rgba(255,255,255,0.4);
 	padding-top: 5px;
 	padding-right: 5px;
 	padding-bottom: 5px;
 	padding-left: 10px;
 	width: auto;
-	Opacity: 0.4;
+	
 }
 .cellule_ref_categorie
 {
