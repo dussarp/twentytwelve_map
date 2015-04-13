@@ -93,7 +93,6 @@ get_header(); ?>
 	/* padding-bottom: 10px; */
   /* padding-top: 60px; */
   /* border: 1px solid #666; */
-	height: 400px !important;
 	background-color: #999;
 }
 
@@ -125,7 +124,7 @@ div.ref-carte
 {
   float: right;
   width: 40%;
-  height: 400px;
+  height: 100%;
   margin-top: 0px;
   /* margin-right: 10%; */
   margin-bottom: 20px;
@@ -269,7 +268,7 @@ div#static-description
 			}, 500);
 			$('#static-description').width( $('.fiche_reference').width());
 			$('#static-description').height( $('.fiche_reference').height());
-			//$('.conteneur_fiche_details').height( $('.fiche_reference').height());
+			$('.conteneur_fiche_details').height( $('.fiche_reference').height());
 			$('.conteneur_fiche_details').css({'min-height' :  $('.fiche_reference').height() + 'px'});
 		
 			$('.ref-carte').waypoint(function(direction){ // no offset on the way down
