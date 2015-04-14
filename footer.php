@@ -80,7 +80,10 @@
 												</div>
 												<div id="cellule_sommaire" class="cellule">
 															<div class="T-5 interligne_-2">
-																		<p class="T-3">rechercher</p>
+																	<p class="T-3">rechercher</p>
+																	<div class="entry-content">																
+																		<?php get_search_form(); ?>
+																	</div><!-- .entry-content -->	
 															</div>
 												</div>
 									</div>
