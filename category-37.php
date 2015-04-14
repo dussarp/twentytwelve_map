@@ -17,7 +17,7 @@ if ( have_posts() ) : ?>
 			minSlides: 4,
 			maxSlides: 4,
 			slideWidth: 5000,
-			slideMargin: 10
+			slideMargin: 5
 		});
 		})
 	</script>
