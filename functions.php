@@ -111,8 +111,10 @@ function twentytwelvechild_scripts_styles() {
 	wp_enqueue_script( 'twentytwelvechild-gmap3', get_stylesheet_directory_uri() . '/js/gmap3.min.js', array( 'jquery' ), '20140711', true );
 	//waypoint
 	wp_enqueue_script( 'twentytwelvechild-waypoint', get_stylesheet_directory_uri() . '/js/jquery.waypoints.min.js', array( 'jquery' ), '20140711', true );
+	//parallax
 	wp_enqueue_script( 'twentytwelvechild-parallax', get_stylesheet_directory_uri() . '/js/parallax.min.js', array( 'jquery' ), '20140711', true );
-
+	//BxSlider
+	wp_enqueue_script( 'twentytwelvechild-bxslider', get_stylesheet_directory_uri() . '/js/jquery.bxslider.min.js', array( 'jquery' ), '20140711', true );
 }
 add_action( 'wp_enqueue_scripts', 'twentytwelvechild_scripts_styles' );
 

@@ -1195,8 +1195,8 @@ div#image_actu_bandeau
 	padding-right: 90px;
 }
 
-#cellule_sommaire form.searchform input#searchsubmit{display:none;}
-#cellule_icone_sommaire
+#cellule_sommaire form.searchform input#searchsubmit, #cellule_sommaire form.searchform .screen-reader-text{display:none;}
+#cellule_icone_sommaire 
 {
 	width: 50px;
 }
