@@ -1,11 +1,12 @@
 <?php
 
 get_header(); ?>
-single-cat-presse.php
-	<br /><h1>PRESS SINGLE ARTICLE</h1><br />
-	<div id="primary" class="site-content"><!-- single.php -->
+	<br />
+	<div id="primary" class="site-content">
 		<div id="content" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
+				
+				<h1><?php echo the_title();?></h1>
 				
 				<?php get_template_part( 'content', get_post_format() ); ?>
 

@@ -1,5 +1,5 @@
 <?php
-// template name: references
+	/* template name : references */
  ?>
 <?php
 /**

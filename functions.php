@@ -45,7 +45,9 @@ function lesBonus_post_type() {
 				'public' => true,
 				'show_ui' => true,
 				'capability_type' => 'post',
-				'hierarchical' => false,
+				'hierarchical' => true,
+				'exclude_from_search' => false,
+				'has_archive' => true,
 				'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'custom-fields', 'comments', 'revisions')
 		));
 		
@@ -74,8 +76,8 @@ add_action('init', 'lesPerspectives_post_type');
 
 function lesPerspectives_post_type() {
   register_post_type('perspective', array(
-				'label' => __('lesperspectives'),
-				'singular_label' => __('actus'),
+				'label' => __('lesPerspectives'),
+				'singular_label' => __('perspectives'),
 				'public' => true,
 				'show_ui' => true,
 				'capability_type' => 'post',
@@ -93,16 +95,14 @@ function lesPerspectives_post_type() {
  */
 function twentytwelvechild_scripts_styles() {
 	global $wp_styles;
-
 	/*
 	 * Adds JavaScript to pages with the comment form to support
 	 * sites with threaded comments (when in use).
 	 */
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) )
 		wp_enqueue_script( 'comment-reply' );
-		// Jquery
+	// Jquery
 	wp_enqueue_script( 'twentytwelvechild-jquery', get_stylesheet_directory_uri() . '/js/jquery-1.11.2.min.js', array( 'jquery' ), '20140711', true );
-	
 	// Adds JavaScript for handling the navigation menu hide-and-show behavior.
 	wp_enqueue_script( 'twentytwelvechild-navigation', get_stylesheet_directory_uri() . '/js/navigation.js', array( 'jquery' ), '20140711', true );
 	//Match height
@@ -130,22 +130,33 @@ add_filter('single_template', 'my_single_template');
 /**
 * Single template function which will choose our template
 */
+
 function my_single_template($single) {
 global $wp_query, $post;
+	/**
+	* Checks for single template by category
+	* Check by category slug and ID
+	*/
+	$categories = array();
+	# fill $categories if any match
+	foreach ((get_the_category()) as $cat)
+	{
+		$categories[] = $cat;
+	}
+	//Check if Categories exist
+	if (!empty($categories)){
+		foreach((array)get_the_category() as $cat){
 
-/**
-* Checks for single template by category
-* Check by category slug and ID
-*/
-foreach((array)get_the_category() as $cat) :
-
-if(file_exists(SINGLE_PATH . '/single-cat-' . $cat->slug . '.php'))
-return SINGLE_PATH . '/single-cat-' . $cat->slug . '.php';
-
-elseif(file_exists(SINGLE_PATH . '/single-cat-' . $cat->term_id . '.php'))
-return SINGLE_PATH . '/single-cat-' . $cat->term_id . '.php';
-
-endforeach;
+		if(file_exists(SINGLE_PATH . '/single-cat-' . $cat->slug . '.php')){
+			return SINGLE_PATH . '/single-cat-' . $cat->slug . '.php';
+		}elseif(file_exists(SINGLE_PATH . '/single-cat-' . $cat->term_id . '.php')){
+			return SINGLE_PATH . '/single-cat-' . $cat->term_id . '.php';
+		}
+	}
+	//Else return custom post-type single
+	}else{
+		return $single;
+	}
 }
 // new login logo
 function my_login_logo() { ?>
@@ -161,4 +172,14 @@ add_action( 'login_enqueue_scripts', 'my_login_logo' );
 function my_login_stylesheet() {
     wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/style-login.css' );
 }
+
+/* add_filter('single_template', 'single_template_terms');
+function single_template_terms($template) {
+    foreach( (array) wp_get_object_terms(get_the_ID(), get_taxonomies(array('public' => true, '_builtin' => false))) as $term ) {
+        if ( file_exists(SINGLE_PATH . "/single-{$term->slug}.php") )
+            return SINGLE_PATH . "/single-{$term->slug}.php";
+    }
+    return $template;
+} */
+
 add_action( 'login_enqueue_scripts', 'my_login_stylesheet' );

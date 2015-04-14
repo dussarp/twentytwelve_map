@@ -48,11 +48,18 @@ get_header(); ?>
 															Les associés
 												</div>
 									</div>
-									<!-- Début de la Boucle associés------------------------->
-									
-									<?php query_posts('category_id=52&&category_name=assos'); ?>
-									<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+									<!-- Début de la Boucle associés------------------------->				
+									<!-- on recupere la liste des associés -->
+									<?php $args = array(
+										'orderby' => 'title',
+										'order'   => 'ASC',
+										'cat' => '55'
+									); ?>
+									<?php $query = new WP_Query($args); ?>
+									<?php if ( $query -> have_posts() ) : while ( $query -> have_posts() ) : $query -> the_post(); ?>
 									<!-- Affiche la miniature -------------->
+									<!-- on regarde si les associés appartiennent à une catégorie en particulier-->
+									<?php if ( in_category( 'membresgroupemap' )) { ?>
 									<div class="cellule_membre_organigramme">
 												<div id="miniature" class="ref_vignette">
 															<a href="<?php the_permalink(); ?>">
@@ -61,9 +68,10 @@ get_header(); ?>
 												</div>
 												<!-- Légende ------------------------->
 												<div id="legende_nom" class="cellule_membre_organigramme interligne_-4 T-7">
-															<?php the_title(); ?>
+															<?php the_title(); ?>														
 												</div>
 									</div>
+									<?php } ?>
 									<?php endwhile; ?>
 									<?php endif; ?>
 						</div>
@@ -83,21 +91,26 @@ get_header(); ?>
 												<!--icone fonction --------------------------->
 												
 												<!-- Début de la Boucle direction ------------------------->
-												
-												<?php query_posts('category_name=groupemap&&category_name=directiongm'); ?>
-												<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+												<!-- on recupere la liste des groupemap -->
+												<?php $query = new WP_Query( 'cat=62' ); ?>
+									
+												<?php if ( $query->have_posts() ) : while (  $query->have_posts() ) :  $query->the_post(); ?>
 												<!-- Affiche la miniature -------------->
+												<!-- on regarde si les membres appartiennent aussi à la direction -->
+												<?php if ( in_category( 'directiongm' )) { ?>
 												<div id="" class="cellule_membre_organigramme">
-															<div id="miniature" class="ref_vignette">
-																		<a href="<?php the_permalink(); ?>">
-																					<?php the_post_thumbnail('miniature-slide'); ?>
-																		</a>
-															</div>
-															<!-- Légende ------------------------->
-															<div id="legende_nom" class="cellule_membre_organigramme interligne_-4 T-7">
-																		<?php the_title(); ?>
-															</div>
+													<div id="miniature" class="ref_vignette">
+														<a href="<?php the_permalink(); ?>">
+																	<?php the_post_thumbnail('miniature-slide'); ?>
+														</a>
+													</div>
+													<!-- Légende ------------------------->
+													<div id="legende_nom" class="cellule_membre_organigramme interligne_-4 T-7">
+																<?php the_title(); ?>
+													</div>
 												</div>
+												<?php } ?>
 												<?php endwhile; else: ?>
 												<?php endif; ?>
 									</div>
@@ -171,8 +184,9 @@ get_header(); ?>
 									
 									<!-- Début de la Boucle associés------------------------->
 									
-									<?php query_posts('category_name=assos'); ?>
-									<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+									<!-- on recupere la liste des associés -->
+									<?php $query = new WP_Query( 'cat=55' ); ?>
+									<?php if ( $query -> have_posts() ) : while ( $query -> have_posts() ) : $query -> the_post(); ?>
 									<!-- Affiche la miniature -------------->
 									<div id="" class="cellule_membre_organigramme">
 												<div id="miniature" class="ref_vignette">
@@ -194,32 +208,34 @@ get_header(); ?>
 						</div>
 						<div id="conteneur_B">
 									<div class="titre_cellule__membre">
-												<div id="icone_fonction" class="">
-															<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/add/organigramme_29.png" width="80%">
-												</div>
-												<div id="fonction_organigramme" class="T-4">
-															Le comité de direction
-												</div>
+										<div id="icone_fonction" class="">
+													<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/add/organigramme_29.png" width="80%">
+										</div>
+										<div id="fonction_organigramme" class="T-4">
+													Le comité de direction
+										</div>
 									</div>
 									<!-- DIRECTION ------------------------->
 									<div id="" class="conteneur_portraits">
 												<!--icone fonction --------------------------->
 												
 												<!-- Début de la Boucle direction ------------------------->
-												
-												<?php query_posts('category_name=map&&category_name=directionmap'); ?>
-												<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+												<!-- on recupere la liste des directionmap ->
+												<?php $query = new WP_Query( 'cat=71' ); ?>
+												<?php if ( $query->have_posts() ) : while (  $query->have_posts() ) :  $query->the_post(); ?>
+
 												<!-- Affiche la miniature -------------->
 												<div id="" class="cellule_membre_organigramme">
-															<div id="miniature" class="ref_vignette">
-																		<a href="<?php the_permalink(); ?>">
-																					<?php the_post_thumbnail('miniature-slide'); ?>
-																		</a>
-															</div>
-															<!-- Légende ------------------------->
-															<div id="legende_nom" class="cellule_membre_organigramme interligne_-4 T-7">
-																		<?php the_title(); ?>
-															</div>
+													<div id="miniature" class="ref_vignette">
+																<a href="<?php the_permalink(); ?>">
+																			<?php the_post_thumbnail('miniature-slide'); ?>
+																</a>
+													</div>
+													<!-- Légende ------------------------->
+													<div id="legende_nom" class="cellule_membre_organigramme interligne_-4 T-7">
+																<?php the_title(); ?>
+													</div>
 												</div>
 												
 												<!-- Fin de La Boucle (mais notez le "else:" - voir la suite).-->
@@ -292,8 +308,9 @@ get_header(); ?>
 									
 									<!-- Début de la Boucle associés------------------------->
 									
-									<?php query_posts('category_name=map&&category_name=assos'); ?>
-									<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+									<!-- on recupere la liste des associés -->
+									<?php $query = new WP_Query( 'cat=55' ); ?>
+									<?php if ( $query -> have_posts() ) : while ( $query -> have_posts() ) : $query -> the_post(); ?>
 									<!-- Affiche la miniature -------------->
 									<div id="" class="cellule_membre_organigramme">
 												<div id="miniature" class="ref_vignette">
@@ -325,9 +342,10 @@ get_header(); ?>
 												<!--icone fonction --------------------------->
 												
 												<!-- Début de la Boucle direction ------------------------->
-												
-												<?php query_posts('category_name=map&&category_name=directionabm'); ?>
-												<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+												<!-- on recupere la liste des directionabm -->
+												<?php $query = new WP_Query( 'cat=72' ); ?>
+												<?php if ( $query -> have_posts() ) : while ( $query -> have_posts() ) : $query -> the_post(); ?>
 												<!-- Affiche la miniature -------------->
 												<div id="" class="cellule_membre_organigramme">
 															<div id="miniature" class="ref_vignette">
