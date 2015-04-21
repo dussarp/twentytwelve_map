@@ -10,7 +10,7 @@
 get_header(); ?>
 
 	<section id="primary" class="site-content">
-		<div id="content" role="main">
+		<div id="content" role="main">Résultats de recherches
 
 		<?php if ( have_posts() ) : ?>
 

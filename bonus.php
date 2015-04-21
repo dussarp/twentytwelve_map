@@ -21,11 +21,11 @@
 	<div  id="cellule_entite_gauche" class="cellule_entite">
 		<!-- présentation de l'entité ---------------------------------------------- -->
 		<div>
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu/logoVSM.png" width="200px" />
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/add/logoVSM.png" width="150px" />
 		</div>
 		<!-- liens vers page php par icones ---------------------------------------------->
-		<p class="T-2">La Vie sur MAP</p>
-		<span class="interligne_-3 T-5"> Fuga. Tis volumenis idestrum, omnisi tecto volorro rersper istrum que iliberion natio. Et ellat quid mod quibusame expliqu untioreptasi cone nus, exceris vid quaest et ma voluptatibus am, ut experum aut eaquam landigent.</span>
+		<p class="T-2">La Vie Sur MAP</p>
+		<span class="interligne_-3 T-5"> Qu'il s'agisse d'architecture ou d'urbanisme, de course ou de célébration, l'étrange tribut des Mapiens s'active souvent en groupe. Et si l'antopologue reste dubitatif, les faits sont pour le moins indéniables: il y a de la vie sur Map. </span>
 	</div>
 	<div  id="cellule_entite_droite" class="cellule_entite">
 				

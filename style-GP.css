@@ -344,7 +344,7 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 #site-navigation .map_menu01 a, #site-navigation .map_menu02 a, #site-navigation .map_menu03 a, #site-navigation .map_menu04 a, #site-navigation .map_menu05 a
 {
 	height: 39px; /*  hauteur menu ----------------------------------- -*/
-	width: 70px;
+	width: 70px; /*écart entre les logos */
 	padding-top: 54px; /*  écart icone titre ----------------------------------- -*/
 	text-align: center;
 	margin-top: 8px; /* marge entre la ligne jaune et les logos du menu haut */
