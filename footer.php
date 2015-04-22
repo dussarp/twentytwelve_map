@@ -46,7 +46,7 @@
 															<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu/logoNAV_18.png"/>
 												</div>
 												<div id="cellule_sommaire" class="cellule">
-															<div class="T-5 interligne_-2">
+															<div class="T-5 interligne_-3">
 																		<p class="T-3">presse</p>
 																		Un florilège des publications consacrées à l’agence ou ses projets.
 															</div>
@@ -59,7 +59,7 @@
 															<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu/logoNAV_18.png"  />
 												</div>
 												<div id="cellule_sommaire" class="cellule">
-															<div class="T-5 interligne_-2">
+															<div class="T-5 interligne_-3">
 																		<p class="T-3">plus loin</p>
 																		Le groupe s’interroge, questionne, se projète et scrute la galaxie des nouveaux outils.
 															</div>
@@ -69,7 +69,7 @@
 															<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu/logoNAV_20.png" />
 												</div>
 												<div id="cellule_sommaire" class="cellule">
-															<div class="T-5 interligne_-2">
+															<div class="T-5 interligne_-3">
 																		<p class="T-3">bonus</p>
 																		Il y a de la vie sur map, elle y est polyymorphe, turbulente et pleine de surprises.
 															</div>
@@ -79,7 +79,7 @@
 															<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu/logo_22_08.png"  width="60px"/>
 												</div>
 												<div id="cellule_sommaire" class="cellule">
-															<div class="T-5 interligne_-2">
+															<div class="T-5 interligne_-3">
 																	<p class="T-3">rechercher</p>
 																	<div class="entry-content">																
 																		<?php get_search_form(); ?>
@@ -100,14 +100,14 @@
 																		<img  src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo/groupeMapblanc.png"  width="100px" />
 															</div>
 															<div id="cellule_sommaire" class="cellule ">
-																		<p class="T-5 interligne_-2"> Le Groupe MAP rassemble en son sein deux agences à l'expertise reconnue, basées à Marseille et à Paris. </p>
+																		<p class="T-6 interligne_-3"> Le Groupe MAP : <br/>deux agences à l'expertise reconnue,<br/> à Marseille et Paris. </p>
 															</div>
 															<!-- ---------------------  cellule-------------------------------------------- -->
 															<div id="cellule_icone_sommaire" class="cellule">
 																		<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo/mapBlanc.png" width="100px" />
 															</div>
 															<div id="cellule_sommaire" class="cellule">
-																		<p class="T-5 interligne_-2"> 4 Place Sadi Carnot<br/>
+																		<p class="T-6 interligne_-3"> 4 Place Sadi Carnot<br/>
 																					13002 Marseille<br/>
 																					Tél. 04 950 942 00<br/>
 																					Fax. 04 950 942 00 </p>
@@ -117,7 +117,7 @@
 																		<img  src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo/becard-mapBlanc.png" width="100px"/>
 															</div>
 															<div id="cellule_sommaire" class="fin cellule">
-																		<p class="T-5 interligne_-2"> 30 rue Ligner<br/>
+																		<p class="T-6 interligne_-3"> 30 rue Ligner<br/>
 																					75020 Paris<br/>
 																					Tél. 01 55 25 45 70 </p>
 															</div>

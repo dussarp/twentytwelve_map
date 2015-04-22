@@ -383,17 +383,16 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	padding-left: 20px;
 }
 /* --------------------- menu icone centrage ------------------------------------------ -*/
-.map_logo
-{
-	width: 120px;
-	/* height: 150px; */
-	padding: 0px;
-	float: left;
-	margin-top: 25px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 25px;
-	border: 5px none #093;
+.map_logo {
+  width: 118px;
+  /* height: 150px; */
+  padding: 0px;
+  float: left;
+  margin-top: 25px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 25px;
+  border: 5px none #093;
 }
 /* --------------------------------------------------------------- -*/
 
@@ -721,20 +720,19 @@ div#tableau_ref_categorie div.cellule
 	color: #F90;
 	background-color: rgba(255,255,255,1)
 }
-.titre_ref_enfant
-{
-	display: block;
-	position: absolute;
-	top: 45%;
-	color: white;
-	z-index: 10;
-	border: 1px none #FFF;
-	background-color: rgba(255,255,255,0.4);
-	padding-top: 5px;
-	padding-right: 5px;
-	padding-bottom: 5px;
-	padding-left: 10px;
-	width: auto;
+.titre_ref_enfant {
+  display: block;
+  position: absolute;
+  top: 45%;
+  color: #FFF;
+  z-index: 10;
+  border: 1px none #FFF;
+  background-color: rgba(255,255,255,0.2);
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  width: auto;
 	
 }
 .cellule_ref_categorie
@@ -1049,33 +1047,33 @@ div.conteneur_tri_presse
 /* ------------------------------- actus principales -------------------------------- -*/
 
 
-div#image_actu_bandeau
-{
+div#image_actu_bandeau {
   position: relative;
-  margin-top: 65px;
+  margin-bottom: 10%;
+  min-height: 366px;
  
 }
-.actus_principales
-{
-	position: absolute;
-	top: 10%;
-	left: 20px;
-	width: 290px;
+.actus_principales {
+  position: absolute;
+  top: 16%;
+  left: 0%;
+  /* width: 41%; */
+  min-width: 392px;
+  max-width: 400px;
+  margin-top: 1%;
 }
-.totem_actu
-{
-	padding: 10px;
-	float: left;
-	height: 30px;
-	width: 30px;
-	border: medium none #999;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 10px;
-	margin-left: 0px;
+.totem_actu {
+  padding: 10px;
+  float: left;
+  height: 30px;
+  width: 162px;
+  border: medium none #999;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-left: 0px;
 }
-.titre_actu
-{
+.titre_actu {
   font-family: "ITCAvantGardeStd-Bk_0";
   padding-top: 12px;
   padding-bottom: 6px;
@@ -1083,18 +1081,20 @@ div#image_actu_bandeau
   padding-right: 20px;
   width: 166px;
   border: 1px none #069;
-  float: left;
-  text-align: left;
+  float: right;
+  text-align: right;
   height: 70px;
   margin-bottom: 10px;
 }
-#content-actu
-{
-	font-family: "ITCAvantGardeStd-Bk_0";
-	border: 1px none #C00;
-	padding: 20px;
-	border-radius: 5px;
-	text-align: right;
+#content-actu {
+  font-family: "ITCAvantGardeStd-Bk_0";
+  border: 1px none #C00;
+  padding-top: 107px;
+  border-radius: 5px;
+  text-align: right;
+  padding-right: 14px;
+  padding-bottom: 0px;
+  padding-left: 30px;
 }
 #date_actu
 {
@@ -1186,13 +1186,12 @@ div#image_actu_bandeau
 	border-bottom-color: #999;
 	border-left-color: #999;
 }
-#cellule_sommaire
-{
-	padding-left: 10px;
-	padding-bottom: 60px;
-	vertical-align: top;
-	width: 30%;
-	padding-right: 90px;
+#cellule_sommaire {
+  padding-left: 22px;
+  padding-bottom: 60px;
+  vertical-align: top;
+  width: 30%;
+  padding-right: 90px;
 }
 
 #cellule_sommaire form.searchform input#searchsubmit, #cellule_sommaire form.searchform .screen-reader-text{display:none;}
@@ -1280,6 +1279,7 @@ _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
 _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
 	float: left;
 }
+
 /* ---------------------------------------Indesign SYTLES -------------------------------------- */
 /* --------------------------------------- div image ------------------------------------------------- */
 
