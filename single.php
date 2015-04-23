@@ -43,13 +43,26 @@ get_header(); ?>
 /*------------------------------------*/
 
 
+.bloc_visuels_WP
+{
+	width: 45%;
+	display: inline-block;
+	float: left;
+	margin-left: 50px;
+}
+
+.visuel_article_WP img
+{
+	width: 100%;
+}
+
 #gallery-info_single
 {
 	float: left;
 	width: 30%;
 	display: inline-block;
 	max-height: 400px !important;
-	margin-left: 50px ;
+	margin-left: 50px;
 }
 
 .conteneur_gallerie_WP
@@ -69,23 +82,24 @@ get_header(); ?>
 	margin: 0px !important;
 }
 
+.article_WP
+{
+	width: 100%;
+}
+
 #titre_article_WP
 {
 	padding: 30px;
+	width: 89%;
 }
 
 #corps_article_WP
 {
-	width: 95% !important;
+	width: 83% !important;
 	padding-top: 30px;
 	padding-right: 30px;
 	padding-bottom: 30px;
 	padding-left: 60px;
-}
-
-.article_WP
-{
-	width: 100%;
 }
 </style>
 
@@ -98,12 +112,15 @@ get_header(); ?>
   <?php while ( have_posts() ) : the_post(); ?>
   <!-- début de la boucle ------ -->
   <!-- Galerie  ---------------------------------------------- -->
-  		<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full', false);
-	$url = $thumb['0']; ?><!-- parallaxe ---------------------------------------------- -->
-												<div class="visuel_article_WP">
-            <img src="<?php echo $url; ?>" data-speed="0.4">
-												</div>
-  <div id="gallery-info_single">
+  <div class="bloc_visuels_WP">
+   <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full', false);
+	$url = $thumb['0']; ?>
+   <!-- parallaxe ---------------------------------------------- -->
+   <div class="visuel_article_WP">
+    <img src="<?php echo $url; ?>" data-speed="0.4">
+   </div>
+   <!-- <div id="gallery-info_single">
+   </div> -->
   </div>
   <div class="conteneur_article_WP fond_blanc">
    <div id="titre_article_WP" class="article_WP texte_blanc fond_jaune T-3">

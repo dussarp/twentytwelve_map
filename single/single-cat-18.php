@@ -172,7 +172,7 @@ div#static-description
 <!-- début de la page ----------------------------------------------- -->
 <div id="primary" class="site-content">
 			<!-- section menus REF ----------------------------------------------- -->
-			<nav id="site-navigation" class="main-navigation fond_gris_clair" role="navigation">
+			<nav id="site-navigation" class="main-navigation fond_blanc" role="navigation">
 						<button class="menu-toggle">
 						<?php _e( 'Menu', 'twentytwelve' ); ?>
 						</button>
@@ -264,7 +264,7 @@ div#static-description
 		jQuery(document).ready(function(){
 			$('div.gallery').appendTo('#gallery-info').show(); /*transfert gallerie wordpress vers le conteneur */
 			 $('html, body').animate({
-				scrollTop:190
+				scrollTop:135
 			}, 500);
 			$('#static-description').width( $('.fiche_reference').width());
 			$('#static-description').height( $('.fiche_reference').height());
