@@ -104,7 +104,7 @@ get_header(); ?>
 </style>
 
 <!-- début de la page ----------------------------------------------- -->
-<div id="primary" class="site-content">
+<div id="primary" class="site-content">single.php
  <div id="content" role="main">
   
   <!-- début du contenu de la page ---------------------------------------------- -->

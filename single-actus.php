@@ -125,7 +125,7 @@ get_header(); ?>
 												<?php the_date(); ?>
 									</p>
    </div>
-   <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full', false);
+   <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'miniature-bandeau', false);
 	$url = $thumb['0']; ?>
    <!-- parallaxe ---------------------------------------------- -->
    <div class="visuel_article_actus">
@@ -233,7 +233,7 @@ get_header(); ?>
 	
 	?>
  </div>
- <!-- NAVIGATION précédent / suivant ----------------------------------------------  
+ <!-- NAVIGATION précédent / suivant ---------------------------------------------- --> 
  <nav class="ref_precedent_suivant">
   <?php
 			$previous = get_previous_subcategory_post_link();

@@ -49,9 +49,8 @@
 	margin-bottom: 0px;
 	margin-left: 1%;
 	width : 20%;
-	display: inline-block;/*position: absolute;
-	left: 0px;
-	top: 200px;*/
+	display: inline-block;
+	border: soplidsolid;
 }
 
 #primary, #secondary
@@ -259,7 +258,6 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 
 .conteneur_boite
 {
-	border: 10px none #06F;
 	padding: 0px;
 }
 
@@ -1448,6 +1446,17 @@ width: 410px;
 	background-repeat: no-repeat;
 	background-position: top center;
 }
+
+/* -- RECHERCHES --------------------------- */
+#conteneur_recherche {
+
+	float: left;
+	width: 70%;
+	display: inline-block;
+	padding-left: 60px;
+		padding-top: 40px;
+}
+
 
 /* ---------------------------------------Indesign SYTLES -------------------------------------- */
 /* --------------------------------------- div image ------------------------------------------------- */

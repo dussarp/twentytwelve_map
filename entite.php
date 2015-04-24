@@ -122,7 +122,7 @@ get_header(); ?>
 															L'équipe
 												</div>
 												<div id="" class="">
-															<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/add/logoNAV_21.png"  width="40%"/>
+															<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/add/logoNAV_21.png"  width="50%"/>
 												</div>
 									</div>
 						</div>
@@ -132,7 +132,7 @@ get_header(); ?>
 															L'organigramme fonctionnel
 												</div>
 												<div id="" class="">
-															<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/add/organigramme_43.png" width="40%"  />
+															<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/add/organigramme_43.png" width="50%"  />
 												</div>
 									</div>
 						</div>
@@ -253,7 +253,7 @@ get_header(); ?>
 															L'équipe
 												</div>
 												<div id="" class="">
-															<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/add/logoNAV_21.png"  width="40%"/>
+															<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/add/logoNAV_21.png"  width="50%"/>
 												</div>
 									</div>
 						</div>
@@ -263,7 +263,7 @@ get_header(); ?>
 															L'organigramme fonctionnel
 												</div>
 												<div id="" class="">
-															<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/add/organigramme_43.png" width="40%"  />
+															<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/add/organigramme_43.png" width="50%"  />
 												</div>
 									</div>
 						</div>
@@ -378,7 +378,7 @@ get_header(); ?>
 															L'équipe
 												</div>
 												<div id="" class="">
-															<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/add/logoNAV_21.png"  width="40%"/>
+															<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/add/logoNAV_21.png"  width="50%"/>
 												</div>
 									</div>
 						</div>
@@ -388,7 +388,7 @@ get_header(); ?>
 															L'organigramme fonctionnel
 												</div>
 												<div id="" class="">
-															<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/add/organigramme_43.png" width="40%"  />
+															<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/add/organigramme_43.png" width="50%"  />
 												</div>
 									</div>
 						</div>
