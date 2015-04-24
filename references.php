@@ -53,7 +53,7 @@ div#tableau_ref_categorie div.cellule
 						 the_content();
 					endwhile; endif; ?>
 						</div>
-						<div id="accroche" class="cellule fond_gris_clair">
+						<div id="accroche" class="cellule fond_blanc">
 						</div>	
 						<!-- Recupération Sous catégorie Références -->
 						<?php 

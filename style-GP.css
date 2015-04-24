@@ -950,21 +950,21 @@ div#tableau_ref_categorie div.cellule
 }*/
 
 
-#publication.site-content
-{
-	margin-top: 4px;
-	margin-right: 0% !important;
-	margin-left: 2% !important;
-	margin-bottom: 4px;
-	background-color: #FFF;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	border-top-width: 4px;
-	border-bottom-width: 4px;
-	border-top-style: solid;
-	border-bottom-style: solid;
-	border-top-color: #FC0;
-	border-bottom-color: #FC0;
+
+#publication.site-content {
+  /* margin-top: 4px; */
+  margin-right: 0% !important;
+  margin-left: 2% !important;
+  /* margin-bottom: 4px; */
+  background-color: #FFF;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top-width: 4px;
+  border-bottom-width: 4px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: #FC0;
+  border-bottom-color: #FC0;
 }
 
 .texte_blanc a
@@ -1213,7 +1213,7 @@ div#image_actu_bandeau
 	/* width: 41%; */
 	min-width: 392px;
 	max-width: 400px;
-	margin-top: 1%;
+  margin-top: -11px;
 }
 
 .totem_actu
@@ -1253,7 +1253,7 @@ div#image_actu_bandeau
 	text-align: right;
 	padding-right: 14px;
 	padding-bottom: 0px;
-	padding-left: 30px;
+	padding-left: 10px;
 }
 
 #date_actu
@@ -1278,12 +1278,11 @@ div#image_actu_bandeau
 
 .cellule_anciennes_actus
 {
-	padding-right: 8px;
-	padding-left: 8px;
+	padding-right: 9px;
+	padding-left: 9px;
 	text-align: center;
 	width: 30%;
 	margin-right: 0%;
-	/* min-width: 355px; */
 	margin-left: 0%;
 	display: inline-block
 }

@@ -21,7 +21,7 @@ if ( have_posts() ) : ?>
 						</div>
 						
 						<div class="cellule_tri_presse fond_gris_clair texte_blanc">
-						<div id="champs" class="T-7 texte_jaune tete" style="text-transform: uppercase;">
+						<div id="champs" class="T-7 tete texte_jaune" style="text-transform: uppercase;">
 									<?php the_field('projet_concerne'); ?>
 						</div>
 									<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
@@ -43,5 +43,108 @@ if ( have_posts() ) : ?>
 			<?php else: ?>
 			<p>Sorry, no posts matched your criteria.</p>
 			<?php endif; ?>
+						<?php 
+		function get_the_subcategory()
+		{
+			$categories = get_the_category();
+			// get the sub category if we have them
+			foreach ($categories as $cat)
+			{
+			$parent = $cat->category_parent;
+			if ($parent != 0 )
+			{
+				$sub_cat_ID = $cat->cat_ID;
+			}
+			}
+			if (!$sub_cat_ID)
+			{
+				return false;
+			}
+			else
+			{
+				return $sub_cat_ID;
+			}
+		}
+		
+		function get_next_subcategory_post_link()
+		{
+			$cat_ID = get_the_subcategory();
+			if($cat_ID != false)
+			{
+				$args = array(
+				'numberposts'     => 1000,
+				'category'        => $cat_ID,
+				'orderby'         => 'post_date',
+				'order'           => 'DESC' );
+				$list = get_posts($args);
+				$current = false;
+			foreach($list as $post)
+			{
+				if($current == true)
+				{
+					return get_permalink($post->ID);
+				}
+				if($post->ID == get_the_ID())
+				{
+					$current = true;
+				}
+				else
+				{}
+			}
+			}
+			else
+			{
+				return "#error";
+			}
+
+		}
+		
+		function get_previous_subcategory_post_link()
+		{
+			$cat_ID = get_the_subcategory();
+			$args = array(
+			'numberposts'     => 1000,
+			'category'        => $cat_ID,
+			'orderby'         => 'post_date',
+			'order'           => 'ASC' );
+			$list = get_posts($args);
+			$current = false;
+			foreach($list as $post)
+			{
+				if($current == true)
+				{
+					return get_permalink($post->ID);
+				}
+				if($post->ID == get_the_ID())
+				{
+					$current = true;
+				}
+				else
+				{}
+			}
+		}
+	
+	?>
+									</div>		
+									<!-- NAVIGATION précédent / suivant ----------------------------------------------  -->
+									<nav class="ref_precedent_suivant">
+												<?php
+			$previous = get_previous_subcategory_post_link();
+			$next = get_next_subcategory_post_link();
+		?>
+												<?php if($previous != false) { ?>
+												<a href="<?php echo $previous; ?>">
+															<div id="position_fleche_gauche" class="fleche_gauche">
+															</div>
+												</a>
+												<?php } ?>
+												<?php if($next != false) { ?>
+												<a href="<?php echo $next; ?>">
+															<div id="position_fleche_droite" class="fleche_droite">
+															</div>
+												</a>
+												<?php }  ?>
+									</nav>
+									<!-- fin navigation -------------------------------- -->
 </section>
 <?php get_footer(); ?>
