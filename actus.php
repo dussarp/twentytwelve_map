@@ -36,7 +36,7 @@ get_header(); ?>
 									<?php the_title(); ?>
 						</div>
 						<div id="content-actu" class="texte_blanc fond_gris_clair interligne_-3 T-5">
-									<?php the_content(); ?>
+								<?php the_field('accroche_actus'); ?>
 									
 									<!-- Affiche la Date. -->
 									<p id="date_actu" class="texte_blanc T-6"> mise à jour le

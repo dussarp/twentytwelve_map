@@ -102,6 +102,12 @@
 	color: #666;
 }
 
+.texte_gris_clair
+{
+	color: #999;
+}
+
+
 /*---------------------------------------------------------- fontes ---------------------------- */
 
 .fonte_replica
@@ -1208,11 +1214,11 @@ div#image_actu_bandeau
 .actus_principales
 {
 	position: absolute;
-	top: 16%;
+	top: 155px;
 	left: 0%;
-	/* width: 41%; */
-	min-width: 392px;
-	max-width: 400px;
+
+	
+width: 410px;
   margin-top: -11px;
 }
 
@@ -1221,7 +1227,7 @@ div#image_actu_bandeau
 	padding: 10px;
 	float: left;
 	height: 30px;
-	width: 162px;
+	width: 173px;
 	border: medium none #999;
 	margin-top: 0px;
 	margin-right: 0px;
