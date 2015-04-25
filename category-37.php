@@ -6,13 +6,9 @@
 get_header(); ?>
 
 <section id="publication" class="site-content">
-			<?php /*?><?php get_sidebar(); ?><?php */?>
-		<?php 
-// Check if there are any posts to display
-if ( have_posts() ) : ?>
-			
-			<!-- The Loop		-->
-			<?php while ( have_posts() ) : the_post(); ?>
+
+		<?php global $query_string; // récupère la requête initiale générée par WordPress
+query_posts( $query_string . '&posts_per_page=12' ); if ( have_posts() ) :  while ( have_posts() ) : the_post(); ?>
 			<div class="conteneur_tri_presse">
 						<div id="vignette_tri_presse"  class="cellule_tri_presse">
 			

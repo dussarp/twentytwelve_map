@@ -264,7 +264,7 @@ div#static-description
 		jQuery(document).ready(function(){
 			$('div.gallery').appendTo('#gallery-info').show(); /*transfert gallerie wordpress vers le conteneur */
 			 $('html, body').animate({
-				scrollTop:150 //niveau de scroll
+				scrollTop:160 //niveau de scroll
 			}, 500);
 			$('#static-description').width( $('.fiche_reference').width());
 			$('#static-description').height( $('.fiche_reference').height());

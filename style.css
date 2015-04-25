@@ -476,6 +476,7 @@ img.wp-smiley, .rsswidget img
 {
 	clear: both;
 	line-height: 2;
+ padding-top: 10px;
 	overflow: hidden;
 }
 

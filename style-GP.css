@@ -1,4 +1,3 @@
-
 /*
  Theme Name:   Twenty Twelve Child
  Theme URI:    http://www.mapgroupe.fr/twenty-twelve-child
@@ -30,12 +29,10 @@
 	background-position: -20px;
 	border: 6px none #963;
 }
-
 /* positionnement du conteneur principal */#primary
 {
 	width: 100%;
 }
-
 /* conteneur associé à la sidebar */
 
 
@@ -43,38 +40,33 @@
 
 #secondary
 {
-	float: left;
+	float: right;
 	margin-top: 30px;
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: 1%;
 	width : 20%;
 	display: inline-block;
-	border: soplidsolid;
+	border: solid;
 }
-
 #primary, #secondary
 {
 	border: 2px none #F00;
 }
-
 /* ----------------------- tableaux ------------------------------- -*/
 
 .tableau
 {
 	display: table;
 }
-
 .ligne
 {
 	display: table-row;
 }
-
 .cellule
 {
 	display: table-cell;
 }
-
 /* ----------------------- textes ------------------------------- -*/
 
 
@@ -85,141 +77,115 @@
 	line-height: 1.5rem;
 	font-size: 1rem;
 }
-
 .texte_jaune
 {
 	color: #FC0;
 }
-
 .texte_blanc
 {
 	color: #FFF;
 }
-
 .texte_gris_fonce
 {
 	color: #666;
 }
-
 .texte_gris_clair
 {
 	color: #999;
 }
-
-
 /*---------------------------------------------------------- fontes ---------------------------- */
 
 .fonte_replica
 {
 	font-family: ReplicaProLight;
 }
-
 .fonte_avantgarde
 {
 	font-family: "ITCAvantGardeStd-Bk_0";
 }
-
 .interligne_-1
 {
 	line-height: 4rem;
 }
-
 .interligne_-2
 {
 	line-height: 1.8rem;
 }
-
 .interligne_-3
 {
 	line-height: 1.6rem;
 }
-
 .interligne_-4
 {
 	line-height: 1.0rem;
 }
-
 /*--------------------------------------------------------- titres ------------------------- */
 
 .tete
 {
 	margin-top: 8px;
 }
-
 .T-1
 {
 	font-size: 3rem;
 }
-
 .T-2
 {
 	font-size: 2rem;
 	margin-bottom: 20px
 }
-
 .T-3
 {
 	font-size: 1.5rem;
 	margin-bottom: 20px
 }
-
 .T-4
 {
 	font-size: 1.2rem;
 	margin-bottom: 10px;
 }
-
 .T-5
 {
 	font-size: 0.85rem;
 	letter-spacing: 0.05rem;
 }
-
 .T-6
 {
 	font-size: 0.8rem;
 	letter-spacing: 0.04rem;
 }
-
 .T-7
 {
 	font-size: 0.7rem;
 	letter-spacing: 0.08rem;
 }
-
 .T-6E
 {
 	font-size: 0.8rem;
 	margin-top: 8px;
 	letter-spacing: 0.04rem;
 }
-
 p.T-5
 {
 	padding-left: 10px;
 }
-
 /*--------------------------------------------------------- fond ------------------------- */.fond_blanc
 {
 	background-color: #FFF;
 }
-
 .fond_jaune
 {
 	background-color: #FC0;
 }
-
 .fond_gris_fonce
 {
 	border: medium none #03C;
 	background-color: #666;
 }
-
 .fond_gris_clair
 {
 	background-color: #999;
 }
-
 /*--------------------------------------------------------- autres ------------------------- */
 
 
@@ -233,7 +199,6 @@ p.T-5
 	left: 0px;
 	bottom: 20px;
 }
-
 .image_fond_div
 {
 	margin: 0px;
@@ -252,7 +217,6 @@ p.T-5
 box-shadow: inset 0px 20px 20px 0px #cfcfcf;
 filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, Strength=20);
 }
-
 /* ---------------------------- MENUS ET ZONES ----------------------------------- -*/
 
 
@@ -260,7 +224,6 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 {
 	padding: 0px;
 }
-
 #position_barre
 {
 	width: auto; /* boite principale à droite de la barre ---------------------*/
@@ -268,18 +231,15 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	vertical-align: top;
 	float: right;
 }
-
 #boite_principale
 {
 	border: 5px none #9F9;
 	width: 100%;
 }
-
 #position_barre, #boite_principale
 {
 	display: inline-block;
 }
-
 .navigation_categorie
 {
 	margin-top: 0px;
@@ -288,7 +248,6 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	height: 400px;
 	position: relative;
 }
-
 .menu_ref_niv-1
 {
 	font-family: ReplicaProRegular;
@@ -307,7 +266,6 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	padding-right: 10px;
 	padding-left: 10px;
 }
-
 .menu_ref_niv0
 {
 	font-family: ReplicaProRegular;
@@ -325,7 +283,6 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	padding-right: 2%;
 	padding-left: 2%;
 }
-
 .second_menu
 {
 	font-family: ReplicaProRegular;
@@ -333,7 +290,6 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	background-color: #F00;
 	border: 2px none #00C;
 }
-
 /* -------------------------- menu navigation icone ------------------------------------- -*/
 
 
@@ -350,17 +306,14 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	margin-top: 56px;
 	padding: 0px;
 }
-
 .centre_menu ul li
 {
 	margin: 0px!important;
 }
-
 .centre_menu ul li
 {
 	margin: 0px!important;
 }
-
 #menu-menu-02 ul li a
 {
 	display: block;
@@ -368,35 +321,30 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	background-position: top center!important;
 	margin: 0!important
 }
-
 #site-navigation .map_menu01 a
 {
 	background-image: url(img/menu/logoNAV_16.png);
 	background-repeat: no-repeat;
 	background-position: top center;
 }
-
 #site-navigation .map_menu02 a
 {
 	background-image: url(img/menu/logoNAV_17.png);
 	background-repeat: no-repeat;
 	background-position: top center;
 }
-
 #site-navigation .map_menu03 a
 {
 	background-image: url(img/menu/logoNAV_18.png);
 	background-repeat: no-repeat;
 	background-position: top center;
 }
-
 #site-navigation .map_menu04 a
 {
 	background-image: url(img/menu/logoNAV_19.png);
 	background-repeat: no-repeat;
 	background-position: top center;
 }
-
 #site-navigation .map_menu05 a
 {
 	background-image: url(img/menu/logoNAV_20.png);
@@ -404,7 +352,6 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	background-position: top center;
 	margin-right: 0px;
 }
-
 #site-navigation .map_menu01 a, #site-navigation .map_menu02 a, #site-navigation .map_menu03 a, #site-navigation .map_menu04 a, #site-navigation .map_menu05 a
 {
 	height: 39px; /*  hauteur menu ----------------------------------- -*/
@@ -415,12 +362,10 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	border: 1px none #F00; /*  contours icone ----------------------------------- -*/
 	margin-left: 0px;
 }
-
 #site-navigation .map_menu01 a, #site-navigation .map_menu02 a, #site-navigation .map_menu03 a, #site-navigation .map_menu04 a
 {
 	margin-right: 0px; /* ------------------- écart entre les logos, le dernier logo n'a pas d'espacement -------------------------------------------- -*/
 }
-
 .fond01
 {
 	position: relative;
@@ -435,7 +380,6 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	opacity: 1;
 	border: 2px solid #F00;
 }
-
 .menu_fixe
 {
 	height: 42px;
@@ -448,7 +392,6 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	padding-right: 20px;
 	padding-left: 20px;
 }
-
 /* --------------------- menu icone centrage ------------------------------------------ -*/
 
 .map_logo
@@ -463,7 +406,6 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	margin-left: 25px;
 	border: 5px none #093;
 }
-
 /* --------------------------------------------------------------- -*/
 
 
@@ -476,7 +418,6 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	padding: 0px;
 	float: left;
 }
-
 .section_centre_bas
 {
 	width: 100%;
@@ -493,7 +434,6 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	margin-bottom: 0px;
 	margin-left: 0px;
 }
-
 /* --------------------------------------------------------------- -*/
 
 
@@ -510,7 +450,6 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	padding-left: 20px;
 	border: 2px none #099;
 }
-
 /* --------------------------- Entité----------------------- -*/	
 
 
@@ -522,7 +461,6 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	margin-bottom: 200px;
 	margin-top: 20px;
 }
-
 .bande_colo
 {
 	float: left;
@@ -531,7 +469,6 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	background-position: -20px;
 	border: 6px none #963;
 }
-
 .cellule_entite
 {
 	background-color: #FFF;
@@ -541,7 +478,6 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	padding-left: 20px;
 	float: left;
 }
-
 #cellule_entite_gauche
 {
 	width : 30%;
@@ -549,12 +485,10 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	padding-right: 100px;
 	text-align: right;
 }
-
 #cellule_entite_droite
 {
 	width: 50%;
 }
-
 #corps_cellule_entite_premier
 {
 	margin-bottom: 100px;
@@ -562,14 +496,12 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	margin-top: 0px;
 	padding-top: 40px;
 }
-
 #corps_cellule_entite
 {
 	margin-bottom: 100px;
 	border: 2px none #903;
 	margin-top: 0px;
 }
-
 #conteneur_A
 {
 	float: left;
@@ -577,14 +509,12 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	margin-bottom: 35px;
 	clear: left;
 }
-
 #conteneur_B
 {
 	float: right;
 	width: 56%;
 	margin-bottom: 35px;
 }
-
 .cellule_liens
 {
 	width: 550px;
@@ -596,7 +526,6 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	margin-top: 150px;
 	height: 150px;
 }
-
 #lien_trombino
 {
 	width: auto;
@@ -604,20 +533,17 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	padding-top: 35px;
 	float: left;
 }
-
 #lien_organigramme
 {
 	text-align: center;
 	width: auto;
 	float: left;
 }
-
 #icone_pellicule
 {
 	margin-left : 80px;
 	width: 100px;
 }
-
 .cellule_pellicule
 {
 	padding-left: 10px;
@@ -631,22 +557,18 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	vertical-align: baseline;
 	text-align: right
 }
-
 #lien_organigramme, #lien_trombino
 {
 	vertical-align: bottom;
 }
-
 #infos_add
 {
 	margin-top: 75px;
 }
-
 .icone_organisation
 {
 	border: 2px none #903;
 }
-
 /* --------------------------- portraits miniatures ----------------------- -*/
 
 .titre_cellule__membre
@@ -654,46 +576,36 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	float: left;
 	width: 100%;
 }
-
 .cellule_membre_organigramme
 {
 	float: left;
 	max-width: 65px;
 }
-
 #icone_fonction
 {
 	width: 20px;
 	margin-right: 2px;
 	float : left;
 }
-
 #fonction_organigramme
 {
 	margin-bottom: 18px;
 }
-
 #icone_fonction, #fonction_organigramme
 {
 	display : inline-block;
 }
-
 #legende_nom
 {
 	width: 100%;
 	text-align: center;
 	min-height: 50px;
 }
-
 .organi_tombino
 {
 	width: 400px;
 	float: left;
 }
-
-/*.titre_cellule__membre, .cellule_membre_organigramme, #icone_fonction, #fonction_organigramme, #icone_fonction, #fonction_organigramme, #legende_nom, .organi_tombino, #conteneur_A  {
-	border: 1px solid #009;
-}*/
 /* --------------------------- Au-delà ----------------------- -*/	
 
 
@@ -708,14 +620,12 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	padding-bottom: 50px;
 	z-index: +4;
 }
-
 .cellule_au-dela
 {
 	width: 45%;
 	padding-left: 20px;
-	float: left;/*	border: 2px solid #009;*/
+	float: left;
 }
-
 #cellule_au-dela_gauche
 {
 	width: 20%;
@@ -724,19 +634,16 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	text-align: right;
 	padding-left: 70px;
 }
-
 #cellule_au-dela_droite
 {
 	width: 68%;
 }
-
 #visuel_au-dela
 {
 	display: inline-block;
 	vertical-align: top;
 	width: 25%;
 }
-
 .titre_au-dela
 {
 	width: 300px;
@@ -747,21 +654,18 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	top: 64px;
 	z-index: +4;
 }
-
 #corps_cellule_au-dela
 {
 	margin-bottom: 6px;
 	margin-top: 0px;
 	padding-top: 7px;
 }
-
 #plus_au-dela
 {
 	padding-left: 30px;
 	width: 100px !important;
 	display: inline-block;
 }
-
 /* --------------------------- tableau pour l'affichage de la page des 5 catégories ----------------------- -*/
 /* --------------------------- style PYD ----------------------- -*/
 
@@ -774,7 +678,6 @@ div#accroche
 	display: block;
 	width: 50%;
 }
-
 div#tableau_ref_categorie div.cellule
 {
 	width: 20%;
@@ -784,19 +687,16 @@ div#tableau_ref_categorie div.cellule
 	position: relative;
 	overflow: hidden;
 }
-
 div#tableau_ref_categorie div.ref_vignette img
 {
 	height: 100%;
 	overflow: hidden;
 }
-
 div#tableau_ref_categorie div.ref_vignette a
 {
 	float: left;
 	display: block
 }
-
 figure.miniature_ref_enfant img
 {
 	transform: scale3d(1.1, 1.1, 1) /*zoom */
@@ -805,7 +705,6 @@ figure.miniature_ref_enfant img
 
 /* Smartphones */
 @media (min-width : 320px) and (max-width : 480px) {
-
 div#tableau_ref_categorie div.cellule
 {
 	width: 100%;
@@ -814,13 +713,11 @@ div#tableau_ref_categorie div.cellule
 
 /* Tablets */
 @media (min-width : 481px) and (max-width : 1024px) {
-
 div#tableau_ref_categorie div.cellule
 {
 	width: 33%;
 }
 }
-
 /* --------------------------- fin ----------------------- -*/
 
 
@@ -829,7 +726,6 @@ div#tableau_ref_categorie div.cellule
 	color: #F90;
 	background-color: rgba(255,255,255,1)
 }
-
 .titre_ref_enfant
 {
 	display: block;
@@ -845,7 +741,6 @@ div#tableau_ref_categorie div.cellule
 	padding-left: 10px;
 	width: auto;
 }
-
 .cellule_ref_categorie
 {
 	vertical-align: top;
@@ -854,7 +749,6 @@ div#tableau_ref_categorie div.cellule
 	margin: 0px;
 	display: inline-block;
 }
-
 #accroche
 {
 	padding-top: 20px;
@@ -862,132 +756,114 @@ div#tableau_ref_categorie div.cellule
 	padding-bottom: 0px;
 	padding-left: 20px;
 }
-
 #accroche_sous-titre
 {
 	padding-top: 0px;
 	padding-left: 20px;
 }
-
 #cellule_num
 {
 	background-color: #999;
-	margin: 0px;/* 	padding: 10px;
-	width: 210px; */
+	margin: 0px;
 }
-
 #num_categorie
 {
 	padding-top : 20px;
 	padding-left: 20px;
 }
-
 #titre_sous_categorie
 {
 	display: block;
 	padding-left: 20px;
 }
-
 #titre_ref_categorie
 {
 	padding-top : 0px;
 	padding-left: 20px;
 }
-
 #titre_ref_categorie, .tableau_ref_categories, #num_categorie, .visuel_principal, #accroche, .cellule_ref_categorie
 {
 	border: 1px none #F00;
 }
-
 /* --------------------------- tableau pour l'affichage des résultats de choix des categories ----------------------- -*/
-
-
+.conteneur_superieur
+{
+	width: 76%;
+	float: left;
+	min-width: 402px;
+/
+}
 .texte_blanc a
 {
 	color: #FFF;
 }
-
-#conteneur_tri_categorie
-{
-	/* float: right; */
-	max-width: 100%;
-	/*	width : 1075px; */
-	margin-right: auto;
-	margin-left: auto;/*	display : inline-block ; */
+#conteneur_tri_categorie {
+  max-width: 392px;
+  width: 100%;
+  min-width: 200px;
+  float: left;
+  height: 417px;
 }
-
 .cellule_tri_categorie
 {
-	height: 240px;
-	width : 100%;
-	max-width: 290px;
+	height: 98px;
+	width: 100%;
+	max-width: 407px;
+	min-width: 188px;
 	vertical-align: top;
 	display: inline-block;
+	float: left;
 }
-
 #vignette_tri_categorie
 {
 	width : 100%;
 	max-width: 480px;
 }
-
-#fil_ariane_tri_categorie
-{
-	padding-right: 40px;
-	padding-left: 20px;
-	padding-top: 5px;/*	width : 200px; */
+#fil_ariane_tri_categorie {
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 5px;
+  margin-top: 98px;
+  width: 281px;
+  text-align: right;
+  float: right;
 }
-
 #titre_tri_categorie
 {
 	padding-left: 30px;
 	padding-right: 30px;
-	padding-top: 5px;
-	width : auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 230px;
 	text-align: right;
+	float: right;
 }
-
 /* --------------------------------------------------------------- -*/
 /* ---------------------------  résultat presse ----------------------- -*/
-/*#accroche_presse {	  width: 33%;
-  height: 90px;
-}*/
-
-
 
 #publication.site-content {
-  /* margin-top: 4px; */
+
   margin-right: 0% !important;
   margin-left: 2% !important;
-  /* margin-bottom: 4px; */
+width: 100%;
   background-color: #FFF;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-top-width: 4px;
-  border-bottom-width: 4px;
-  border-top-style: solid;
-  border-bottom-style: solid;
-  border-top-color: #FC0;
-  border-bottom-color: #FC0;
+
 }
 
 .texte_blanc a
 {
 	color: #FFF;
 }
-
 .texte_blanc a:hover
 {
 	color: #FFF;
 }
-
 div.conteneur_tri_presse
 {
 	width: 33%;
 	border: thin none #06C;
 	display: inline-block;
 }
-
 .cellule_tri_presse
 {
 	width: 50%;
@@ -995,31 +871,26 @@ div.conteneur_tri_presse
 	display: inline-block;
 	height: 160px;
 }
-
 #titre_tri_presse
 {
 	padding-top: 5px;
 	padding-left: 16px;
 	padding-right: 16px;
 }
-
 #champs
 {
 	padding-left: 16px;
 	padding-right: 16px;
 	vertical-align: top;
 }
-
 #titre_tri_presse.T-3
 {
 	margin-bottom: 6px !important;
 }
-
 #vignette_tri_presse
 {
 	width: 49%;
 }
-
 /* --------------------------------------------------------------- -*/
 
 
@@ -1029,7 +900,6 @@ div.conteneur_tri_presse
 	border: 2px solid #0F0;
 	background-color: #CFC;
 }
-
 /* --------------------------------------------------------------- -*/
 
 .article_secondaire
@@ -1045,7 +915,6 @@ div.conteneur_tri_presse
 	padding-left: 42px;
 	border: 2px none #0FC;
 }
-
 .boite_article_secondaire
 {
 	background-color: #FFF;
@@ -1059,7 +928,6 @@ div.conteneur_tri_presse
 	padding-left: 42px;
 	border: 2px none #0FC;
 }
-
 /* --------------------------------------------------------------- -*/
 
 
@@ -1072,7 +940,6 @@ div.conteneur_tri_presse
 	margin-right: auto;
 	margin-left: auto;
 }
-
 /* --------------------------------------------------------------- -*/
 
 
@@ -1086,7 +953,6 @@ div.conteneur_tri_presse
 	top: 0px;
 	font-family: "ITCAvantGardeStd-Bk_0";
 }
-
 .titre_niv_-1
 {
 	font-family: "ITCAvantGardeStd-Bk_0";
@@ -1094,14 +960,12 @@ div.conteneur_tri_presse
 	padding: 0px;
 	margin: 0px;
 }
-
 .texte_courant
 {
 	font-family: "ITCAvantGardeStd-Bk_0";
 	font-size: 0.8em;
 	line-height: 1.5em;
 }
-
 /* --------------------------------------------------------------- -*/
 
 
@@ -1123,7 +987,6 @@ div.conteneur_tri_presse
 	margin-left: 0px;
 	text-align: right;
 }
-
 .bloc_gris
 {
 	background-color: #737373;
@@ -1138,7 +1001,6 @@ div.conteneur_tri_presse
 	color: #FFF;
 	margin: 0px;
 }
-
 /* --------------------------------------------------------------- -*/
 
 
@@ -1148,7 +1010,6 @@ div.conteneur_tri_presse
 	font-family: "ITCAvantGardeStd-Bk_0";
 	font-size: 0.6em;
 }
-
 .visuel_article_secondaire
 {
 	border: 2px none #F00;
@@ -1158,7 +1019,6 @@ div.conteneur_tri_presse
 	padding-right: 42px;
 	padding-left: 42px;
 }
-
 /* --------------------------------------------------------------- -*/
 
 
@@ -1175,7 +1035,6 @@ div.conteneur_tri_presse
 	font-family: ReplicaProRegular;
 	border: 2px dotted #09F;
 }
-
 .boite_explication_menu
 {
 	height: 400px;
@@ -1184,7 +1043,6 @@ div.conteneur_tri_presse
 	float: left;
 	background-color: #737373;
 }
-
 .boite_slogan
 {
 	background-color: #CCC;
@@ -1197,7 +1055,6 @@ div.conteneur_tri_presse
 	color: #FFF;
 	padding: 10px;
 }
-
 /* ------------------------------- actus principales -------------------------------- -*/
 
 
@@ -1208,18 +1065,14 @@ div#image_actu_bandeau
 	margin-bottom: 10%;
 	min-height: 366px;
 }
-
 .actus_principales
 {
 	position: absolute;
 	top: 155px;
 	left: 0%;
-
-	
-width: 410px;
-  margin-top: -11px;
+	width: 410px;
+	margin-top: -11px;
 }
-
 .totem_actu
 {
 	padding: 10px;
@@ -1232,7 +1085,6 @@ width: 410px;
 	margin-bottom: 10px;
 	margin-left: 0px;
 }
-
 .titre_actu
 {
 	font-family: "ITCAvantGardeStd-Bk_0";
@@ -1247,7 +1099,6 @@ width: 410px;
 	height: 70px;
 	margin-bottom: 10px;
 }
-
 #content-actu
 {
 	font-family: "ITCAvantGardeStd-Bk_0";
@@ -1259,14 +1110,12 @@ width: 410px;
 	padding-bottom: 0px;
 	padding-left: 10px;
 }
-
 #date_actu
 {
 	border: 2px none #666;
 	margin-top: 20px;
 	padding-bottom: 10px;
 }
-
 /* -------------------------------  anciennes actus-------------------------------- -*/
 
 
@@ -1277,9 +1126,8 @@ width: 410px;
 	margin-right: 20%;
 	margin-left: 20%;
 	margin-top: 150px;
-	margin-bottom: 150px;/* max-width: 287px; */
+	margin-bottom: 150px;
 }
-
 .cellule_anciennes_actus
 {
 	padding-right: 9px;
@@ -1290,29 +1138,24 @@ width: 410px;
 	margin-left: 0%;
 	display: inline-block
 }
-
 .cellule_anciennes_actus img
 {
 	border-radius: 3px !important
 }
-
 #titre_anciennes_actus
 {
 	font-family: "ITCAvantGardeStd-Bk_0";
 	height: 50px;
 	padding-bottom: 50px;
 }
-
 #date_anciennes_actus
 {
 	padding-bottom: 10px;
 }
-
 #tableau_anciennes_actus, #titre_anciennes_actus, #date_anciennes_actus, .cellule_anciennes_actus, #conteneur_anciennes_actus
 {
 	border: 1px none #009;
 }
-
 /* ------------------------------- sommaire -------------------------------- -*/
 
 
@@ -1324,7 +1167,6 @@ width: 410px;
 	padding-bottom: 0px;
 	margin-top: 0px;
 }
-
 #tableau_sommaire
 {
 	width: 90%;
@@ -1332,7 +1174,6 @@ width: 410px;
 	margin-left: auto;
 	margin-top: 10px;
 }
-
 #tableau_contact
 {
 	width: 90%;
@@ -1340,7 +1181,6 @@ width: 410px;
 	margin-left: auto;
 	margin-top: 0px;
 }
-
 .conteneur_contact
 {
 	width: 100%;
@@ -1360,7 +1200,6 @@ width: 410px;
 	border-bottom-color: #999;
 	border-left-color: #999;
 }
-
 #cellule_sommaire
 {
 	padding-left: 22px;
@@ -1369,29 +1208,20 @@ width: 410px;
 	width: 30%;
 	padding-right: 90px;
 }
-
 #cellule_sommaire form.searchform input#searchsubmit, #cellule_sommaire form.searchform .screen-reader-text
 {
 	display: none;
 }
-
 #cellule_icone_sommaire
 {
 	width: 50px;
 }
-
 .corps_sommaire
 {
 	font-family: "ITCAvantGardeStd-Bk_0";
 	font-size: 1rem;
 	line-height: 1.6rem;
 }
-
-/* .corps_sommaire, #cellule_icone_sommaire, #cellule_sommaire, #tableau_contact, .conteneur_contact, #tableau_sommaire, .conteneur_sommaire
-{
-	border: 1px none #F00; */
-
-
 /* ----------------------- Détails fiche référence ------------------------------- -*/
 
 /* FLECHES http://apps.eky.hk/css-triangle-generator/ */
@@ -1403,32 +1233,26 @@ width: 410px;
 	z-index: +10;
 	display: block;
 }
-
 #position_fleche_droite
 {
 	right: 0px;
 }
-
 #position_fleche_gauche
 {
 	left: 0px;
 }
-
 .fleche_droite, .fleche_gauche
 {
 	display: inline-block;
 }
-
 .fleche_haut
 {
 	background-image: url(img/nav/haut.png);
 }
-
 .fleche_bas
 {
 	background-image: url(img/nav/bas.png);
 }
-
 .fleche_droite
 {
 	background-image: url(img/nav/droite_jaune.png);
@@ -1437,7 +1261,6 @@ width: 410px;
 	background-repeat: no-repeat;
 	background-position: top center;
 }
-
 .fleche_gauche
 {
 	background-image: url(img/nav/gauche_jaune.png);
@@ -1446,18 +1269,15 @@ width: 410px;
 	background-repeat: no-repeat;
 	background-position: top center;
 }
-
 /* -- RECHERCHES --------------------------- */
-#conteneur_recherche {
-
+#conteneur_recherche
+{
 	float: left;
 	width: 70%;
 	display: inline-block;
 	padding-left: 60px;
-		padding-top: 40px;
+	padding-top: 40px;
 }
-
-
 /* ---------------------------------------Indesign SYTLES -------------------------------------- */
 /* --------------------------------------- div image ------------------------------------------------- */
 
@@ -1475,7 +1295,6 @@ width: 410px;
 	padding: 0px;
 	float: left;
 }
-
 /* div slide image ----------------------------------------------------------------------------- */
 
 .fiche_reference
@@ -1485,10 +1304,8 @@ width: 410px;
 	left: 70px;
 	width: 240px;
 	margin: 0px;
-	/* padding: 6px; */
 	float: right;
 }
-
 /* conteneur pour le titre ----------------------------------------------------------------------------- */
 
 .titre-op-ration, div.titre-
@@ -1505,7 +1322,6 @@ width: 410px;
 	border-bottom-right-radius: 0px;
 	border-bottom-left-radius: 0px;
 }
-
 .d-tails, .Bloc-de-texte-standard/* conteneur pour les détails ----------------------------------------------------------------------------- */
 {
 	height: auto;
@@ -1515,20 +1331,13 @@ width: 410px;
 	padding: 10px;
 	margin-bottom: 0px;
 }
-
 .titre-principale-verso/* conteneur pour le programme ----------------------------------------------------------------------------- */
 {
 	height: auto;
-	/* width: 100%; */
 	border: 2px none #930;
 	background-color: #999;
-	padding: 10px;/* margin-bottom: 10px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px; */
+	padding: 10px;
 }
-
 /* textes ----------------------------------------------------------------------------- */
 
 .Titre-verso, Titre-couv
@@ -1542,14 +1351,12 @@ width: 410px;
 	text-transform: capitalize;
 	color: #FFF;
 }
-
 .ville-couv, .Ville-verso, .para-style-override-1
 {
 	font-family: ReplicaProRegular;
 	font-size: 0.8rem;
 	color: #FFF;
 }
-
 .label-info
 {
 	font-family: ReplicaProRegular;
@@ -1560,7 +1367,6 @@ width: 410px;
 	border: 2px none #F00;
 	letter-spacing : 0.05 rem;
 }
-
 .info
 {
 	font-family: ReplicaProLight;
@@ -1571,7 +1377,6 @@ width: 410px;
 	margin-bottom: 8px;
 	letter-spacing : 1 rem;
 }
-
 .Titre-projet-verso
 {
 	font-family: ReplicaProRegular;
@@ -1582,7 +1387,6 @@ width: 410px;
 	text-transform: uppercase;
 	letter-spacing : 1 rem;
 }
-
 body.archive category category-01_urba category-20 logged-in custom-background custom-font-enabled single-author
 {
 	background-color: #099;

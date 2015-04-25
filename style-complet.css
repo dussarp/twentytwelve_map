@@ -447,6 +447,7 @@ img.wp-smiley, .rsswidget img
 {
 	clear: both;
 	line-height: 2;
+ padding-top: 10px;
 	overflow: hidden;
 }
 
@@ -2344,7 +2345,7 @@ footer.entry-meta, footer.entry-meta a
 
 #secondary
 {
-	float: left;
+	float: right ;
 	margin-top: 00px;
 	margin-right: 0px;
 	margin-bottom: 0px;

@@ -111,7 +111,7 @@ get_header(); ?>
    </div> -->
 						</div>
 						<div class="conteneur_article_publication fond_blanc">
-									<div id="conteneur_titres_article_publication" class="article_WP texte_blanc fond_jaune T-3">
+									<div id="conteneur_titres_article_publication" class="article_WP texte_blanc fond_gris_clair T-3">
 												<div class="T-6" style="text-transform: uppercase;">
 															<?php the_field('projet_concerne'); ?>
 												</div>

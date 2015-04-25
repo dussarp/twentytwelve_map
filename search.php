@@ -16,9 +16,9 @@ get_header(); ?>
 			<div id="conteneur_recherche" class="conteneur_boite fond_blanc">
 						<div id="content" role="main">
 									<?php if ( have_posts() ) : ?>
-														<div class="T-4">
-															<?php printf( __( 'Search Results for: %s', 'twentytwelve' ), '<span class="texte_jaune T-2">' . get_search_query() . '</span>' ); ?>
-												</div>
+									<div class="T-4">
+												<?php printf( __( 'Search Results for: %s', 'twentytwelve' ), '<span class="texte_jaune T-2">' . get_search_query() . '</span>' ); ?>
+									</div>
 									<?php twentytwelve_content_nav( 'nav-above' ); ?>
 									<?php /* Start the Loop */ ?>
 									<?php while ( have_posts() ) : the_post(); ?>
@@ -45,17 +45,21 @@ get_header(); ?>
 									</div>
 									<!-- ---------- cellule fil Ariane -------------------------------------->
 									<div  class="cellule_tri_categorie fond_gris_fonce  ">
-									<p id="fil_ariane_tri_categorie" class="T-6 texte_blanc" >
-												<!-- ---------- affichage du nom des catégorie -------------------------------------->
-												<?php foreach((get_the_category()) as $cat)
+												<p id="fil_ariane_tri_categorie" class="T-6 texte_blanc" >
+															<!-- ---------- affichage du nom des catégorie -------------------------------------->
+															<?php foreach((get_the_category()) as $cat)
 												 {echo $cat->cat_name . ' ';} ?>
-												<?php $cat = get_the_category(); $cat = $cat[0]; echo $cat->cat_name; ?><br/><br/>
-												 Mise à jour le
-															<?php the_date(); ?><br/><br/>
+															<?php $cat = get_the_category(); $cat = $cat[0]; echo $cat->cat_name; ?>
+															<br/>
+															<br/>
+															Mise à jour le
+															<?php the_date(); ?>
+															<br/>
+															<br/>
 															<?php echo $category->name; ?>
 															<br/>
 															<!-- fil d'Ariane ------------------------------------------------------->
-																				<br/>
+															<br/>
 															<?php if ( is_singular() && get_the_author_meta( 'description' ) && is_multi_author() ) : // If a user has filled out their description  ?>
 															<?php endif; ?>
 									</div>
