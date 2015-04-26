@@ -16,7 +16,7 @@ get_header(); ?>
 
 <!-- section menus REF --------- -->
 
-<nav id="site-navigation" class="main-navigation fond_gris_clair" role="navigation">
+<nav id="site-navigation" class="main-navigation fond_jaune" role="navigation">
 			<button class="menu-toggle">
 			<?php _e( 'Menu', 'twentytwelve' ); ?>
 			</button>
@@ -36,26 +36,28 @@ get_header(); ?>
 						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 									<!--  résultat catégorie ----------->
 									<a href="<?php the_permalink(); ?>" rel="bookmark">
-												<div id="conteneur_tri_categorie" class="conteneur_boite">
+												<div id="conteneur_tri_categorie" class="conteneur_boite fond_gris_fonce">
 															<!--  cellule titre ----------->
-															<div id="titre_tri_categorie" class="fond_jaune cellule_tri_categorie">
-																		<p  class="T-3 texte_blanc" >
+															<div id="titre_tri_categorie" class="fond_gris_clair cellule_tri_categorie">
+																		<p  class="T-4 texte_blanc" >
 																					<?php the_title(); ?>
+																		</p>
+																		<p  class="T-7 texte_blanc" >
+																					<!-- ---------- affichage du nom des catégorie -------------------------------------->
+																					<?php foreach((get_the_category()) as $cat)
+												 {echo $cat->cat_name . ' ';} ?>
+																					<?php $cat = get_the_category(); $cat = $cat[0]; echo $cat->cat_name; ?>
+																					<br/>
+																					<?php echo $category->name; ?>
+																					<br/>
+																					Mise à jour le
+																					<?php the_date(); ?>
+																					<br/>
 																		</p>
 															</div>
 															<!--  cellule vignette----------->
 															<div id="vignette_tri_categorie" class="cellule_tri_categorie">
 																		<?php the_post_thumbnail('miniature-tri'); ?>
-															</div>
-															<!--  cellule fil Ariane ----------->
-															<div id="fil_ariane_tri_categorie" class="fond_gris_clair cellule_tri_categorie">
-																		<p  class="T-6 texte_blanc" >
-																					<?php twentytwelve_entry_meta(); ?>
-																					<br/>
-																					<!-- fil d'Ariane --------->
-																					<?php edit_post_link( __( 'Edit', 'twentytwelve' ), '<span class="edit-link">', '</span>' ); ?>
-																					<br/>
-																		</p>
 															</div>
 												</div>
 									</a>

@@ -1,58 +1,107 @@
 <?php
+// template name: au-delà
+ ?>
+<?php
 /**
- Template name:Bonus
+ * The template for displaying all pages
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package web2feel
- * @since web2feel 1.0
+ * @package WordPress
+ * @subpackage Twenty_Twelve
+ * @since Twenty Twelve 1.0
  */
 
- ?>
-<?php get_header(); ?>
-<!-- boite principale GROUPE ------------------------------------------------>
-<div id="conteneur_entite" class="conteneur_boite">
-	<!-- contenu boite principale ------------------------------------------------>
-	<div class="bande_colo fond_jaune alignleft">
-	</div>
-	<div  id="cellule_entite_gauche" class="cellule_entite">
-		<!-- présentation de l'entité ---------------------------------------------- -->
-		<div>
+get_header(); ?>
+<!-- début section centre haut -->
+<!-- boite principale AMA ------------------------------------------------>
+
+<div class="conteneur_AD_bonus fond_gris_clair texte_blanc">
+			<!-- contenu boite principale ------------------------------------------------>
+			<div  id="cellule_bonus_gauche" class="cellule_bonus">
+						<!-- présentation de l'entité ---------------------------------------------- -->
+						<!--	<div>
 			<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/add/logoVSM.png" width="150px" />
-		</div>
-		<!-- liens vers page php par icones ---------------------------------------------->
-		<p class="T-2">La Vie Sur MAP</p>
-		<span class="interligne_-3 T-5"> Qu'il s'agisse d'architecture ou d'urbanisme, de course ou de célébration, l'étrange tribut des Mapiens s'active souvent en groupe. Et si l'antopologue reste dubitatif, les faits sont pour le moins indéniables: il y a de la vie sur Map. </span>
-	</div>
-	<div  id="cellule_entite_droite" class="cellule_entite">
-				
-	<!-- Début de la Boucle-------------------------------------------------->
-				
-	<?php 
-		$args = array( 'post_type' => 'bonus', 'posts_per_page' => 2, 'order' => 'ASC', 'genre' => 'la-vie-sur-map');
-		$the_query = new WP_Query( $args ); 
-	?>
-	<?php if ( $the_query->have_posts() ) : ?>
-	<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-	<span class="arrow title">
-		<a href="<?php the_permalink(); ?>">
-			<div id="legende_nom" class="cellule_membre_organigramme interligne_-4 T-7"><?php the_title(); ?>		</div>
-			<?php the_post_thumbnail('miniature-tri'); ?>
-		</a>
-	</span>
-	<?php endwhile; ?>
-	<?php else:  ?>
-	<p>
-				<?php _e( 'Sorry, no posts matched your criteria.' ); ?>
-	</p>
-	<?php endif; ?>
-					
-	</div>
+		</div>-->
+						<!-- liens vers page php par icones ---------------------------------------------->
+						<p class="T-2 ">La Vie Sur MAP</p>
+						<span class="interligne_-3 T-5"> Qu'il s'agisse d'architecture ou d'urbanisme, de courses ou de célébrations, l'étrange tribut des Mapiens s'active bien souvent en groupe. </span>
+			</div>
+			<!-- Cellule droite -------------------------------------------------->
+			<div  id="cellule_bonus_droite" class="cellule_bonus">
+						
+						<!-- Début de la Boucle-------------------------------------------------->
+						
+						<?php 
+				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+			$args = array( 'post_type' => 'bonus', 'posts_per_page' => 3, 'order' => 'ASC', 'genre' => 'la-vie-sur-map');
+				$the_query = new WP_Query( $args ); 
+			?>
+						<?php if ( $the_query->have_posts() ) : ?>
+						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+						<a href="<?php the_permalink(); ?>">
+									<div id="visuel_bonus">
+												<?php the_post_thumbnail('miniature-actus'); ?>
+									</div>
+						</a>
+						<?php endwhile; ?>
+						<?php endif; ?>
+						<a href="<?php the_permalink(); ?>">
+									<div id="plus_bonus">
+												<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/add/plus_11.png"/>
+									</div>
+						</a>
+			</div>
 </div>
 
+<!-- boite principale trombino ------------------------------------------------>
+
+<div class="conteneur_AD_bonus fond_gris_fonce texte_blanc">
+			<!-- contenu boite principale ------------------------------------------------>
+			<div  id="cellule_bonus_gauche" class="cellule_bonus">
+						<!-- présentation de l'entité ---------------------------------------------- -->
+						<p class="T-2 ">South Trombino</p>
+						<span class="interligne_-3 T-5">Mapiennes et Mapiens, façon South Park</span>
+			</div>
+			<!-- Droite ------------------------------------------------->
+			<div  id="cellule_bonus_droite" class="cellule_bonus">
+						
+						<!-- Début de la Boucle-------------------------------------------------->
+						
+						<div id="visuel_bonus">
+									<img src="http://mapgroupe.fr/wp-content/uploads/2015/04/Panneau_FINAL.jpg" height="280px">
+						</div>
+			</div>
+			</div>
+			<!-- boite principale film ------------------------------------------------>
+			
+			<div class="conteneur_AD_bonus fond_gris_clair texte_blanc">
+						<!-- contenu boite principale ------------------------------------------------>
+						<a href="http://www.dailymotion.com/video/x268kad_map-harlem-shake_lifestyle" target="_blank">
+									<div  id="cellule_bonus_gauche" class="cellule_bonus">
+												<!-- présentation de l'entité ---------------------------------------------- -->
+												<!-- liens vers page php par icones ---------------------------------------------->
+												<p class="T-2">Harlem Shake</p>
+												<span class="interligne_-3 T-5"> Une petite musique entrainante <br/>
+												et soudain...</span>
+									</div>
+									<div  id="cellule_bonus_droite" class="cellule_bonus">
+												
+												<!-- Début de la Boucle-------------------------------------------------->
+												
+												<div id="visuel_bonus">
+															<img src="http://mapgroupe.fr/wp-content/uploads/2015/04/harlemShake.jpg" height="300px">
+												</div>
+									</div>
+						</a>
+			</div>
+
+			
+			<!-- #content -->
+</div>
 <!-- #primary -->
 
 <?php get_footer(); ?>

@@ -666,6 +666,66 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	width: 100px !important;
 	display: inline-block;
 }
+/* --------------------------- BONUS ----------------------- -*/	
+
+
+.conteneur_AD_bonus
+{
+	width: 100%;
+	display: inline-block;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 10px;
+	z-index: +4;
+}
+.cellule_bonus
+{
+	width: 45%;
+	padding-left: 20px;
+	float: left;
+		display: inline-block;
+
+}
+#cellule_bonus_gauche {
+  width: 20%;
+  max-width: 420px;
+  min-width: 223px;
+  padding-right: 45px;
+  text-align: right;
+ 
+}
+#cellule_bonus_droite {
+  width: 68%;
+  
+}
+#visuel_bonus {
+  display: inline-block;
+  vertical-align: top;
+  width: 27%;
+  min-height: 100px;
+  float: left;
+}
+.titre_bonus
+{
+	width: 300px;
+	display: inline-block;
+	background-color: #FFF;
+	position: relative;
+	left: 0px;
+	top: 64px;
+	z-index: +4;
+}
+#corps_cellule_bonus
+{
+	margin-bottom: 6px;
+	margin-top: 0px;
+	padding-top: 7px;
+}
+#plus_bonus
+{
+	width: 50px !important;
+	display: inline-block;
+}
 /* --------------------------- tableau pour l'affichage de la page des 5 catégories ----------------------- -*/
 /* --------------------------- style PYD ----------------------- -*/
 
@@ -802,7 +862,7 @@ div#tableau_ref_categorie div.cellule
   width: 100%;
   min-width: 200px;
   float: left;
-  height: 417px;
+  height: 314px;
 }
 .cellule_tri_categorie
 {
@@ -820,23 +880,23 @@ div#tableau_ref_categorie div.cellule
 	max-width: 480px;
 }
 #fil_ariane_tri_categorie {
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
   padding-top: 5px;
-  margin-top: 98px;
-  width: 281px;
+  /* margin-top: 10px; */
+  width: 332px;
   text-align: right;
-  float: right;
+  float: left;
+  /* height: 73px !important;*/
 }
-#titre_tri_categorie
-{
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	width: 230px;
-	text-align: right;
-	float: right;
+#titre_tri_categorie {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 250px;
+  text-align: left;
+  float: left;
 }
 /* --------------------------------------------------------------- -*/
 /* ---------------------------  résultat presse ----------------------- -*/
