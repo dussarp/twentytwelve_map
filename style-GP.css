@@ -846,12 +846,11 @@ div#tableau_ref_categorie div.cellule
 	border: 1px none #F00;
 }
 /* --------------------------- tableau pour l'affichage des résultats de choix des categories ----------------------- -*/
-.conteneur_superieur
-{
-	width: 76%;
-	float: left;
-	min-width: 402px;
-/
+.conteneur_superieur {
+  width: 76%;
+  float: left;
+  min-width: 402px;
+  border-bottom: 1px solid #FC0;
 }
 .texte_blanc a
 {
@@ -862,11 +861,10 @@ div#tableau_ref_categorie div.cellule
   width: 100%;
   min-width: 200px;
   float: left;
-  height: 314px;
+  height: 300px;
 }
 .cellule_tri_categorie
 {
-	height: 98px;
 	width: 100%;
 	max-width: 407px;
 	min-width: 188px;
@@ -878,25 +876,29 @@ div#tableau_ref_categorie div.cellule
 {
 	width : 100%;
 	max-width: 480px;
+	clear:both;
+	height:195px;
 }
 #fil_ariane_tri_categorie {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
   padding-top: 5px;
-  /* margin-top: 10px; */
-  width: 332px;
+  width: 97px;
   text-align: right;
   float: left;
-  /* height: 73px !important;*/
+  height: 100px !important;
+  display: inline-block;
+
 }
 #titre_tri_categorie {
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  width: 250px;
+  width: 255px;
   text-align: left;
   float: left;
+  height: 81px;
 }
 /* --------------------------------------------------------------- -*/
 /* ---------------------------  résultat presse ----------------------- -*/
@@ -1243,24 +1245,15 @@ div#image_actu_bandeau
 	margin-left: auto;
 	margin-top: 0px;
 }
-.conteneur_contact
-{
-	width: 100%;
-	padding-top: 30px;
-	padding-bottom: 0px;
-	margin-top: 0px;
-	border-top-width: 2px;
-	border-right-width: 2px;
-	border-bottom-width: 2px;
-	border-left-width: 2px;
-	border-top-style: solid;
-	border-right-style: none;
-	border-bottom-style: none;
-	border-left-style: none;
-	border-top-color: #999;
-	border-right-color: #999;
-	border-bottom-color: #999;
-	border-left-color: #999;
+.conteneur_contact {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #FFF;
+
 }
 #cellule_sommaire
 {
@@ -1284,9 +1277,15 @@ div#image_actu_bandeau
 	font-size: 1rem;
 	line-height: 1.6rem;
 }
-/* ----------------------- Détails fiche référence ------------------------------- -*/
+/* ----------------------- Détails fiche référence / navigaton ------------------------------- -*/
 
 /* FLECHES http://apps.eky.hk/css-triangle-generator/ */
+.ref_nav_avant_apres {
+  height: 50px;
+  width: 100%;
+  clear: both;
+  border-bottom: 1px solid #999;
+}
 
 #position_fleche_droite, #position_fleche_gauche
 {
@@ -1323,6 +1322,23 @@ div#image_actu_bandeau
 	background-repeat: no-repeat;
 	background-position: top center;
 }
+.fleche_droite_gris
+{
+	background-image: url(img/nav/droite_gris.png);
+	width: 50px;
+	height: 50px;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+.fleche_gauche_gris
+{
+	background-image: url(img/nav/gauche_gris.png);
+	width: 50px;
+	height: 50px;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
 .fleche_gauche
 {
 	background-image: url(img/nav/gauche_jaune.png);
