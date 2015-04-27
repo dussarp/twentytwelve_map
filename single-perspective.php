@@ -41,6 +41,7 @@ get_header(); ?>
 	display: none
 }
 
+div.site-content{position:relative;}
 nav.ref_precedent_suivant{position:absolute; top:50%; width:100%;}
 nav.ref_precedent_suivant a{display:block;}
 nav.ref_precedent_suivant .fleche_gauche{position:inherit!important; float:left;}
@@ -139,13 +140,16 @@ nav.ref_precedent_suivant .fleche_droite{position:inherit!important; float:right
  <!-- NAVIGATION précédent / suivant ----------------------------------------------  -->
  <nav class="ref_precedent_suivant">
 	<?php
-	$prev_post = get_previous_post();
+
+	//Only return next element with common taxonomy slug (here sorte)
+	$prev_post = get_adjacent_post( true, '', true, 'sorte' );
 	if($prev_post) {
 	   $prev_title = strip_tags(str_replace('"', '', $prev_post->post_title));
 	   echo '<a rel="prev" href="' . get_permalink($prev_post->ID) . '" title="' . $prev_title. '" class=" "><div id="position_fleche_gauche" class="fleche_gauche"></div></a>';
 	}
 
-	$next_post = get_next_post();
+	//Only return previous element with common taxonomy slug (here sorte)
+	$next_post = get_adjacent_post( true, '', false, 'sorte' );
 	if($next_post) {
 	   $next_title = strip_tags(str_replace('"', '', $next_post->post_title));
 	   echo '<a rel="next" href="' . get_permalink($next_post->ID) . '" title="' . $next_title. '" class=" "><div id="position_fleche_droite" class="fleche_droite"></div></a>';

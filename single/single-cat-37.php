@@ -30,6 +30,12 @@ get_header(); ?>
 }
 /*------------------------------------*/
 
+div.site-content{position:relative;}
+nav.ref_precedent_suivant{position:absolute; top:50%; width:100%;}
+nav.ref_precedent_suivant a{display:block;}
+nav.ref_precedent_suivant .fleche_gauche{position:inherit!important; float:left;}
+nav.ref_precedent_suivant .fleche_droite{position:inherit!important; float:right;}
+
 
 .bloc_visuels_WP
 {

@@ -65,6 +65,7 @@ function lesActus_post_type() {
 				'show_ui' => true,
 				'capability_type' => 'post',
 				'hierarchical' => false,
+				'has_archive' => true,
 				'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'custom-fields', 'comments', 'revisions')
 		));
 		
@@ -82,6 +83,7 @@ function lesPerspectives_post_type() {
 				'show_ui' => true,
 				'capability_type' => 'post',
 				'hierarchical' => false,
+				'has_archive' => true,
 				'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'custom-fields', 'comments', 'revisions')
 		));
 		
