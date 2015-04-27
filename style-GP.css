@@ -905,6 +905,8 @@ div#tableau_ref_categorie div.cellule
 
   margin-right: 0% !important;
   margin-left: 2% !important;
+		padding-top: 20px;
+		padding-bottom: 20px;
 width: 100%;
   background-color: #FFF;
 

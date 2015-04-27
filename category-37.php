@@ -16,12 +16,12 @@ query_posts( $query_string . '&posts_per_page=16' ); if ( have_posts() ) :  whil
 							
 						</div>
 						
-						<div class="cellule_tri_presse fond_gris_clair texte_blanc">
-						<div id="champs" class="T-7 tete texte_jaune" style="text-transform: uppercase;">
+						<div class="cellule_tri_presse ">
+						<div id="champs" class="T-6 tete" style="text-transform: uppercase;">
 									<?php the_field('projet_concerne'); ?>
 						</div>
 									<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
-												<div id="titre_tri_presse" class="T-4">
+												<div id="titre_tri_presse" class="T-3">
 															<?php the_title(); ?>
 												</div>
 												<div id="champs" class="T-5">
