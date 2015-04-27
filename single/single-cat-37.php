@@ -131,115 +131,101 @@ get_header(); ?>
 												<?php the_content(); ?>
 									</div>
 						</div>
-						<script>
-		jQuery(document).ready(function(){
-			$('div.gallery').appendTo('#gallery-info_single').show(); /*transfert gallerie wordpress vers le conteneur */
-		
-		})
-</script>
-						
-						<!-- script pour la navigation -->
-						<?php 
-		function get_the_subcategory()
-		{
-			$categories = get_the_category();
-			// get the sub category if we have them
-			foreach ($categories as $cat)
-			{
-			$parent = $cat->category_parent;
-			if ($parent != 0 )
-			{
-				$sub_cat_ID = $cat->cat_ID;
-			}
-			}
-			if (!$sub_cat_ID)
-			{
-				return false;
-			}
-			else
-			{
-				return $sub_cat_ID;
-			}
-		}
-		
-		function get_next_subcategory_post_link()
-		{
-			$cat_ID = get_the_subcategory();
-			if($cat_ID != false)
-			{
-				$args = array(
-				'numberposts'     => 1000,
-				'category'        => $cat_ID,
-				'orderby'         => 'post_date',
-				'order'           => 'DESC' );
-				$list = get_posts($args);
-				$current = false;
-			foreach($list as $post)
-			{
-				if($current == true)
-				{
-					return get_permalink($post->ID);
-				}
-				if($post->ID == get_the_ID())
-				{
-					$current = true;
-				}
-				else
-				{}
-			}
-			}
-			else
-			{
-				return "#error";
-			}
 
-		}
-		
-		function get_previous_subcategory_post_link()
-		{
-			$cat_ID = get_the_subcategory();
-			$args = array(
-			'numberposts'     => 1000,
-			'category'        => $cat_ID,
-			'orderby'         => 'post_date',
-			'order'           => 'ASC' );
-			$list = get_posts($args);
-			$current = false;
-			foreach($list as $post)
-			{
-				if($current == true)
+		<!-- script pour la navigation -->
+				<?php
+				function get_the_subcategory()
 				{
-					return get_permalink($post->ID);
+					$categories = get_the_category();
+					// get the sub category if we have them
+					foreach ($categories as $cat)
+					{
+						$parent = $cat->category_parent;
+
+						if ($parent != 0 )
+						{
+							$sub_cat_ID = $cat->cat_ID;
+						}else{
+							return $cat->cat_ID;
+						}
+					}	
 				}
-				if($post->ID == get_the_ID())
+				
+				function get_next_subcategory_post_link()
 				{
-					$current = true;
+					$cat_ID = get_the_subcategory();
+					
+						$args = array(
+						'numberposts'     => 1000,
+						'category'        => $cat_ID,
+						'orderby'         => 'post_date',
+						'order'           => 'DESC' );
+						
+						$list = get_posts($args);
+						$current = false;
+						foreach($list as $post)
+						{
+							if($current == true)
+							{
+								return get_permalink($post->ID);
+							}
+							elseif($post->ID == get_the_ID())
+							{
+								$current = true;
+							}
+							else
+							{}
+						}
+						
 				}
-				else
-				{}
-			}
-		}
-	
-	?>
+				
+				function get_previous_subcategory_post_link()
+				{
+					$cat_ID = get_the_subcategory();
+					
+					$args = array(
+					'numberposts'     => 1000,
+					'category'        => $cat_ID,
+					'orderby'         => 'post_date',
+					'order'           => 'ASC' );
+					
+					$list = get_posts($args);
+					$current = false;
+					
+					foreach($list as $post)
+					{
+						if($current == true)
+						{
+							return get_permalink($post->ID);
+						}
+						elseif($post->ID == get_the_ID())
+						{
+							$current = true;
+						}
+						else
+						{}
+					}
+				}
+			
+			?>
 			</div>
+			
 			<!-- NAVIGATION précédent / suivant ----------------------------------------------  -->
 			<nav class="ref_precedent_suivant">
-						<?php
-			$previous = get_previous_subcategory_post_link();
-			$next = get_next_subcategory_post_link();
-		?>
-						<?php if($previous != false) { ?>
-						<a href="<?php echo $previous; ?>">
-									<div id="position_fleche_gauche" class="fleche_gauche">
-									</div>
-						</a>
-						<?php } ?>
-						<?php if($next != false) { ?>
-						<a href="<?php echo $next; ?>">
-									<div id="position_fleche_droite" class="fleche_droite">
-									</div>
-						</a>
-						<?php }  ?>
+				<?php
+					$previous = get_previous_subcategory_post_link();
+					$next = get_next_subcategory_post_link();
+				?>
+				<?php if($previous != false) { ?>
+				<a href="<?php echo $previous; ?>">
+					<div id="position_fleche_gauche" class="fleche_gauche"></div>
+				</a>
+				<?php } ?>
+				<?php if($next != false) { ?>
+				<a href="<?php echo $next; ?>">
+					<div id="position_fleche_droite" class="fleche_droite"></div>
+				</a>
+				<?php }  ?>
 			</nav>
 			<!-- fin navigation -------------------------------- -->
 			

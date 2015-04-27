@@ -8,6 +8,8 @@
  */
 get_header(); ?>
 <style>
+
+.site-content nav{overflow:visible!important;}
 .conteneur_light_box
 {
 	float: left;
