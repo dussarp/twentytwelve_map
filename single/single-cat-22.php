@@ -16,7 +16,7 @@ get_header(); ?>
 </style>
 
 <!-- début de la page ----------------------------------------------- -->
-<div id="primary" class="site-content">single cat-20.php
+<div id="primary" class="site-content">single cat-22.php
 			<!-- section menus REF ----------------------------------------------- -->
 			<nav id="site-navigation" class="main-navigation fond_gris_clair" role="navigation">
 						<button class="menu-toggle">
