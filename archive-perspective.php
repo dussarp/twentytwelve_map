@@ -46,7 +46,13 @@ get_header(); ?>
 			
 				// get the proper type
 				if ($currentSorte == $_GET["type"]){
-					get_template_part( 'content', get_post_format() );
+					if ($_GET["type"] == 'ama'){
+						get_template_part( 'content-archives', get_post_format() );
+					}elseif($_GET["type"] == 'focus'){
+						echo 'focus';
+					}else{
+						echo 'le reste';
+					}
 				}
 
 			endwhile;

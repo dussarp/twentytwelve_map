@@ -31,29 +31,34 @@ get_header(); ?>
 						<span class="interligne_-3 T-5"> Qu'il s'agisse d'architecture ou d'urbanisme, de courses ou de célébrations, l'étrange tribut des Mapiens s'active bien souvent en groupe. </span>
 			</div>
 			<!-- Cellule droite -------------------------------------------------->
-			<div  id="cellule_bonus_droite" class="cellule_bonus">
+			<div  id="cellule_bonus_droite" class="cellule_au-dela">
 						
 						<!-- Début de la Boucle-------------------------------------------------->
 						
-						<?php 
-				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-			$args = array( 'post_type' => 'bonus', 'posts_per_page' => 3, 'order' => 'ASC', 'genre' => 'la-vie-sur-map');
-				$the_query = new WP_Query( $args ); 
-			?>
-						<?php if ( $the_query->have_posts() ) : ?>
-						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-						<a href="<?php the_permalink(); ?>">
-									<div id="visuel_bonus">
-												<?php the_post_thumbnail('miniature-actus'); ?>
-									</div>
-						</a>
-						<?php endwhile; ?>
-						<?php endif; ?>
-						<a href="<?php the_permalink(); ?>">
-									<div id="plus_bonus">
-												<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/add/plus_11.png"/>
-									</div>
-						</a>
+				<?php 
+					$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+					$args = array( 'post_type' => 'bonus', 'posts_per_page' => 3, 'order' => 'ASC', 'genre' => 'la-vie-sur-map');
+					$the_query = new WP_Query( $args ); 
+				?>
+				<?php if ( $the_query->have_posts() ) : ?>
+				<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+					<a href="<?php the_permalink(); ?>" class="item-link">
+						
+						<div id="visuel_au-dela">
+							<figure>
+								<?php the_post_thumbnail('miniature-actus'); ?>
+							</figure>
+							<figcaption><span><?php the_title(); ?></span></figcaption>
+						</div>
+								
+					</a>
+				<?php endwhile; ?>
+				<?php endif; ?>
+				<a href="<?php the_permalink(); ?>">
+					<div id="plus_bonus">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/add/plus_11.png"/>
+					</div>
+				</a>
 			</div>
 </div>
 

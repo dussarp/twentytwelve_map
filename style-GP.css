@@ -669,14 +669,23 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 /* --------------------------- BONUS ----------------------- -*/	
 
 
+.cellule_au-dela a.link-pdf{border:1px red solid; display:inline!important;}
+.cellule_au-dela a.item-link {position:relative; display:block; float:left; width:25%; margin-right:10px; height:265px; overflow:hidden;}
+.cellule_au-dela a.item-link #visuel_au-dela {width:100%;}
+.cellule_au-dela a.item-link figcaption{display:none;}
+.cellule_au-dela a.item-link:hover figcaption{display:block;background: rgba(0,0,0,0.3); position: absolute;top: 0px;height: 100%;color: white; width:100%;}
+.cellule_au-dela a.item-link figcaption span{padding: 20px;display: block;font-size: 21px;}
+.cellule_au-dela a.item-link figcaption span.pdf{display:block; width:100%; position:absolute; bottom:0px; background:#cc2200; text-align:left; color:#fff; font-size:16px;}
+	
+
 .conteneur_AD_bonus
 {
 	width: 100%;
-	display: inline-block;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	padding-left: 10px;
 	z-index: +4;
+	float:left;
 }
 .cellule_bonus
 {

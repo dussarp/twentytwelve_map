@@ -18,14 +18,6 @@
 get_header(); ?>
 <!-- début section centre haut -->
 <!-- boite principale AMA ------------------------------------------------>
-<style>
-	.cellule_au-dela a {position:relative; display:block; float:left; width:25%; margin-right:10px; height:265px; overflow:hidden;}
-	.cellule_au-dela a #visuel_au-dela {width:100%;}
-	.cellule_au-dela a figcaption{display:none;}
-	.cellule_au-dela a:hover figcaption{display:block;background: rgba(0,0,0,0.3); position: absolute;top: 0px;height: 100%;color: white; width:100%;}
-	.cellule_au-dela a figcaption span{padding: 20px;display: block;font-size: 21px;}
-	.cellule_au-dela a figcaption span.pdf{display:block; width:100%; position:absolute; bottom:0px; background:#cc2200; text-align:left; color:#fff; font-size:16px;}
-</style>
 <div class="conteneur_AD fond_jaune">
 			<!-- contenu boite principale ------------------------------------------------>
 			<div  id="cellule_au-dela_gauche" class="cellule_au-dela">
@@ -48,7 +40,7 @@ get_header(); ?>
 				?>
 				<?php if ( $the_query->have_posts() ) : ?>
 				<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-				<a href="<?php the_permalink(); ?>">
+				<a href="<?php the_permalink(); ?>" class="item-link">
 					<div id="visuel_au-dela">
 						<figure>
 							<?php the_post_thumbnail('miniature-actus'); ?>
@@ -92,7 +84,7 @@ get_header(); ?>
 			?>
 						<?php if ( $the_query->have_posts() ) : ?>
 								<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-						<a href="<?php the_permalink(); ?>">
+						<a href="<?php the_permalink(); ?>" class="item-link">
 							<div id="visuel_au-dela">
 								<figure>
 									<?php the_post_thumbnail('miniature-actus'); ?>
@@ -140,12 +132,16 @@ get_header(); ?>
 						))) { ?>
 						
 						<?php foreach ($attachments as $attachment) { ?>
-							<a href="<?php echo wp_get_attachment_url( $attachment->ID ); ?>">
+							<a href="<?php wp_get_attachment_url( $attachment->ID ); ?>" class="item-link">
 								<div id="visuel_au-dela">
 									<figure>
 										<?php the_post_thumbnail('miniature-actus'); ?>
 									</figure>
-									<figcaption><span><?php the_title(); ?></span><span class="pdf"> > PDF document</span></figcaption>
+									<figcaption>
+										<span><?php the_title(); ?></span>
+										<span class="pdf"> > PDF document </span>
+										
+									</figcaption>
 								</div>
 							</a>
 					
@@ -153,7 +149,7 @@ get_header(); ?>
 						
 						<!-- if no attachment -->
 						<?php }else{ ?>
-							<a href="<?php the_permalink(); ?>">
+							<a href="<?php the_permalink(); ?>" class="item-link">
 								<div id="visuel_au-dela">
 									<figure>
 										<?php the_post_thumbnail('miniature-actus'); ?>
