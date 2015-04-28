@@ -23,27 +23,28 @@ get_header(); ?>
 			<!-- nouvelle actu -------------------------- -->
 			<!-- image -------------------------- -->
 			<div id="image_actu_bandeau">
-						<a href="<?php the_permalink(); ?>">
-									<?php the_post_thumbnail('miniature-bandeau'); ?>
-						</a>
+				<a href="<?php the_permalink(); ?>">
+					<?php the_post_thumbnail('miniature-bandeau'); ?>
+				</a>
+				
+				<!-- boite actus principales -------------------------- -->
+				<div class="actus_principales">
+					<!-- totem -------------------------- -->
+					<div class="totem_actu fond_gris_fonce">
+					</div>
+					<div class="titre_actu fond_jaune texte_blanc interligne_-2 T-2">
+								<?php the_title(); ?>
+					</div>
+					<div id="content-actu" class="texte_blanc fond_gris_clair interligne_-3 T-5">
+					<?php the_field('accroche_actus'); ?>
+						<!-- Affiche la Date. -->
+						<p id="date_actu" class="texte_blanc T-6"> mise à jour le
+									<?php the_date(); ?>
+						</p>
+					</div>
+				</div>
 			</div>
-			<!-- boite actus principales -------------------------- -->
-			<div class="actus_principales">
-						<!-- totem -------------------------- -->
-						<div class="totem_actu fond_gris_fonce">
-						</div>
-						<div class="titre_actu fond_jaune texte_blanc interligne_-2 T-2">
-									<?php the_title(); ?>
-						</div>
-						<div id="content-actu" class="texte_blanc fond_gris_clair interligne_-3 T-5">
-								<?php the_field('accroche_actus'); ?>
-									
-									<!-- Affiche la Date. -->
-									<p id="date_actu" class="texte_blanc T-6"> mise à jour le
-												<?php the_date(); ?>
-									</p>
-						</div>
-			</div>
+			
 			<?php endwhile; ?>
 			<?php endif; ?>
 </div>

@@ -1141,7 +1141,8 @@ div#image_actu_bandeau
 .actus_principales
 {
 	position: absolute;
-	top: 155px;
+	top: 0px;
+	z-index:1;
 	left: 0%;
 	width: 410px;
 	margin-top: -11px;
