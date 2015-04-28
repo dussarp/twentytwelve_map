@@ -1296,7 +1296,7 @@ div#image_actu_bandeau
   clear: both;
   border-bottom: 1px solid #999;
 }
-
+.site-content nav{margin:0; padding:0!important;}
 #position_fleche_droite, #position_fleche_gauche
 {
 	position: absolute;
