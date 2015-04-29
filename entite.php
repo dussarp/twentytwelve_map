@@ -153,19 +153,19 @@ get_header(); ?>
 						<a href="">
 						</a>
 			</div>
-			<div  id="cellule_entite_droite" class="cellule_entite">
-						<div id="corps_cellule_entite" class="interligne_-3 T-5">
-									<div id="" class="alignright">
-												<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/images/mapCnous.jpg" width="400px" style="border-radius:3px"/>
-									</div>
-									<div id="" class="T-4 cellule_pellicule">
-												Map,<br/>
+			<div  id="cellule_entite_droite" class="cellule_entite">			
+ <div class="visuel_icone_pellicule">
+ <div id="visuel_film"> <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/images/mapCnous.jpg" width="400px" style="border-radius:5px"/></div>
+
+									
+									 <span class="T-4 interligne_-2">			Map,<br/>
 												c'est nous,<br/>
 												pour vous.<br/>
 												Venez-le découvrir <br/>
 												en image...
-									</div>
-									Fuga. Tis volumenis idestrum, omnisi tecto volorro rersper istrum que iliberion natio. Et ellat quid mod quibusame expliqu untioreptasi cone nus, exceris vid quaest et ma voluptatibus am, ut experum aut eaquam landigent.
+									</span></div>
+						<div id="corps_cellule_entite" class="interligne_-3 T-5">
+													Fuga. Tis volumenis idestrum, omnisi tecto volorro rersper istrum que iliberion natio. Et ellat quid mod quibusame expliqu untioreptasi cone nus, exceris vid quaest et ma voluptatibus am, ut experum aut eaquam landigent.
 									Ta nihillate ipsae corestis re molut que eum quiatendis illa delesti am rem. Recabor escipitatqui que volupta cusandu ntiatem exera volore occatio nsequi in re velist, ute nonsequi ipsam re, adi beriam harci sus doluptiam, cusciis sequiam qui corum fugiatu risquas pelest, untia nit vellacc uptatis ute pora nusam harciumquide dolest vid et laudi utatur, tet, nonem rerepedit qui odiciis alit, omnimo voluptur? Bus porro mi, qui doluptium inci qui sit, conseque quos nonsequ aspicium ad ea cor millab invenis as quiduntusa inctent.
 									Us voluptati odignim inienite percit, seria nonsendenet veligenditae corae pres doluptatet liquia nam expero exped quid quae et exerovid estiur, sinimus molore perovitia dollab il est ute velliti ut exceror essitatem sequaecepre prerfer rovides volora pliae nost audiatiis mi, sequo totasperum quae. Evenis quiamus dent.
 						</div>
