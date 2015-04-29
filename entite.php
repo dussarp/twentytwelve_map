@@ -45,7 +45,7 @@ get_header(); ?>
 															<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/add/organigramme_28.png" width="80%">
 												</div>
 												<div id="fonction_organigramme" class="T-4">
-															Les associés
+															Les associés exécutifs
 												</div>
 									</div>
 									<!-- Début de la Boucle associés------------------------->				
@@ -83,7 +83,7 @@ get_header(); ?>
 															<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/add/organigramme_29.png" width="80%">
 												</div>
 												<div id="fonction_organigramme" class="T-4">
-															Le comité de direction
+															La direction
 												</div>
 									</div>
 									<!-- DIRECTION ------------------------->
@@ -156,7 +156,7 @@ get_header(); ?>
 			<div  id="cellule_entite_droite" class="cellule_entite">
 						<div id="corps_cellule_entite" class="interligne_-3 T-5">
 									<div id="" class="alignright">
-												<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/add/pellicule_25.png" />
+												<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/images/mapCnous.jpg" width="400px" style="border-radius:3px"/>
 									</div>
 									<div id="" class="T-4 cellule_pellicule">
 												Map,<br/>
@@ -175,7 +175,7 @@ get_header(); ?>
 															<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/add/organigramme_28.png" width="80%">
 												</div>
 												<div id="fonction_organigramme" class="T-4">
-															Les associés
+															Les associés exécutifs
 												</div>
 									</div>
 									<!-- ASSOCIES ------------------------->
@@ -212,7 +212,7 @@ get_header(); ?>
 													<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/add/organigramme_29.png" width="80%">
 										</div>
 										<div id="fonction_organigramme" class="T-4">
-													Le comité de direction
+													La direction
 										</div>
 									</div>
 								<!-- DIRECTION ------------------------->
@@ -302,7 +302,7 @@ get_header(); ?>
 															<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/add/organigramme_28.png" width="80%">
 												</div>
 												<div id="fonction_organigramme" class="T-4">
-															Les associés
+															Les associés exécutifs
 												</div>
 									</div>
 									<!-- ASSOCIES ------------------------->
@@ -337,7 +337,7 @@ get_header(); ?>
 															<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/add/organigramme_29.png" width="80%">
 												</div>
 												<div id="fonction_organigramme" class="T-4">
-															Le comité de direction
+															La direction
 												</div>
 									</div>
 								<!-- DIRECTION ------------------------->
