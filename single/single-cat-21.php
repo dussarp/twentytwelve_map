@@ -7,44 +7,25 @@
  * @since Twenty Twelve 1.0
  */
 get_header(); ?>
-<style>
-.conteneur_urba
+<style>.gallery .gallery-icon img { max-width: 100%; }
+#gallery-info-urba #gallery-1 gallery-item {  float: left;
+  margin-top: 10px;
+  text-align: center;
+		border:solid;
+ }
+.gallery-item a
 {
-	position: relative;
-	float: left;
 	width: 100%;
-	height: 1500px;
+	height: 200px;
+	min-width: 200px!important;
+	overflow: hidden;
 }
-#conteneur_fiche
-{
-	z-index: +4;
-	float: left;
-	width: 100%;
-	position: relative;
-	padding: 20px 0px;
-}
-#conteneur_espace
-{
-	height: 800px;
-}
-#conteneur_carte
-{
-	height: 800px;
-	position: fixed!important;
-	top: 0;
-	width: 100%;
-	z-index: 0;
-}
-#conteneur_details_urba
-{
-	height: 400px;
-	z-index: +4;
-	position: absolute;
-	bottom: 0px;
-	width: 100%;
-}
-</style>
 
+.gallery-caption { display: none }</style>
+<script>
+jQuery(document).ready(function(){
+			$('div.bloc-texte-explicatif').appendTo('#programme').show(); /*transfert gallerie wordpress vers le conteneur */})
+			</script>
 <!-- gmap carte google-->
 <script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
 <?php if(get_field('adresse_de_loperation')!= '') : ?>
@@ -115,18 +96,36 @@ get_header(); ?>
 			</nav>
 			<?php while ( have_posts() ) : the_post(); ?>
 			<div class="conteneur_urba">
-						<!-- fiche info -->
-						<div id="conteneur_fiche" class="texte_blanc fond_gris_clair">
-									<?php the_content(); ?>
+						<!-- conteneur des données de la fiche impor de ID  -->
+						
+						<div id="conteneur_fiche" class="fond_gris_fonce">
+									<div class="programme_et_fiche">
+											
+												<!-- fiche du projet -->
+												<div class="fiche_reference_urba">
+															<?php the_content(); ?>
+												</div>	
+									</div>
+									<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full', false);
+	$url = $thumb['0']; ?>
+									<div class="visuel-urba">
+												<img src="<?php echo $url; ?>"  >
+									</div>
 						</div>
 						<!-- carte -->
-						<div id="conteneur_carte" class="fond_gris_fonce texte_jaune">
+						<div id="conteneur_carte">
 						</div>
 						<!-- description -->
-						<div id="conteneur_details_urba" class="texte_blanc fond_gris_clair">
-									détails avec galerie et compagnie
+						<div id="conteneur_details_urba"><div id="programme" class="fond_jaune texte_blanc">
+												</div>
+								<div id="gallery-info-urba">
+												</div>
 						</div>
 			</div>
 			<?php endwhile;?>
+			<script>
+			jQuery(document).ready(function(){
+			$('div.gallery').appendTo('#gallery-info-urba').show(); /*transfert gallerie wordpress vers le conteneur */})
+			</script>
 </div>
 <?php get_footer(); ?>
