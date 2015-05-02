@@ -13,7 +13,11 @@
 */
 
 
-section#haut,footer{position:relative; z-index:1;}
+section#haut, footer
+{
+	position: relative;
+	z-index: 1;
+}
 /* ------------------ ------- GP STYLES------------------------------------------------------------------*/
 /* ----------------------- COMMUN ------------------------------- -*/
 
@@ -453,13 +457,14 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 /* --------------------------- Entité----------------------- -*/	
 
 
-#conteneur_entite
+.conteneur_entite
 {
 	border: 5px none #9F9;
 	width: 100%;
 	display: inline-block;
 	margin-bottom: 200px;
 	margin-top: 20px;
+	border: solid;
 }
 .bande_colo
 {
@@ -469,7 +474,11 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	background-position: -20px;
 	border: 6px none #963;
 }
-.cellule_entite
+.rubrique_entite
+{
+padding-bottom: 80px;
+  height: 400px;}
+/*.cellule_entite
 {
 	background-color: #FFF;
 	width: 45%;
@@ -477,43 +486,61 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	padding-top: 00px;
 	padding-left: 20px;
 	float: left;
+		border:solid;
+}*/
+
+#_1 {    height: 400px;;}
+
+#_3 {  height: 150px;}
+
+#_5 {  height: 180px;}
+
+#_7 {  height: 150px;}
+
+#_9 {  height: 333px;}
+
+#_11 {  height: 333px;}
+
+.cellule_entite_gauche {
+  width: 40%;
+  max-width: 665px;
+  text-align: right;
+  display: inline-block;
+  float: left;
 }
-#cellule_entite_gauche
-{
-	width : 30%;
-	max-width: 420px;
-	padding-right: 100px;
-	text-align: right;
+.cellule_entite_droite {
+  /* width: 50%; */
+  float: left;
+  display: inline-block;
+  padding-left: 61px;
+  max-width: 50%;
+		vertical-align: top;
 }
-#cellule_entite_droite
-{
-	width: 50%;
+
+.corps_cellule_entite {
+  padding-top: 50px;
+  max-width: 570px;
 }
-#corps_cellule_entite_premier
-{
-	margin-bottom: 100px;
-	border: 2px none #903;
-	margin-top: 0px;
-	padding-top: 40px;
-}
-#corps_cellule_entite
-{
-	margin-bottom: 100px;
-	border: 2px none #903;
-	margin-top: 0px;
-}
-#conteneur_A
-{
-	float: left;
-	width: 40%;
-	margin-bottom: 35px;
-	clear: left;
-}
-#conteneur_B
+#groupe_map
 {
 	float: right;
-	width: 56%;
+	width: 35%;
+}
+.espace_avant
+{
+	margin-top: 90px
+}
+.conteneur_A {
+  float: left;
+  display: inline-block;
+  max-width: 306px;
+}
+.conteneur_B
+{
+	float: left;
+	width: 100%;
 	margin-bottom: 35px;
+
 }
 .cellule_liens
 {
@@ -539,20 +566,23 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	width: auto;
 	float: left;
 }
-.visuel_icone_pellicule {
+.visuel_icone_pellicule
+{
 	margin-top: 0px;
 	width: 100%;
 	float: left;
-	clear:right
-	height: 120px;
+ clear:right  height: 120px;
 	display: inline-block;
 	vertical-align: baseline;
 	text-align: left;
 	margin-bottom: 20px;
-
 }
-#visuel_film {float: left; display:inline-block; margin-right: 20px;}
-
+#visuel_film
+{
+	float: left;
+	display: inline-block;
+	margin-right: 20px;
+}
 #lien_organigramme, #lien_trombino
 {
 	vertical-align: bottom;
@@ -566,32 +596,43 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	border: 2px none #903;
 }
 /* --------------------------- portraits miniatures ----------------------- -*/
-
+.organi_vignette
+{
+	float: left;
+}
 .titre_cellule__membre
 {
 	float: left;
 	width: 100%;
+
 }
 .cellule_membre_organigramme
 {
 	float: left;
 	max-width: 65px;
+	margin-right: 6px;
+	text-align: center;
 }
-#icone_fonction
+.icone_fonction
 {
 	width: 20px;
 	margin-right: 2px;
 	float : left;
+	display: inline-block;
 }
-#fonction_organigramme
+#moyens_generaux
+{
+	width: 100px;
+}
+.fonction_organigramme
 {
 	margin-bottom: 18px;
 }
-#icone_fonction, #fonction_organigramme
+.icone_fonction, .fonction_organigramme
 {
 	display : inline-block;
 }
-#legende_nom
+.legende_nom
 {
 	width: 100%;
 	text-align: center;
@@ -665,15 +706,56 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 /* --------------------------- BONUS ----------------------- -*/	
 
 
-.cellule_au-dela a.link-pdf{border:1px red solid; display:inline!important;}
-.cellule_au-dela a.item-link {position:relative; display:block; float:left; width:25%; margin-right:10px; height:265px; overflow:hidden;}
-.cellule_au-dela a.item-link #visuel_au-dela {width:100%;}
-.cellule_au-dela a.item-link figcaption{display:none;}
-.cellule_au-dela a.item-link:hover figcaption{display:block;background: rgba(0,0,0,0.3); position: absolute;top: 0px;height: 100%;color: white; width:100%;}
-.cellule_au-dela a.item-link figcaption span{padding: 20px;display: block;font-size: 21px;}
-.cellule_au-dela a.item-link figcaption span.pdf{display:block; width:100%; position:absolute; bottom:0px; background:#cc2200; text-align:left; color:#fff; font-size:16px;}
-	
-
+.cellule_au-dela a.link-pdf
+{
+	border: 1px red solid;
+	display: inline!important;
+}
+.cellule_au-dela a.item-link
+{
+	position: relative;
+	display: block;
+	float: left;
+	width: 25%;
+	margin-right: 10px;
+	height: 265px;
+	overflow: hidden;
+}
+.cellule_au-dela a.item-link #visuel_au-dela
+{
+	width: 100%;
+}
+.cellule_au-dela a.item-link figcaption
+{
+	display: none;
+}
+.cellule_au-dela a.item-link:hover figcaption
+{
+	display: block;
+	background: rgba(0,0,0,0.3);
+	position: absolute;
+	top: 0px;
+	height: 100%;
+	color: white;
+	width: 100%;
+}
+.cellule_au-dela a.item-link figcaption span
+{
+	padding: 20px;
+	display: block;
+	font-size: 21px;
+}
+.cellule_au-dela a.item-link figcaption span.pdf
+{
+	display: block;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	background: #cc2200;
+	text-align: left;
+	color: #fff;
+	font-size: 16px;
+}
 .conteneur_AD_bonus
 {
 	width: 100%;
@@ -681,34 +763,34 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color= #cfcfcf, Direction=180, S
 	padding-bottom: 30px;
 	padding-left: 10px;
 	z-index: +4;
-	float:left;
+	float: left;
 }
 .cellule_bonus
 {
 	width: 45%;
 	padding-left: 20px;
 	float: left;
-		display: inline-block;
-
+	display: inline-block;
 }
-#cellule_bonus_gauche {
-  width: 20%;
-  max-width: 420px;
-  min-width: 223px;
-  padding-right: 45px;
-  text-align: right;
- 
+#cellule_bonus_gauche
+{
+	width: 20%;
+	max-width: 420px;
+	min-width: 223px;
+	padding-right: 45px;
+	text-align: right;
 }
-#cellule_bonus_droite {
-  width: 68%;
-  
+#cellule_bonus_droite
+{
+	width: 68%;
 }
-#visuel_bonus {
-  display: inline-block;
-  vertical-align: top;
-  width: 27%;
-  min-height: 100px;
-  float: left;
+#visuel_bonus
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 27%;
+	min-height: 100px;
+	float: left;
 }
 .titre_bonus
 {
@@ -851,22 +933,24 @@ div#tableau_ref_categorie div.cellule
 	border: 1px none #F00;
 }
 /* --------------------------- tableau pour l'affichage des résultats de choix des categories ----------------------- -*/
-.conteneur_superieur {
-  width: 76%;
-  float: left;
-  min-width: 402px;
-  border-bottom: 1px solid #FC0;
+.conteneur_superieur
+{
+	width: 76%;
+	float: left;
+	min-width: 402px;
+	border-bottom: 1px solid #FC0;
 }
 .texte_blanc a
 {
 	color: #FFF;
 }
-#conteneur_tri_categorie {
-  max-width: 392px;
-  width: 100%;
-  min-width: 200px;
-  float: left;
-  height: 300px;
+#conteneur_tri_categorie
+{
+	max-width: 392px;
+	width: 100%;
+	min-width: 200px;
+	float: left;
+	height: 300px;
 }
 .cellule_tri_categorie
 {
@@ -881,44 +965,43 @@ div#tableau_ref_categorie div.cellule
 {
 	width : 100%;
 	max-width: 480px;
-	clear:both;
-	height:195px;
+	clear: both;
+	height: 195px;
 }
-#fil_ariane_tri_categorie {
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 5px;
-  width: 97px;
-  text-align: right;
-  float: left;
-  height: 100px !important;
-  display: inline-block;
-
+#fil_ariane_tri_categorie
+{
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 5px;
+	width: 97px;
+	text-align: right;
+	float: left;
+	height: 100px !important;
+	display: inline-block;
 }
-#titre_tri_categorie {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 255px;
-  text-align: left;
-  float: left;
-  height: 81px;
+#titre_tri_categorie
+{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 255px;
+	text-align: left;
+	float: left;
+	height: 81px;
 }
 /* --------------------------------------------------------------- -*/
 /* ---------------------------  résultat presse ----------------------- -*/
 
-#publication.site-content {
-
-  margin-right: 0% !important;
-  margin-left: 2% !important;
-		padding-top: 20px;
-		padding-bottom: 20px;
-width: 100%;
-  background-color: #FFF;
-
+#publication.site-content
+{
+	margin-right: 0% !important;
+	margin-left: 2% !important;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 100%;
+	background-color: #FFF;
 }
-
 .texte_blanc a
 {
 	color: #FFF;
@@ -1138,7 +1221,7 @@ div#image_actu_bandeau
 {
 	position: absolute;
 	top: 0px;
-	z-index:1;
+	z-index: 1;
 	left: 0%;
 	width: 410px;
 	margin-top: -11px;
@@ -1251,15 +1334,15 @@ div#image_actu_bandeau
 	margin-left: auto;
 	margin-top: 0px;
 }
-.conteneur_contact {
-  width: 100%;
-  padding-top: 30px;
-  padding-bottom: 0px;
-  margin-top: 0px;
-  border-top-width: 1px;
-  border-top-style: solid;
-  border-top-color: #FFF;
-
+.conteneur_contact
+{
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 0px;
+	margin-top: 0px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #FFF;
 }
 #cellule_sommaire
 {
@@ -1286,13 +1369,18 @@ div#image_actu_bandeau
 /* ----------------------- Détails fiche référence / navigaton ------------------------------- -*/
 
 /* FLECHES http://apps.eky.hk/css-triangle-generator/ */
-.ref_nav_avant_apres {
-  height: 50px;
-  width: 100%;
-  clear: both;
-  border-bottom: 1px solid #999;
+.ref_nav_avant_apres
+{
+	height: 50px;
+	width: 100%;
+	clear: both;
+	border-bottom: 1px solid #999;
 }
-.site-content nav{margin:0; padding:0!important;}
+.site-content nav
+{
+	margin: 0;
+	padding: 0!important;
+}
 #position_fleche_droite, #position_fleche_gauche
 {
 	position: absolute;
@@ -1344,7 +1432,6 @@ div#image_actu_bandeau
 	background-repeat: no-repeat;
 	background-position: top center;
 }
-
 .fleche_gauche
 {
 	background-image: url(img/nav/gauche_jaune.png);
@@ -1394,17 +1481,22 @@ div#image_actu_bandeau
 
 .titre-op-ration, div.titre-
 {
-	border: 3px none #F00;
 	padding: 10px;
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: 0px;
-	background-color: #FC0;
+	background-color: #666;
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
 	border-bottom-right-radius: 0px;
 	border-bottom-left-radius: 0px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-top-color: #F00;
+	border-right-color: #F00;
+	border-bottom-color: #666;
+	border-left-color: #F00;
 }
 .d-tails, .Bloc-de-texte-standard/* conteneur pour les détails ----------------------------------------------------------------------------- */
 {
