@@ -172,7 +172,7 @@ div#static-description
 <!-- début de la page ----------------------------------------------- -->
 <div id="primary" class="site-content">
 			<!-- section menus REF ----------------------------------------------- -->
-			<nav id="site-navigation" class="main-navigation fond_gris_clair" role="navigation">
+			<nav id="site-navigation" class="main-navigation fond_gris_clair" role="navigation">single cat 20
 						<button class="menu-toggle">
 						<?php _e( 'Menu', 'twentytwelve' ); ?>
 						</button>

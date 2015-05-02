@@ -8,167 +8,37 @@
  */
 get_header(); ?>
 <style>
-.site-content nav{overflow:visible!important;}
+.gallery .gallery-icon img { max-width: 100%; }
 
-.conteneur_light_box
-{
-	float: left;
-	width: 70%;
-	max-width: 822px;
-	margin-left: 290px;
-	margin-top: 20px;
-}
-#visuel_carte
-{
-	display: inline-block;
-	width: 50%;
-	max-width : 400px;
-	margin-right: 20px;
-}
-.conteneur_visuels
-{
-	display: inline-block;
-	vertical-align: top;
-	float: left;
-}
-.visuel_light_box
-{
-	width: 217px;
-	vertical-align: top;
-	float: left;
-	display: block;
-	clear: right;
-}
-#gallery-info
-{
-  float: right;
-  width: 30%;
-  display: inline-block;
-  max-height: 400px !important;
-
-}
-.gallery-item
-{
-  /* float: left; */
-  margin-top: 0px!important;
-  /* text-align: center; */
-  /* width: 33.3333%!important; */
-  display: inline-block;
-}
-.gallery-item img
-{
-	border: none!important;
-	padding: 0px!important;
-	width: 100%!important
-}
-.gallery .gallery-icon img
-{
-	max-width: 100%;
-}
 .gallery-item a
 {
 	width: 100%;
 	height: 200px;
-	min-width:200px!important;
+	min-width: 200px!important;
 	overflow: hidden;
 }
 
-.gallery-caption
-{
-	display: none
-}
+.gallery-caption { display: none }
+
 .fiche_reference
 {
 	z-index: 10!important;
 	position: fixed;
-
 	top: 275px;
 	left: 70px;
 	width: 240px;
 	margin: 0px;
 	float: right;
 }
-.conteneur_fiche_details
-{
-	float: left;
-	width: 100%!important;
-	/* padding-bottom: 10px; */
-  /* padding-top: 60px; */
-  /* border: 1px solid #666; */
-	background-color: #999;
-}
 
-div.ref-content
-{
-	float: left;
-	position: relative;
-	width: 100%;
-}
-div.ref-background
-{
-	position: relative;
-	float: left;
-	width: 100%
-}
-div.ref-background img
-{
-	width: 100%;
-}
-div.ref-description
-{
-	position: fixed;
-	top: 200px;
-	left: 20px;
-	z-index: 10!important;
-	width: 30%;
-}
 div.ref-carte
 {
-  float: right;
-  width: 40%;
-  height: 100%;
-  margin-top: 0px;
-  /* margin-right: 10%; */
-  margin-bottom: 20px;
-  /* margin-left: 20px; */
+	float: right;
+	width: 40%;
+	height: 100%;
+	margin-top: 0px;
+	margin-bottom: 20px;
 }
-
-div.gallery
-{
-
-}
-.parallax-window
-{
-	min-height: 1200px;
-	background: transparent;
-	position: relative;
-	float: left;
-	width: 100%;
-}
-.parallax-mirror
-{
-	z-index: 10!important
-}
-div#static-description
-{
-	float: left;
-	width: 30% !important;
-	padding-top: 0px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 0px;
-	background-color: #999;
-	
-}
-#static-description fiche_reference d-tails {
-  height: 260px;
-  /* width: 100%; */
-  border: 2px none #930;
-  background-color: #FFF;
-  padding: 10px;
-  margin-bottom: 0px;
-}
-
 </style>
 
 <!-- début de la page ----------------------------------------------- -->
@@ -193,9 +63,10 @@ div#static-description
 									
 									<!-- reference ---------------------------------------------- -->
 									
-							<div class="ref-content">
+									<div class="ref-content">
 												<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full', false);
-	$url = $thumb['0']; ?><!-- parallaxe ---------------------------------------------- -->
+	$url = $thumb['0']; ?>
+												<!-- parallaxe ---------------------------------------------- -->
 												<div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo $url; ?>" data-speed="0.4">
 												</div>
 												<!-- fin parallaxe ---------------------------------------------- -->
@@ -283,7 +154,6 @@ div#static-description
 			},{offset:'bottom-in-view'});
 		})
 </script>
-
 												<?php 
 		function get_the_subcategory()
 		{
@@ -366,7 +236,7 @@ div#static-description
 		}
 	
 	?>
-									</div>		
+									</div>
 									<!-- NAVIGATION précédent / suivant ----------------------------------------------  -->
 									<nav class="ref_precedent_suivant">
 												<?php
