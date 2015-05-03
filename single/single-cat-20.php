@@ -7,209 +7,31 @@
  * @since Twenty Twelve 1.0
  */
 get_header(); ?>
-<style>
-.conteneur_light_box
-{
-	float: left;
-	width: 70%;
-	max-width: 822px;
-	margin-left: 290px;
-	margin-top: 20px;
-}
-#visuel_carte
-{
-	display: inline-block;
-	width: 50%;
-	max-width : 400px;
-	margin-right: 20px;
-}
-.conteneur_visuels
-{
-	display: inline-block;
-	vertical-align: top;
-	float: left;
-}
-.visuel_light_box
-{
-	width: 217px;
-	vertical-align: top;
-	float: left;
-	display: block;
-	clear: right;
-}
-#gallery-info
-{
-  float: right;
-  max-width: 400px!important;
-  width: 35%;
-  display: inline-block;
-  max-height: 400px !important;
-
-}
-.gallery-item
-{
-  /* float: left; */
-  margin-top: 0px!important;
-  /* text-align: center; */
-  /* width: 33.3333%!important; */
-  display: inline-block;
-}
-.gallery-item img
-{
-	border: none!important;
-	padding: 0px!important;
-	width: 100%!important
-}
-.gallery .gallery-icon img
-{
-	max-width: 100%;
-}
+<style>.gallery .gallery-icon img { max-width: 100%; }
+#gallery-info-urba #gallery-1 gallery-item {  float: left;
+  margin-top: 10px;
+  text-align: center;
+		border:solid;
+ }
 .gallery-item a
 {
-	width: 100%;	height: 200px;
+	width: 100%;
+	height: 200px;
+	min-width: 200px!important;
 	overflow: hidden;
 }
 
-.gallery-caption
-{
-	display: none
-}
-.fiche_reference
-{
-	z-index: 10!important;
-	position: fixed;
-
-	top: 275px;
-	left: 70px;
-	width: 240px;
-	margin: 0px;
-	float: right;
-}
-.conteneur_fiche_details
-{
-	float: left;
-	width: 100%!important;
-	/* padding-bottom: 10px; */
-  /* padding-top: 60px; */
-  /* border: 1px solid #666; */
-	height: 400px !important;
-	background-color: #999;
-}
-
-div.ref-content
-{
-	float: left;
-	position: relative;
-	width: 100%;
-}
-div.ref-background
-{
-	position: relative;
-	float: left;
-	width: 100%
-}
-div.ref-background img
-{
-	width: 100%;
-}
-div.ref-description
-{
-	position: fixed;
-	top: 200px;
-	left: 20px;
-	z-index: 10!important;
-	width: 30%;
-}
-div.ref-carte
-{
-  float: right;
-  width: 48%;
-  height: 400px;
-  margin-top: 0px;
-  /* margin-right: 10%; */
-  margin-bottom: 20px;
-  /* margin-left: 20px; */
-}
-
-div.gallery
-{
-
-}
-.parallax-window
-{
-	min-height: 1200px;
-	background: transparent;
-	position: relative;
-	float: left;
-	width: 100%;
-}
-.parallax-mirror
-{
-	z-index: 10!important
-}
-div#static-description
-{
-	float: left;
-	width: 27% !important;
-	padding-top: 0px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 0px;
-	background-color: #999;
-	
-}
-#static-description fiche_reference d-tails {
-  height: 260px;
-  /* width: 100%; */
-  border: 2px none #930;
-  background-color: #FFF;
-  padding: 10px;
-  margin-bottom: 0px;
-}
-
-</style>
-
-<!-- début de la page ----------------------------------------------- -->
-<div id="primary" class="site-content">
-			<!-- section menus REF ----------------------------------------------- -->
-			<nav id="site-navigation" class="main-navigation fond_gris_clair" role="navigation">single cat 20
-						<button class="menu-toggle">
-						<?php _e( 'Menu', 'twentytwelve' ); ?>
-						</button>
-						<a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>">
-									<?php _e( 'Skip to content', 'twentytwelve' ); ?>
-						</a>
-						<?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_class' => 'nav-menu' ) ); ?>
-			</nav>
-			<!-- fin menu REF ---------------------------------------------- single-cat-18.php-->URBA single cat 20
-			<div id="content" role="main">
-						<?php while ( have_posts() ) : the_post(); ?>
-						<!-- script Google -->
-						<script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
-						<!-- début du contenu de la page ---------------------------------------------- -->
-						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-									
-									<!-- reference ---------------------------------------------- -->
-									
-							<div class="ref-content">
-												<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full', false);
-	$url = $thumb['0']; ?><!-- parallaxe ---------------------------------------------- -->
-												<div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo $url; ?>" data-speed="0.4">
-												</div>
-												<!-- fin parallaxe ---------------------------------------------- -->
-												<!-- import html de la reference depuis ID ---------------------------------------------- -->
-												<div class="fiche_reference">
-															<?php the_content(); ?>
-												</div>
-									</div>
-									<!-- fin import html de la reference depuis ID ---------------------------------------------- -->
-									<!-- détails de la fiche : carte, photos, etc ---------------------------------------------- -->
-									<div class="conteneur_fiche_details">
-												<!-- appel de la carte ---------------------------------------------- -->
-												<?php if(get_field('adresse_de_loperation')!= '') : ?>
-												<script>
+.gallery-caption { display: none }</style>
+<script>
+jQuery(document).ready(function(){
+			$('div.bloc-texte-explicatif').appendTo('#programme').show(); /*transfert gallerie wordpress vers le conteneur */})
+			</script>
+<!-- gmap carte google-->
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+<?php if(get_field('adresse_de_loperation')!= '') : ?>
+<script>
 		jQuery(document).ready(function(){
-			$(".ref-carte").gmap3({
+			$("#conteneur_carte").gmap3({
 				marker:{
 				  address: "<?php echo get_field('adresse_de_loperation'); ?>",
 				  data: "<?php the_title(); ?>",
@@ -242,155 +64,69 @@ div#static-description
 				},
 				map:{
 				  options:{
-					zoom: 16
+					zoom: 16,
+					scrollwheel: false
 				  }
 				}, 
 				
 			});
+			
+			//waypoint
+			$('#conteneur_carte').waypoint(function(direction){ 
+			   if(direction == 'down') {
+					
+				}else{}
+			},{offset:'bottom-in-view'});
 		})
 
 	</script>
-												<!-- carte ---------------------------------------------- -->
-												<?php endif;?>
-												<div id="static-description">
-												</div>
-												<?php if(get_field('adresse_de_loperation')!= '') : ?>
-												<div class="ref-carte">
-												</div>
-												<div id="gallery-info">
-												</div>
-												<?php endif;?>
-												<script>
-		jQuery(document).ready(function(){
-			$('div.gallery').appendTo('#gallery-info').show(); /*transfert gallerie wordpress vers le conteneur */
-			 $('html, body').animate({
-				scrollTop:190
-			}, 500);
-			$('#static-description').width( $('.fiche_reference').width());
-			$('#static-description').height( $('.fiche_reference').height());
-			$('.conteneur_fiche_details').height( $('.fiche_reference').height());
-		
-			$('.ref-carte').waypoint(function(direction){ // no offset on the way down
-			   if(direction == 'down') {
-				$('.fiche_reference').appendTo('#static-description').show().css({'position':'initial','width':'100%'});
-				}else{
-				   $('.fiche_reference').css({'position':'fixed','width':'240px'}).appendTo('#static-description').show();
-				   //$('#static-description').html('');
-				}
-			},{offset:'bottom-in-view'});
-		})
-</script>
+<?php endif;?>
 
-												<?php 
-		function get_the_subcategory()
-		{
-			$categories = get_the_category();
-			// get the sub category if we have them
-			foreach ($categories as $cat)
-			{
-			$parent = $cat->category_parent;
-			if ($parent != 0 )
-			{
-				$sub_cat_ID = $cat->cat_ID;
-			}
-			}
-			if (!$sub_cat_ID)
-			{
-				return false;
-			}
-			else
-			{
-				return $sub_cat_ID;
-			}
-		}
-		
-		function get_next_subcategory_post_link()
-		{
-			$cat_ID = get_the_subcategory();
-			if($cat_ID != false)
-			{
-				$args = array(
-				'numberposts'     => 1000,
-				'category'        => $cat_ID,
-				'orderby'         => 'post_date',
-				'order'           => 'DESC' );
-				$list = get_posts($args);
-				$current = false;
-			foreach($list as $post)
-			{
-				if($current == true)
-				{
-					return get_permalink($post->ID);
-				}
-				if($post->ID == get_the_ID())
-				{
-					$current = true;
-				}
-				else
-				{}
-			}
-			}
-			else
-			{
-				return "#error";
-			}
-
-		}
-		
-		function get_previous_subcategory_post_link()
-		{
-			$cat_ID = get_the_subcategory();
-			$args = array(
-			'numberposts'     => 1000,
-			'category'        => $cat_ID,
-			'orderby'         => 'post_date',
-			'order'           => 'ASC' );
-			$list = get_posts($args);
-			$current = false;
-			foreach($list as $post)
-			{
-				if($current == true)
-				{
-					return get_permalink($post->ID);
-				}
-				if($post->ID == get_the_ID())
-				{
-					$current = true;
-				}
-				else
-				{}
-			}
-		}
-	
-	?>
-									</div>		
-									<!-- NAVIGATION précédent / suivant ----------------------------------------------  -->
-									<nav class="ref_precedent_suivant">
-												<?php
-			$previous = get_previous_subcategory_post_link();
-			$next = get_next_subcategory_post_link();
-		?>
-												<?php if($previous != false) { ?>
-												<a href="<?php echo $previous; ?>">
-															<div id="position_fleche_gauche" class="fleche_gauche">
-															</div>
-												</a>
-												<?php } ?>
-												<?php if($next != false) { ?>
-												<a href="<?php echo $next; ?>">
-															<div id="position_fleche_droite" class="fleche_droite">
-															</div>
-												</a>
-												<?php }  ?>
-									</nav>
-									<!-- fin navigation -------------------------------- -->
-									<!-- fil d'Ariane  ----------------------------------------------  -->
-						</article>
-						<!----appel du content-ref pour mise en page personnalisée --->
+<!-- début de la page -- -->
+<div id="primary" class="site-content">
+			<!-- section menus REF -- -->
+			<nav id="site-navigation" class="main-navigation fond_gris_clair" role="navigation">
+						<button class="menu-toggle">
+						<?php _e( 'Menu', 'twentytwelve' ); ?>
+						</button>
+						<a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>">
+									<?php _e( 'Skip to content', 'twentytwelve' ); ?>
+						</a>
+						<?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_class' => 'nav-menu' ) ); ?>
+			</nav>
+			<?php while ( have_posts() ) : the_post(); ?>
+			<div class="conteneur_urba">
+						<!-- conteneur des données de la fiche impor de ID  -->
 						
-						<?php endwhile; // end of the loop. ?>
+						<div id="conteneur_fiche" class="fond_gris_fonce">
+									<div class="programme_et_fiche">
+											
+												<!-- fiche du projet -->
+												<div class="fiche_reference_urba">
+															<?php the_content(); ?>
+												</div>
+												<div id="programme" class="fond_jaune texte_blanc">
+												</div>	
+									</div>
+									<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full', false);
+	$url = $thumb['0']; ?>
+									<div class="visuel-urba">
+												<img src="<?php echo $url; ?>"  >
+									</div>
+						</div>
+						<!-- carte -->
+						<div id="conteneur_carte">
+						</div>
+						<!-- description -->
+						<div id="conteneur_details_urba">
+								<div id="gallery-info-urba">
+												</div>
+						</div>
 			</div>
-			<!-- #content -->
-</div>
+			<?php endwhile;?>
+			<script>
+			jQuery(document).ready(function(){
+			$('div.gallery').appendTo('#gallery-info-urba').show(); /*transfert gallerie wordpress vers le conteneur */})
+			</script>
 </div>
 <?php get_footer(); ?>

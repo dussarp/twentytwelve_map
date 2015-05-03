@@ -498,6 +498,7 @@ p.T-5 { padding-left: 10px; }
 #_5 { height: 180px; }
 
 #_7 { height: 150px; }
+#_7_map { height: 736px; }
 
 #_9 { height: 333px; }
 
@@ -511,7 +512,7 @@ p.T-5 { padding-left: 10px; }
 	display: inline-block;
 	float: left;
 }
-
+#equipe_map {width:40%;}
 .cellule_entite_droite
 { /* width: 50%; */
 	float: left;
@@ -524,7 +525,7 @@ p.T-5 { padding-left: 10px; }
 .corps_cellule_entite
 {
 	padding-top: 50px;
-	max-width: 570px;
+	max-width: 610px;
 }
 
 #groupe_map
@@ -1114,28 +1115,33 @@ div#static-description
 	width: 100%;
 }
 
-.programme_et_fiche, .visuel-urba
-{
-	display: inline-block;
-	vertical-align: top;
+.programme_et_fiche {
+  width: 38%;
+  margin-left: 10px;
+  float: right;
 }
 
 .programme_et_fiche { width: 38%; margin-left:10px; }
 
-.fiche_reference_urba { width: 100%; }
+.fiche_reference_urba {
+  /* width: 100%; */
+  margin-right: 5px;}
 
-#programme
-{
-	width: 18%;
-	min-width:200px;
 
-	border-radius: 5px;
-	margin-top: 10px;
-	padding-top: 10px;
-	padding-right: 0px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	display: inline-block;
+
+.fiche_reference_urba .titre-op-ration {
+	background-color:#FFC700; border-radius:5px;}
+
+#programme {
+  width: 95%;
+  min-width: 200px;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  display: inline-block
 }
 
 .titre-texte-urba
@@ -1934,10 +1940,10 @@ div#image_actu_bandeau
 	font-family: ReplicaProRegular;
 	color: #FFF;
 	font-size: 0.8rem;
-	line-height: 0.5rem;
+	line-height: 1rem;
 	margin-top: 0px;
 	text-transform: uppercase;
-	letter-spacing : 1 rem;
+	letter-spacing : 0.05rem;
 }
 
 /* urbanisme */

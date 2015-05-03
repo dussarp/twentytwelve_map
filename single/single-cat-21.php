@@ -104,6 +104,8 @@ jQuery(document).ready(function(){
 												<!-- fiche du projet -->
 												<div class="fiche_reference_urba">
 															<?php the_content(); ?>
+												</div>
+												<div id="programme" class="fond_jaune texte_blanc">
 												</div>	
 									</div>
 									<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full', false);
@@ -116,8 +118,7 @@ jQuery(document).ready(function(){
 						<div id="conteneur_carte">
 						</div>
 						<!-- description -->
-						<div id="conteneur_details_urba"><div id="programme" class="fond_jaune texte_blanc">
-												</div>
+						<div id="conteneur_details_urba">
 								<div id="gallery-info-urba">
 												</div>
 						</div>
