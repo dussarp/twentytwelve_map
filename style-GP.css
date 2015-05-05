@@ -15,11 +15,21 @@
  Text Domain:  twenty-twelve-child
 */
 
+/* prehome */
 
 
+.conteneur_gm_prehome { width: 289px }
 
+.conteneur_logos_agence_prehome { width: 600px; }
 
+.conteneur_logos_agence_prehome, .conteneur_gm_prehome
+{
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 85px;
+}
 
+/* --------------------------------*/
 
 section#haut, footer
 {
@@ -28,11 +38,6 @@ section#haut, footer
 }
 
 /* -- COMMUN -- *//* -- fond pour la l'affichage de la page category.php -- */
-
-
-
-
-
 
 
 
@@ -49,11 +54,6 @@ section#haut, footer
 
 /* positionnement du conteneur principal */
 /* conteneur associé à la sidebar -- */
-
-
-
-
-
 
 
 #secondary
@@ -77,11 +77,6 @@ section#haut, footer
 .cellule { display: table-cell; }
 
 /* -- textes -- */
-
-
-
-
-
 
 
 .texte_courant
@@ -112,11 +107,6 @@ section#haut, footer
 .interligne_-4 { line-height: 1.0rem; }
 
 /*--- titres - */
-
-
-
-
-
 
 
 .tete { margin-top: 8px; }
@@ -169,11 +159,6 @@ section#haut, footer
 p.T-5 { padding-left: 10px; }
 
 /*--- fond - */
-
-
-
-
-
 
 
 .fond_blanc { background-color: #FFF; }
@@ -284,11 +269,6 @@ p.T-5 { padding-left: 10px; }
 
 /* -- menu navigation icone -- */
 
-
-
-
-
-
 .centre_menu
 {
 	width: 450px;
@@ -393,11 +373,6 @@ p.T-5 { padding-left: 10px; }
 
 /* --- menu icone centrage ---- */
 
-
-
-
-
-
 .map_logo
 {
 	width: 118px; /* height: 150px; */
@@ -411,11 +386,6 @@ p.T-5 { padding-left: 10px; }
 }
 
 /* ---- */
-
-
-
-
-
 
 .section_centre_haut
 {
@@ -459,13 +429,7 @@ p.T-5 { padding-left: 10px; }
 
 /* -- */
 
-/* --- Entités--- */	
-
-
-
-
-
-.conteneur_entite
+/* --- Entités--- */	.conteneur_entite
 {
 	border: 5px none #9F9;
 	width: 100%;
@@ -498,6 +462,7 @@ p.T-5 { padding-left: 10px; }
 #_5 { height: 180px; }
 
 #_7 { height: 150px; }
+
 #_7_map { height: 736px; }
 
 #_9 { height: 333px; }
@@ -512,7 +477,9 @@ p.T-5 { padding-left: 10px; }
 	display: inline-block;
 	float: left;
 }
-#equipe_map {width:40%;}
+
+#equipe_map { width: 40%; }
+
 .cellule_entite_droite
 { /* width: 50%; */
 	float: left;
@@ -604,11 +571,6 @@ clear:right height: 120px;
 
 /* --- portraits miniatures --- */
 
-
-
-
-
-
 .organi_vignette { float: left; }
 
 .titre_cellule__membre
@@ -653,11 +615,6 @@ clear:right height: 120px;
 }
 
 /* --- Au-delà --- */
-
-
-
-
-
 
 .conteneur_AD
 {
@@ -722,11 +679,6 @@ clear:right height: 120px;
 }
 
 /* --- BONUS --- */
-
-
-
-
-
 
 .cellule_au-dela a.link-pdf
 {
@@ -847,11 +799,6 @@ clear:right height: 120px;
 
 /* --- style PYD --- */
 
-
-
-
-
-
 div#accroche
 {
 	font-size: 24px;
@@ -896,13 +843,7 @@ div#tableau_ref_categorie div.cellule { width: 33%; }
 
 /* --- fin --- */
 
-/* -- single cat 18 ( fiche architecture ) -- */
-
-
-
-
-
-.site-content nav { overflow: visible!important; }
+/* -- single cat 18 ( fiche architecture ) -- */.site-content nav { overflow: visible!important; }
 
 .conteneur_light_box
 {
@@ -944,6 +885,7 @@ div#tableau_ref_categorie div.cellule { width: 33%; }
 	display: inline-block;
 	max-height: 400px !important;
 }
+
 #gallery-info-urba
 {
 	float: right;
@@ -1076,6 +1018,8 @@ div#static-description
 
 
 
+
+
 .conteneur_urba/* conteneur général */
 {
 	position: relative;
@@ -1116,33 +1060,38 @@ div#static-description
 	width: 100%;
 }
 
-.programme_et_fiche {
-  width: 38%;
-  margin-left: 10px;
-  float: right;
+.programme_et_fiche
+{
+	width: 38%;
+	margin-left: 10px;
+	float: right;
 }
 
-.programme_et_fiche { width: 38%; margin-left:10px; }
+.programme_et_fiche
+{
+	width: 38%;
+	margin-left: 10px;
+}
 
-.fiche_reference_urba {
-  /* width: 100%; */
-  margin-right: 5px;}
+.fiche_reference_urba { /* width: 100%; */ margin-right: 5px; }
 
+.fiche_reference_urba .titre-op-ration
+{
+	background-color: #FFC700;
+	border-radius: 5px;
+}
 
-
-.fiche_reference_urba .titre-op-ration {
-	background-color:#FFC700; border-radius:5px;}
-
-#programme {
-  width: 95%;
-  min-width: 200px;
-  border-radius: 5px;
-  margin-top: 10px;
-  padding-top: 10px;
-  padding-right: 0px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  display: inline-block
+#programme
+{
+	width: 95%;
+	min-width: 200px;
+	border-radius: 5px;
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	display: inline-block
 }
 
 .titre-texte-urba
@@ -1165,23 +1114,17 @@ div#static-description
 {
 	width: 60%;
 	float: right;
-	margin-right:10px;
-
+	margin-right: 10px;
 }
 
 .visuel-urba img
 {
 	width: 100%;
-	border-radius: 6px!important;;
+	border-radius: 6px!important;
+	;
 }
 
-/*-----------------------------------------------------------------*/
-
-
-
-
-
-.titre_ref_enfant:hover
+/*-----------------------------------------------------------------*/.titre_ref_enfant:hover
 {
 	color: #F90;
 	background-color: rgba(255,255,255,1)
@@ -1254,11 +1197,6 @@ div#static-description
 
 /* --- tableau pour l'affichage des résultats de choix des categories --- */
 
-
-
-
-
-
 .conteneur_superieur
 {
 	width: 76%;
@@ -1320,13 +1258,7 @@ div#static-description
 	height: 81px;
 }/* ---- */
 
-/* ---  résultat presse --- */
-
-
-
-
-
-#publication.site-content
+/* ---  résultat presse --- */#publication.site-content
 {
 	margin-right: 0% !important;
 	margin-left: 2% !important;
@@ -1375,11 +1307,6 @@ div.conteneur_tri_presse
 
 /* ---- */
 
-
-
-
-
-
 .suite_art
 {
 	border: 2px solid #0F0;
@@ -1387,11 +1314,6 @@ div.conteneur_tri_presse
 }
 
 /* ---- */
-
-
-
-
-
 
 .article_secondaire
 {
@@ -1431,11 +1353,6 @@ div.conteneur_tri_presse
 }
 
 /* ---- */
-
-
-
-
-
 
 .titre_niv_00
 {
@@ -1513,11 +1430,6 @@ div.conteneur_tri_presse
 
 /* ---- */
 
-
-
-
-
-
 .menu_haut
 {
 	font-size: 0.8em;
@@ -1556,11 +1468,6 @@ div.conteneur_tri_presse
 
 /* - actus principales --- */
 
-
-
-
-
-
 div#image_actu_bandeau
 {
 	position: relative;
@@ -1571,11 +1478,10 @@ div#image_actu_bandeau
 .actus_principales
 {
 	position: absolute;
-	top: 0px;
+	top: 37px;
 	z-index: 1;
-	left: 0%;
-	width: 410px;
-	margin-top: -11px;
+	left: 2%;
+	width: 425px;
 }
 
 .totem_actu
@@ -1610,12 +1516,14 @@ div#image_actu_bandeau
 {
 	font-family: "ITCAvantGardeStd-Bk_0";
 	border: 1px none #C00;
-	padding-top: 107px;
+	padding-top: 60px;
 	border-radius: 5px;
 	text-align: right;
 	padding-right: 14px;
 	padding-bottom: 0px;
 	padding-left: 10px;
+	height: 100px;
+	margin-top: 39px;
 }
 
 #date_actu
@@ -1626,11 +1534,6 @@ div#image_actu_bandeau
 }
 
 /* -  anciennes actus--- */
-
-
-
-
-
 
 #conteneur_anciennes_actus
 {
@@ -1666,11 +1569,6 @@ div#image_actu_bandeau
 #tableau_anciennes_actus, #titre_anciennes_actus, #date_anciennes_actus, .cellule_anciennes_actus, #conteneur_anciennes_actus { border: 1px none #009; }
 
 /* - sommaire --- */
-
-
-
-
-
 
 .conteneur_sommaire
 {
@@ -1730,11 +1628,6 @@ div#image_actu_bandeau
 /* -- Détails fiche référence / navigaton -- */
 /* FLECHES http://apps.eky.hk/css-triangle-generator/ */
 
-
-
-
-
-
 .ref_nav_avant_apres
 {
 	height: 50px;
@@ -1774,7 +1667,7 @@ div#image_actu_bandeau
 	height: 50px;
 	background-repeat: no-repeat;
 	background-position: top center;
-	opacity:0.5;
+	opacity: 0.5;
 }
 
 .fleche_droite_gris
@@ -1802,20 +1695,12 @@ div#image_actu_bandeau
 	height: 50px;
 	background-repeat: no-repeat;
 	background-position: top center;
-		opacity:0.5;
+	opacity: 0.5;
 }
-.fleche_gauche:hover, .fleche_droite:hover, .fiche_reference:hover {		opacity:1;}
 
-
-
-
+.fleche_gauche:hover, .fleche_droite:hover, .fiche_reference:hover { opacity: 1; }
 
 /* -- RECHERCHES --- */
-
-
-
-
-
 
 #conteneur_recherche
 {
@@ -1829,6 +1714,8 @@ div#image_actu_bandeau
 /* ---Indesign SYTLES -- */
 
 /* --- div image - */
+
+
 
 
 
@@ -1848,11 +1735,6 @@ div#image_actu_bandeau
 
 /* div slide image -- */
 
-
-
-
-
-
 .fiche_reference
 {
 	position: fixed;
@@ -1865,17 +1747,10 @@ div#image_actu_bandeau
 
 /* conteneur pour le titre -- */
 
-
-
-
-
-
 .titre-op-ration, div.titre-
 {
 	padding: 10px;
-
 	background-color: #666;
-
 }
 
 .d-tails, .Bloc-de-texte-standard
@@ -1896,11 +1771,6 @@ div#image_actu_bandeau
 }/* conteneur pour le programme -- */
 
 /* textes des fiches -- */
-
-
-
-
-
 
 .Titre-verso, .Titre-couv, .URBA-titre-verso
 {
@@ -1959,11 +1829,13 @@ div#image_actu_bandeau
 
 
 
+
+
 .titre-texte-urba { color: #FFF; }
 
-.liste-urba-niv-0 {  }
+.liste-urba-niv-0 { }
 
-.puces-niv-0 {  }
+.puces-niv-0 { }
 
 body.archive category category-01_urba category-20 logged-in custom-background custom-font-enabled single-author { background-color: #099; }
 }

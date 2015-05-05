@@ -30,8 +30,7 @@ get_header(); ?>
 				<!-- boite actus principales -------------------------- -->
 				<div class="actus_principales">
 					<!-- totem -------------------------- -->
-					<div class="totem_actu fond_gris_fonce">
-					</div>
+
 					<div class="titre_actu fond_jaune texte_blanc interligne_-2 T-2">
 								<?php the_title(); ?>
 					</div>
