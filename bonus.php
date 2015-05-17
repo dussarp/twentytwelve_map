@@ -77,7 +77,7 @@ get_header(); ?>
 						<!-- Début de la Boucle-------------------------------------------------->
 						
 						<div id="visuel_bonus">
-									<img src="http://mapgroupe.fr/wp-content/uploads/2015/04/Panneau_FINAL.jpg" height="280px">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/images/trominoSouh.jpg" height="280px"/>
 						</div>
 			</div>
 			</div>

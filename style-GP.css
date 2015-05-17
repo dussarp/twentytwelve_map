@@ -18,6 +18,7 @@
 /* prehome */
 
 
+
 .conteneur_gm_prehome { width: 289px }
 
 .conteneur_logos_agence_prehome { width: 600px; }
@@ -31,6 +32,7 @@
 
 /* --------------------------------*/
 
+
 section#haut, footer
 {
 	position: relative;
@@ -38,6 +40,7 @@ section#haut, footer
 }
 
 /* -- COMMUN -- *//* -- fond pour la l'affichage de la page category.php -- */
+
 
 
 
@@ -54,6 +57,7 @@ section#haut, footer
 
 /* positionnement du conteneur principal */
 /* conteneur associé à la sidebar -- */
+
 
 
 #secondary
@@ -77,6 +81,7 @@ section#haut, footer
 .cellule { display: table-cell; }
 
 /* -- textes -- */
+
 
 
 .texte_courant
@@ -107,6 +112,7 @@ section#haut, footer
 .interligne_-4 { line-height: 1.0rem; }
 
 /*--- titres - */
+
 
 
 .tete { margin-top: 8px; }
@@ -159,6 +165,7 @@ section#haut, footer
 p.T-5 { padding-left: 10px; }
 
 /*--- fond - */
+
 
 
 .fond_blanc { background-color: #FFF; }
@@ -269,6 +276,7 @@ p.T-5 { padding-left: 10px; }
 
 /* -- menu navigation icone -- */
 
+
 .centre_menu
 {
 	width: 450px;
@@ -276,9 +284,9 @@ p.T-5 { padding-left: 10px; }
 	margin-left: auto;
 	float: none;
 	height: auto;
-	border: 1px none #F00; /* - contour centrage menu --- */
+	border: 1px none #F00;
 	clear: right;
-	margin-top: 56px;
+	margin-top: 22px;
 	padding: 0px;
 }
 
@@ -373,19 +381,21 @@ p.T-5 { padding-left: 10px; }
 
 /* --- menu icone centrage ---- */
 
+
 .map_logo
 {
-	width: 118px; /* height: 150px; */
+	width: 118px;
 	padding: 0px;
 	float: left;
-	margin-top: 25px;
+	margin-top: 7px;
 	margin-right: 0px;
 	margin-bottom: 0px;
-	margin-left: 25px;
+	margin-left: 7px;
 	border: 5px none #093;
 }
 
 /* ---- */
+
 
 .section_centre_haut
 {
@@ -452,22 +462,23 @@ p.T-5 { padding-left: 10px; }
 {
 	padding-bottom: 50px;
 	padding-top: 50px;
-	height: 400px;
+	float: left;
+	width: 100%
 }
 
-#_1 { height: 400px; ; }
+#_1 { }
 
-#_3 { height: 150px; }
+#_3 { }
 
-#_5 { height: 180px; }
+#_5 { }
 
-#_7 { height: 150px; }
+#_7 { }
 
-#_7_map { height: 736px; }
+#_7_map { }
 
-#_9 { height: 333px; }
+#_9 { }
 
-#_11 { height: 333px; }
+#_11 { }
 
 .cellule_entite_gauche
 {
@@ -571,6 +582,7 @@ clear:right height: 120px;
 
 /* --- portraits miniatures --- */
 
+
 .organi_vignette { float: left; }
 
 .titre_cellule__membre
@@ -585,6 +597,7 @@ clear:right height: 120px;
 	max-width: 65px;
 	margin-right: 6px;
 	text-align: center;
+	height: 150px;
 }
 
 .icone_fonction
@@ -616,41 +629,43 @@ clear:right height: 120px;
 
 /* --- Au-delà --- */
 
+
 .conteneur_AD
 {
-	width: 100%;
-	height: 300px;
+	width: 33.33%;
+	height: 667px;
 	display: inline-block;
-	margin-bottom: 50px;
-	margin-top: 50px;
-	padding-top: 50px;
+	float: left;
 	padding-bottom: 50px;
 	z-index: +4;
 }
 
-.cellule_au-dela
+.cellule_extension_haut
 {
-	width: 45%;
-	padding-left: 20px;
-	float: left;
-}
-
-#cellule_au-dela_gauche
-{
-	width: 20%;
-	max-width: 420px;
-	padding-right: 45px;
+	width: 90%;
+	padding-right: 5%;
 	text-align: right;
-	padding-left: 70px;
+	padding-left: 5%;
+	padding-top: 20px;
+	float: left;
+	  height: 200px;
 }
 
-#cellule_au-dela_droite { width: 68%; }
+.cellule_extension_bas
+{
+  width: 100%;
+  /* padding-right: 5%; */
+  /* text-align: right; */
+  /* padding-left: 5%; */
+  padding-top: 20px;
+  float: right;
+}
 
 #visuel_au-dela
 {
-	display: inline-block;
+	display: block;
 	vertical-align: top;
-	width: 25%;
+	width: 90%;
 }
 
 .titre_au-dela
@@ -680,6 +695,7 @@ clear:right height: 120px;
 
 /* --- BONUS --- */
 
+
 .cellule_au-dela a.link-pdf
 {
 	border: 1px red solid;
@@ -688,13 +704,13 @@ clear:right height: 120px;
 
 .cellule_au-dela a.item-link
 {
-	position: relative;
-	display: block;
-	float: left;
-	width: 25%;
-	margin-right: 10px;
-	height: 265px;
-	overflow: hidden;
+  position: relative;
+  display: block;
+  float: left;
+  width: 25%;
+  /* margin-right: 10px; */
+  height: 265px;
+  overflow: hidden;
 }
 
 .cellule_au-dela a.item-link #visuel_au-dela { width: 100%; }
@@ -758,7 +774,8 @@ clear:right height: 120px;
 	text-align: right;
 }
 
-#cellule_bonus_droite { width: 68%; }
+#cellule_bonus_droite { width: 68%;
+  float: left; }
 
 #visuel_bonus
 {
@@ -798,6 +815,7 @@ clear:right height: 120px;
 
 
 /* --- style PYD --- */
+
 
 div#accroche
 {
@@ -1001,6 +1019,7 @@ div#static-description
 	padding-bottom: 0px;
 	padding-left: 0px;
 	background-color: #999;
+	border-top: 6px solid #FFC700;
 }
 
 #static-description fiche_reference d-tails
@@ -1014,6 +1033,7 @@ div#static-description
 }
 
 /*--------------cat 20 urba et littoral --------------*/
+
 
 
 
@@ -1197,9 +1217,10 @@ div#static-description
 
 /* --- tableau pour l'affichage des résultats de choix des categories --- */
 
+
 .conteneur_superieur
 {
-	width: 76%;
+	width: 100%;
 	float: left;
 	min-width: 402px;
 	border-bottom: 1px solid #FC0;
@@ -1209,7 +1230,7 @@ div#static-description
 
 #conteneur_tri_categorie
 {
-	max-width: 392px;
+	max-width: 399px;
 	width: 100%;
 	min-width: 200px;
 	float: left;
@@ -1252,7 +1273,7 @@ div#static-description
 	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	width: 255px;
+	width: 262px;
 	text-align: left;
 	float: left;
 	height: 81px;
@@ -1307,6 +1328,7 @@ div.conteneur_tri_presse
 
 /* ---- */
 
+
 .suite_art
 {
 	border: 2px solid #0F0;
@@ -1314,6 +1336,7 @@ div.conteneur_tri_presse
 }
 
 /* ---- */
+
 
 .article_secondaire
 {
@@ -1353,6 +1376,7 @@ div.conteneur_tri_presse
 }
 
 /* ---- */
+
 
 .titre_niv_00
 {
@@ -1430,6 +1454,7 @@ div.conteneur_tri_presse
 
 /* ---- */
 
+
 .menu_haut
 {
 	font-size: 0.8em;
@@ -1467,6 +1492,7 @@ div.conteneur_tri_presse
 }
 
 /* - actus principales --- */
+
 
 div#image_actu_bandeau
 {
@@ -1535,6 +1561,7 @@ div#image_actu_bandeau
 
 /* -  anciennes actus--- */
 
+
 #conteneur_anciennes_actus
 {
 	width: 60%;
@@ -1569,6 +1596,7 @@ div#image_actu_bandeau
 #tableau_anciennes_actus, #titre_anciennes_actus, #date_anciennes_actus, .cellule_anciennes_actus, #conteneur_anciennes_actus { border: 1px none #009; }
 
 /* - sommaire --- */
+
 
 .conteneur_sommaire
 {
@@ -1628,6 +1656,7 @@ div#image_actu_bandeau
 /* -- Détails fiche référence / navigaton -- */
 /* FLECHES http://apps.eky.hk/css-triangle-generator/ */
 
+
 .ref_nav_avant_apres
 {
 	height: 50px;
@@ -1667,7 +1696,6 @@ div#image_actu_bandeau
 	height: 50px;
 	background-repeat: no-repeat;
 	background-position: top center;
-	opacity: 0.5;
 }
 
 .fleche_droite_gris
@@ -1695,12 +1723,12 @@ div#image_actu_bandeau
 	height: 50px;
 	background-repeat: no-repeat;
 	background-position: top center;
-	opacity: 0.5;
 }
 
 .fleche_gauche:hover, .fleche_droite:hover, .fiche_reference:hover { opacity: 1; }
 
 /* -- RECHERCHES --- */
+
 
 #conteneur_recherche
 {
@@ -1720,9 +1748,10 @@ div#image_actu_bandeau
 
 
 
+
 .section_haut /* bloc entête */
 {
-	height: 160px;
+	height: 133px;
 	width: 100%;
 	margin: 0px;
 	left: 0px;
@@ -1735,6 +1764,7 @@ div#image_actu_bandeau
 
 /* div slide image -- */
 
+
 .fiche_reference
 {
 	position: fixed;
@@ -1746,6 +1776,7 @@ div#image_actu_bandeau
 }
 
 /* conteneur pour le titre -- */
+
 
 .titre-op-ration, div.titre-
 {
@@ -1768,9 +1799,12 @@ div#image_actu_bandeau
 	border: 2px none #930;
 	background-color: #999;
 	padding: 10px;
+	margin-top: 10px;
+	border-radius: 3px;
 }/* conteneur pour le programme -- */
 
 /* textes des fiches -- */
+
 
 .Titre-verso, .Titre-couv, .URBA-titre-verso
 {
@@ -1787,8 +1821,10 @@ div#image_actu_bandeau
 .ville-couv, .Ville-verso, .para-style-override-1
 {
 	font-family: ReplicaProRegular;
-	font-size: 0.8rem;
+	font-size: 1rem;
 	color: #FFF;
+	text-transform: uppercase;
+	margin-top: 5px;
 }
 
 .label-info
@@ -1825,6 +1861,7 @@ div#image_actu_bandeau
 }
 
 /* urbanisme */
+
 
 
 

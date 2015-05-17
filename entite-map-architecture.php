@@ -17,10 +17,6 @@
 
 get_header(); ?>
 
-<!-- boite principale GROUPE ------------------------>
-<!----------------------------------------------------------------------->
-
-<!-- contenu boite principale ------------------------>
 <!----------------------- 1 ------------------------------------------------>
 
 <div id="_1" class="rubrique_entite">
@@ -32,11 +28,11 @@ get_header(); ?>
 			<!------------------------- 2 ---------------------------------------------->
 			<div class="cellule_entite_droite">
 						<div class="visuel_icone_pellicule">
-									<div id="visuel_film">
-												<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/images/mapCnous.jpg" width="400px" style="border-radius:5px"/>
+									<a href="http://www.dailymotion.com/video/x22qce2_map-c-est-nous_creation" target="_blank">			<div id="visuel_film">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/images/mapCnous.jpg" width="400px" style="border-radius:5px"/>
 									</div>
 									<span class="T-4 interligne_-2">Découvrez l'agence <br/>
-									et ceux qui la font... </span>
+									et ceux qui la font... </span></a>
 						</div>
 						<div class="corps_cellule_entite interligne_-3 T-5">
 									Fuga. Tis volumenis idestrum, omnisi tecto volorro rersper istrum que iliberion natio. Et ellat quid mod quibusame expliqu untioreptasi cone nus, exceris vid quaest et ma voluptatibus am, ut experum aut eaquam landigent.
@@ -45,21 +41,9 @@ get_header(); ?>
 						</div>
 			</div>
 </div>
-<!-------------------------- 3 --------------------------------------------
-<div id="_3" class="rubrique_entite">
-			<div class="cellule_entite_gauche">
-						<div id="fonction_organigramme" class="T-3 texte_gris_clair">
-									Les administrateurs
-						</div>
-						<div>
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/add/organigramme_28.png" width="20px"/>
-						</div>
-			</div>
-			<!-------------------------- 4 -------------------------------------------
-			
-			<!-- Fin de La Boucle -->
-</div>
-<!--------------------------- 5 -------------------------------------------->
+<!-------------------------- 3 -------------------------------------------->
+<!-------------------------- 4 ------------------------------------------->
+<!-------------------------- 5 -------------------------------------------->
 <div id="_5" class="rubrique_entite">
 			<div class="cellule_entite_gauche">
 						
@@ -91,9 +75,10 @@ get_header(); ?>
 										'posts_per_page'=> '1000'
 									); ?>
 						<?php $query = new WP_Query($args); ?>
+								<!-- Début de La Boucle -->
 						<?php if ( $query -> have_posts() ) : while ( $query -> have_posts() ) : $query -> the_post(); ?>
 						<!-- Affiche la miniature -------------->
-						<!-- on regarde si les associés appartiennent à une catégorie en particulier-->
+						<!-- on regarde si les membres appartiennent à une sous-catégorie en particulier du groupemap (catégorie 52)-->
 						<?php if ( in_category( 'assos-exe-map' )) { ?>
 						<div class="cellule_membre_organigramme">
 									<div class="organi_vignette">
@@ -103,7 +88,8 @@ get_header(); ?>
 									</div>
 									<!-- Légende ---->
 									<div class="cellule_membre_organigramme interligne_-4 T-7 legende_nom">
-												<?php the_title(); ?>
+											<?php the_field('prenom'); ?><br/>
+												<?php the_field('nom'); ?>
 									</div>
 						</div>
 						<?php } ?>
@@ -119,7 +105,7 @@ get_header(); ?>
 									</div>
 						</div>
 						<!-- Début de la Boucle DIRECTION---->
-						<!-- on recupere la liste des associés -->
+						<!-- on recupere la liste des membres du groupe map -->
 						<?php $args = array(
 										'orderby' => 'title',
 										'order'   => 'ASC',
@@ -129,7 +115,7 @@ get_header(); ?>
 						<?php $query = new WP_Query($args); ?>
 						<?php if ( $query -> have_posts() ) : while ( $query -> have_posts() ) : $query -> the_post(); ?>
 						<!-- Affiche la miniature -------------->
-						<!-- on regarde si les associés appartiennent à une catégorie en particulier-->
+						<!-- on regarde si les membres appartiennent à une sous-catégorie en particulier -->
 						<?php if ( in_category( 'directiongm' )) { ?>
 						<div class="cellule_membre_organigramme">
 									<div class="organi_vignette">
@@ -139,7 +125,8 @@ get_header(); ?>
 									</div>
 									<!-- Légende ---->
 									<div class="cellule_membre_organigramme interligne_-4 T-7 legende_nom">
-												<?php the_title(); ?>
+												<?php the_field('prenom'); ?><br/>
+												<?php the_field('nom'); ?>
 									</div>
 						</div>
 						<?php } ?>
@@ -171,19 +158,21 @@ get_header(); ?>
 										'posts_per_page'=> '1000'
 									); ?>
 						<?php $query = new WP_Query($args); ?>
+											<!-- architecture -------------->
 						<?php if ( $query -> have_posts() ) : while ( $query -> have_posts() ) : $query -> the_post(); ?>
 						<!-- Affiche la miniature -------------->
-						<!-- on regarde si les associés appartiennent à une catégorie en particulier-->
-						<?php if ( in_category( 'agence-map' )) { ?>
+						<!-- on regarde si les membres appartiennent à une sous-catégorie en particulier -->
+						<?php  if ( in_category( 'personnel_map' )) { ?>
 						<div class="cellule_membre_organigramme">
 									<div class="organi_vignette" >
-												<a href="<?php the_permalink(); ?>">
+											<!--	<a href="<?php the_permalink(); ?>">-->
 															<?php the_post_thumbnail('miniature-slide'); ?>
-												</a>
+											<!--	</a>-->
 									</div>
 									<!-- Légende ---->
 									<div class="cellule_membre_organigramme interligne_-4 T-7 legende_nom">
-												<?php the_title(); ?>
+												<?php the_field('prenom'); ?><br/>
+												<?php the_field('nom'); ?>
 									</div>
 						</div>
 						<?php } ?>

@@ -17,58 +17,52 @@ get_header(); ?>
 <!-- section menus REF --------- -->
 
 <nav id="site-navigation" class="main-navigation fond_gris_clair" role="navigation">
- <button class="menu-toggle">
- <?php _e( 'Menu', 'twentytwelve' ); ?>
- </button>
- <a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>">
-  <?php _e( 'Skip to content', 'twentytwelve' ); ?>
- </a>
- <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_class' => 'nav-menu' ) ); ?>
+			<button class="menu-toggle">
+			<?php _e( 'Menu', 'twentytwelve' ); ?>
+			</button>
+			<a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>">
+						<?php _e( 'Skip to content', 'twentytwelve' ); ?>
+			</a>
+			<?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_class' => 'nav-menu' ) ); ?>
 </nav>
 <!-- fin menu REF -->
 
 <!-- boite principale -->
 <section id="primary" class="site-content">
- <?php get_sidebar(); ?>
- <div class="conteneur_superieur">
-  <?php global $query_string; query_posts( $query_string . '&posts_per_page=9' ); if ( have_posts() ) :  while ( have_posts() ) : the_post(); ?>
-  <!--  ARTICLE ----------->
-  <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-   <!--  résultat catégorie ----------->
-   <a href="<?php the_permalink(); ?>" rel="bookmark">
-    <div id="conteneur_tri_categorie" class="conteneur_boite fond_jaune">  <!--  cellule vignette----------->
-     <div id="vignette_tri_categorie" class="cellule_tri_categorie">
-      <?php the_post_thumbnail('miniature-tri'); ?>
-     </div>
-     <!--  cellule titre ----------->
-     <div id="titre_tri_categorie" class="interligne_-3 cellule_tri_categorie texte_blanc fond_gris_clair">
-      <p  class="T-5" style="text-transform: uppercase;" >
-       <?php the_title(); ?>
-      </p>
-      <p  class="T-7 texte_blanc" >
-       <!-- ---------- affichage du nom des catégorie -------------------------------------->
-       
-       <?php /*?> <?php foreach((get_the_category()) as $cat)
-												 {echo $cat->cat_name . ' ';} ?>
-       <?php $cat = get_the_category(); $cat = $cat[0]; echo $cat->cat_name; ?>
-       <br/>
-       <?php echo $category->name; ?><?php */?>
-      </p>
-     </div>
-     <div id="fil_ariane_tri_categorie" class="fond_gris_fonce T-6 texte_gris_clair">
-      Mise à jour le<br/>
-      <?php the_date(); ?>
-      <br/>
-      </p>
-     </div>
-     
-   
-    </div>
-   </a>
-  </article>
-  <?php	endwhile; ?>
-  <?php endif; ?>
- </div>
+			<?php /*?>		<?php get_sidebar(); ?><?php */?>
+			<div class="conteneur_superieur">
+						<?php global $query_string; query_posts( $query_string . '&posts_per_page=12' ); if ( have_posts() ) :  while ( have_posts() ) : the_post(); ?>
+						<!--  ARTICLE ----------->
+						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+									<!--  résultat catégorie ----------->
+									<a href="<?php the_permalink(); ?>" rel="bookmark">
+												<div id="conteneur_tri_categorie" class="conteneur_boite fond_jaune">
+															<!--  cellule vignette----------->
+															<div id="vignette_tri_categorie" class="cellule_tri_categorie">
+																		<?php the_post_thumbnail('miniature-tri'); ?>
+															</div>
+															<!--  cellule titre ----------->
+															<div id="titre_tri_categorie" class="interligne_-3 cellule_tri_categorie texte_blanc fond_gris_clair">
+																		<p  class="T-5" style="text-transform: uppercase;" >
+																					<?php the_title(); ?>
+																		</p>
+																		<p  class="T-5 texte_gris_fonce" style="text-transform: uppercase;" >
+																					<?php the_field('ville_OP'); ?>
+																		</p>
+															</div>
+															<div id="fil_ariane_tri_categorie" class="fond_gris_fonce T-6 texte_gris_clair">
+																		Mise à jour le<br/>
+																		<?php the_date(); ?>
+					
+																	
+																		</p>
+															</div>
+												</div>
+									</a>
+						</article>
+						<?php	endwhile; ?>
+						<?php endif; ?>
+			</div>
 </section>
 <!-- script pour navigation -->
 <?php
@@ -149,24 +143,24 @@ get_header(); ?>
 
 <!-- NAVIGATION précédent / suivant ----------------------------------------------  -->
 <div class="ref_nav_avant_apres fond_gris_fonce">
- <nav class="ref_precedent_suivant">
-  <?php
+			<nav class="ref_precedent_suivant">
+						<?php
 					$previous = get_previous_subcategory_post_link();
 					$next = get_next_subcategory_post_link();
 				?>
-  <?php if($previous != false) { ?>
-  <a href="<?php echo $previous; ?>">
-   <div class="fleche_gauche_gris alignleft">
-   </div>
-  </a>
-  <?php } ?>
-  <?php if($next != false) { ?>
-  <a href="<?php echo $next; ?>">
-   <div class="fleche_droite_gris alignright">
-   </div>
-  </a>
-  <?php }  ?>
- </nav>
+						<?php if($previous != false) { ?>
+						<a href="<?php echo $previous; ?>">
+									<div class="fleche_gauche_gris alignleft">
+									</div>
+						</a>
+						<?php } ?>
+						<?php if($next != false) { ?>
+						<a href="<?php echo $next; ?>">
+									<div class="fleche_droite_gris alignright">
+									</div>
+						</a>
+						<?php }  ?>
+			</nav>
 </div>
 <!-- fin navigation -------------------------------- -->
 

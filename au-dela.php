@@ -20,7 +20,7 @@ get_header(); ?>
 <!-- boite principale AMA ------------------------------------------------>
 <div class="conteneur_AD fond_jaune">
 			<!-- contenu boite principale ------------------------------------------------>
-			<div  id="cellule_au-dela_gauche" class="cellule_au-dela">
+			<div  class="cellule_extension_haut">
 				<!-- présentation de l'entité ---------------------------------------------- -->
 				<!-- 	<div>
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu/logoVSM.png" width="100px" />
@@ -30,23 +30,23 @@ get_header(); ?>
 				<span class="interligne_-3 T-5"> Fuga. Tis volumenis idestrum, omnisi tecto volorro rersper istrum que iliberion natio. Et ellat quid mod quibusame expliqu untioreptasi cone nus, exceris vid quaest et ma voluptatibus am, ut experum aut eaquam landigent.</span>
 			</div>
 				<!-- Cellule droite -------------------------------------------------->
-			<div  id="cellule_au-dela_droite" class="cellule_au-dela">
+			<div  class="cellule_extension_bas">
 						
 						<!-- Début de la Boucle-------------------------------------------------->				
 				<?php 
 					$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-					$args = array( 'post_type' => 'perspective', 'posts_per_page' => 3, 'order' => 'ASC', 'sorte' => 'ama', 'paged' => $paged);
+					$args = array( 'post_type' => 'perspective', 'posts_per_page' => 1, 'order' => 'ASC', 'sorte' => 'ama', 'paged' => $paged);
 					$the_query = new WP_Query( $args ); 
 				?>
 				<?php if ( $the_query->have_posts() ) : ?>
 				<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 				<a href="<?php the_permalink(); ?>" class="item-link">
-					<div id="visuel_au-dela">
+
 						<figure>
 							<?php the_post_thumbnail('miniature-actus'); ?>
 						</figure>
 						<figcaption><span><?php the_title(); ?></span></figcaption>
-					</div>
+
 				</a>
 				<?php endwhile; ?>
 				<?php else:  ?>
@@ -68,13 +68,13 @@ get_header(); ?>
 
 <div class="conteneur_AD fond_gris_clair">
 			<!-- contenu boite principale ------------------------------------------------>
-			<div  id="cellule_au-dela_gauche" class="cellule_au-dela">
+			<div  class="cellule_extension_haut">
 						<!-- présentation de l'entité ---------------------------------------------- -->
-						<p class="T-2 texte_blanc">Consilium</p>
+						<p class="T-2 texte_blanc">Consilium<br/></p>
 						<span class="interligne_-3 T-5"> Fuga. Tis volumenis idestrum, omnisi tecto volorro rersper istrum que iliberion natio. Et ellat quid mod quibusame expliqu untioreptasi cone nus, exceris vid quaest et ma voluptatibus am, ut experum aut eaquam landigent.</span>
 			</div>
 								<!-- Droite ------------------------------------------------->
-			<div  id="cellule_au-dela_droite" class="cellule_au-dela">
+			<div  class="cellule_extension_bas">
 						
 						<!-- Début de la Boucle-------------------------------------------------->
 						
@@ -85,12 +85,12 @@ get_header(); ?>
 						<?php if ( $the_query->have_posts() ) : ?>
 								<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 						<a href="<?php the_permalink(); ?>" class="item-link">
-							<div id="visuel_au-dela">
+
 								<figure>
 									<?php the_post_thumbnail('miniature-actus'); ?>
 								</figure>
 								<figcaption><span><?php the_title(); ?></span></figcaption>
-							</div>
+
 						</a>
 						<?php endwhile; ?>
 					
@@ -103,13 +103,13 @@ get_header(); ?>
 <div class="conteneur_AD fond_jaune">
 			<!-- contenu boite principale ------------------------------------------------>
 
-			<div  id="cellule_au-dela_gauche" class="cellule_au-dela">
+			<div  class="cellule_extension_haut">
 						<!-- présentation de l'entité ---------------------------------------------- -->
 						<!-- liens vers page php par icones ---------------------------------------------->
-						<p class="T-2 texte_blanc">Focus</p>
+						<p class="T-2 texte_blanc">Focus<br/></p>
 						<span class="interligne_-3 T-5"> Fuga. Tis volumenis idestrum, omnisi tecto volorro rersper istrum que iliberion natio. Et ellat quid mod quibusame expliqu untioreptasi cone nus, exceris vid quaest et ma voluptatibus am, ut experum aut eaquam landigent.</span>
 			</div>
-			<div  id="cellule_au-dela_droite" class="cellule_au-dela">
+			<div  class="cellule_extension_bas">
 						
 						<!-- Début de la Boucle -------------------------------------------------->
 						
@@ -150,12 +150,12 @@ get_header(); ?>
 						<!-- if no attachment -->
 						<?php }else{ ?>
 							<a href="<?php the_permalink(); ?>" class="item-link">
-								<div id="visuel_au-dela">
+
 									<figure>
 										<?php the_post_thumbnail('miniature-actus'); ?>
 									</figure>
 									<figcaption><span><?php the_title(); ?></span></figcaption>
-								</div>
+
 							</a>
 						<?php } ?>
 					<?php endwhile; ?>

@@ -27,11 +27,8 @@ if ( ! isset( $content_width ) )
 	$content_width = 625;
 
 add_image_size( 'miniature-slide', 400, 400, true ); /* -----------------------------------------code ajouté -------------**/
-add_image_size( 'miniature-article', 300, 300, false );
 add_image_size( 'miniature-actus', 800, 800, true );
 add_image_size( 'miniature-bandeau', 1920, 800, true );
-add_image_size( 'miniature-galerie', 1920, 400, true );
-add_image_size( 'visuel-maxi', 1920, 1200, false );
 add_image_size( 'miniature-tri', 480, 240, true );
 add_image_size( 'miniature-publication', 260, 160, true );
 
